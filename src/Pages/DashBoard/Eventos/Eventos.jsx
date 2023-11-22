@@ -3,10 +3,12 @@ import SingleEventoTD from "./SingleEventoTD";
 import { Link } from "react-router-dom";
 
 const Eventos = () => {
-  const [eventos, setEventos] = useState([])
+  const [eventos, setEventos] = useState([]);
   useEffect(() => {
-    fetch('/eventos.json').then((response) => response.json()).then(data => setEventos(data))
-  }, [])
+    fetch("/eventos.json")
+      .then((response) => response.json())
+      .then((data) => setEventos(data));
+  }, []);
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 5;
   const totalPages = Math.ceil(eventos.length / eventsPerPage);
@@ -37,7 +39,7 @@ const Eventos = () => {
       </div>
       <div className='eventos-container'>
         <h4>Eventos</h4>
-        <div className='eventos-container-header' >
+        <div className='eventos-container-header'>
           <div className='flex'>
             <div className='search-box'>
               <input
@@ -84,15 +86,15 @@ const Eventos = () => {
               </select>
             </div>
           </div>
-          <Link to='/createEvento'><button className="create-evento-btn">Crear Evento</button></Link>
+          <Link to='createEvento'>
+            <button className='create-evento-btn'>Crear Evento</button>
+          </Link>
         </div>
-        <div className="eventos-table">
+        <div className='eventos-table'>
           <table>
             <thead>
               <tr>
-                <th>
-                  Evento
-                </th>
+                <th>Evento</th>
                 <th>Vendidas</th>
                 <th>Neto</th>
                 <th>Fecha</th>
@@ -100,34 +102,72 @@ const Eventos = () => {
                 <th></th>
               </tr>
             </thead>
-            {currentEvents.map(evento => <SingleEventoTD key={evento.id} evento={evento}></SingleEventoTD>)}
-
+            {currentEvents.map((evento) => (
+              <SingleEventoTD key={evento.id} evento={evento}></SingleEventoTD>
+            ))}
           </table>
         </div>
         {/* Pagination */}
-        <div className="pagination">
+        <div className='pagination'>
           <p>Showing 1 to 5 items</p>
-          <div className="pagination-button-group">
-            <button className="page-btn" onClick={goToPrevPage} disabled={currentPage === 1}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
-                <path d="M6 1L1 6L6 11" stroke="#9B65E4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <div className='pagination-button-group'>
+            <button
+              className='page-btn'
+              onClick={goToPrevPage}
+              disabled={currentPage === 1}
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='7'
+                height='12'
+                viewBox='0 0 7 12'
+                fill='none'
+              >
+                <path
+                  d='M6 1L1 6L6 11'
+                  stroke='#9B65E4'
+                  stroke-width='1.5'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
               </svg>
             </button>
-            {Array.from({ length: Math.ceil(eventos.length / eventsPerPage) }, (_, i) => (
-              <button className={currentPage === i + 1 ? 'active-page' : 'page-btn'} key={i + 1} onClick={() => paginate(i + 1)}>
-                {i + 1}
-              </button>
-            ))}
-            <button className="page-btn" onClick={goToNextPage} disabled={currentPage === totalPages}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
-                <path d="M1 11L6 6L1 1" stroke="#949CA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            {Array.from(
+              { length: Math.ceil(eventos.length / eventsPerPage) },
+              (_, i) => (
+                <button
+                  className={currentPage === i + 1 ? "active-page" : "page-btn"}
+                  key={i + 1}
+                  onClick={() => paginate(i + 1)}
+                >
+                  {i + 1}
+                </button>
+              )
+            )}
+            <button
+              className='page-btn'
+              onClick={goToNextPage}
+              disabled={currentPage === totalPages}
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='7'
+                height='12'
+                viewBox='0 0 7 12'
+                fill='none'
+              >
+                <path
+                  d='M1 11L6 6L1 1'
+                  stroke='#949CA9'
+                  stroke-width='1.5'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
               </svg>
             </button>
           </div>
         </div>
       </div>
-
-
     </div>
   );
 };

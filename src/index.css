@@ -7,6 +7,9 @@
 a {
   text-decoration: none;
 }
+body {
+  background: #f9fafe;
+}
 
 .grid-container {
   display: grid;
@@ -85,7 +88,7 @@ a {
 /* Sidebar  */
 #sidebar {
   grid-area: sidebar;
-  height: 100%;
+  height: 95%;
   border-radius: 15px;
   transition: all 0.8s ease-in-out;
   -webkit-transition: all 0.8s ease-in-out;
@@ -94,6 +97,7 @@ a {
   padding-right: 10px;
   margin-top: 30px;
   margin-left: 30px;
+  margin-bottom: 30px;
   border-radius: 16px;
   background: #fff;
   box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
@@ -107,7 +111,7 @@ a {
   /* margin-bottom: 30px; */
 }
 
-.sidebar-title>span {
+.sidebar-title > span {
   display: none;
 }
 
@@ -159,7 +163,7 @@ a {
   cursor: pointer;
 } */
 
-.sidebar-list-item>a {
+.sidebar-list-item > a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -191,9 +195,6 @@ a {
   overflow-x: hidden;
   max-width: 100%;
   height: 100%;
-
-  /* padding-top: 24px; */
-  /* padding-left: 30px; */
 }
 
 /* Eventos */
@@ -324,8 +325,8 @@ a {
   align-items: center;
   gap: 6px;
   border-radius: 100px;
-  background: #C90000;
-  color: #FFF;
+  background: #c90000;
+  color: #fff;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -345,7 +346,6 @@ table {
 }
 
 .eventos-table table thead {
-
   border-radius: 5px;
   background: rgba(87, 118, 242, 0.08);
 }
@@ -353,11 +353,9 @@ table {
 .eventos-table table th,
 td {
   padding: 15px 21px !important;
-
 }
 
 .eventos-table table th {
-
   text-align: left;
   color: #666;
   font-family: Poppins;
@@ -368,7 +366,7 @@ td {
 }
 
 .eventos-table table td h6 {
-  color: #1B212D;
+  color: #1b212d;
   font-family: Poppins;
   font-size: 15px;
   font-style: normal;
@@ -409,7 +407,7 @@ td {
 }
 
 .eventos-table .neto {
-  color: #1B212D;
+  color: #1b212d;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -418,7 +416,7 @@ td {
 }
 
 .eventos-table .date {
-  color: #1B212D;
+  color: #1b212d;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -436,7 +434,7 @@ td {
 }
 
 .eventos-table .estado-inactive {
-  color: #E41616;
+  color: #e41616;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -445,7 +443,7 @@ td {
 }
 
 .eventos-table .estado-active {
-  color: #4AAD31;
+  color: #4aad31;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -503,9 +501,9 @@ tr:first-child th:last-child {
   align-items: flex-start;
   gap: 9px;
   border-radius: 100px;
-  background: #9B65E4;
-  color: #FFF;
-  font-feature-settings: 'clig' off, 'liga' off;
+  background: #9b65e4;
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -517,8 +515,8 @@ tr:first-child th:last-child {
 }
 
 .page-btn {
-  color: #949CA9;
-  font-feature-settings: 'clig' off, 'liga' off;
+  color: #949ca9;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -536,11 +534,11 @@ tr:first-child th:last-child {
   margin: 30px;
 }
 
-.create-event>p {
+.create-event > p {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #180E2C;
+  color: #180e2c;
   font-family: Poppins;
   font-size: 22px;
   font-style: normal;
@@ -551,13 +549,13 @@ tr:first-child th:last-child {
 
 .create-event-container {
   border-radius: 16px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
-  padding: 30px 40px;
+  /* padding: 30px 40px; */
 }
 
-.create-event-container>h4 {
-  color: #180E2C;
+.create-event-container > h4 {
+  color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
   font-style: normal;
@@ -565,23 +563,35 @@ tr:first-child th:last-child {
   line-height: normal;
   text-transform: capitalize;
   margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+.create-event-container form {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .create-event-container .from-group label {
   margin-bottom: 8px;
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .create-event-container .from-group {
   margin-bottom: 16px;
-
-
 }
 
-.create-event-container input {
+.create-event-container .text-input,
+.date-picker,
+.date-picker-O {
   width: 100%;
   padding: 15px 12px;
   border-radius: 6px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
 
   outline: none !important;
   color: #757575;
@@ -591,6 +601,18 @@ tr:first-child th:last-child {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+}
+
+.create-event-container label .span {
+  color: #9b65e4;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.create-event-container textarea {
+  height: 201px;
 }
 
 .create-event-container ::placeholder {
@@ -608,7 +630,7 @@ tr:first-child th:last-child {
   padding-bottom: 15px;
   padding-left: 12px;
   border-radius: 6px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   appearance: none;
   /* Hides default arrow */
   -webkit-appearance: none;
@@ -617,8 +639,8 @@ tr:first-child th:last-child {
   /* For older versions of Firefox */
 
   /* Adding custom arrow */
-  background-image: url('./assets/images/downarrow.svg');
-  background-position: right 10px center;
+  background-image: url("./assets/images/downarrow.svg");
+  background-position: right 13px center;
   background-repeat: no-repeat;
 
   /* Adjust padding for the arrow */
@@ -633,4 +655,133 @@ tr:first-child th:last-child {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.date-picker {
+  width: 100%;
+  background-image: url("./assets/images/date-picker.svg");
+  background-position: right 13px center;
+  background-repeat: no-repeat;
+}
+.date-picker-O {
+  width: 100%;
+  background-image: url("./assets/images/date.svg");
+  background-position: right 13px center;
+  background-repeat: no-repeat;
+}
+.radio-btn-group input,
+.radio-btn-group label {
+  margin-right: 9px;
+}
+.radio-btn-group {
+  margin-bottom: 35px;
+}
+input[type="radio"]:checked {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 14px;
+  height: 14px;
+  background-color: #4aad31;
+  border-radius: 50%;
+
+  background-image: url("./assets/images/fi_656971.png"); /* Image for unchecked state */
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.upload-photo {
+  height: 201px;
+  border-radius: 6px;
+  border: 1px dashed #9b65e4;
+  background: rgba(155, 101, 228, 0.1);
+  padding: 58px 0;
+  text-align: center;
+}
+.upload-photo h5 {
+  color: #0c0025;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+.upload-photo p {
+  color: #666;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11.907px; /* 99.227% */
+}
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff !important;
+  font-family: Poppins;
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  text-transform: capitalize;
+
+  background-color: #9b65e4;
+  padding: 10px 14px;
+  border-radius: 39.691px;
+  border: none;
+}
+.custom-file-upload svg {
+  margin-right: 5px;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+/* Style the span/text within the label */
+.custom-file-upload span {
+  display: inline-block;
+}
+
+.line-1 {
+  background: #eaeaea;
+  height: 1px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+
+  width: 100%;
+}
+.create-event-container-btn-group {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  gap: 24px;
+}
+.create-event-container-btn-group > button {
+  display: flex;
+  width: 213px;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 100px;
+  background: #efe6fb;
+
+  border: none;
+  color: #9b65e4;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+.create-event-container-btn-group > button:hover {
+  color: #fff;
+  background: #9b65e4;
 }

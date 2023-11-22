@@ -13,9 +13,9 @@ export const router = createBrowserRouter([
         element: <Eventos />,
       },
       {
-        path: "createEvento",
+        path: "eventos/createEvento",
         element: <CreateEvent></CreateEvent>,
-      }
+      },
     ],
   },
 ]);
