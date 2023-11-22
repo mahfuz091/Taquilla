@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
@@ -42,12 +43,15 @@ a {
 
   align-items: center;
 }
+
 .header-right {
   gap: 24px;
 }
+
 .header-right-profile {
   gap: 6px;
 }
+
 .header-right-profile-desc h4 {
   color: #192351;
   font-family: Poppins;
@@ -55,8 +59,10 @@ a {
   font-style: normal;
   font-weight: 600;
   margin-right: 6px;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
 }
+
 .create-event-btn {
   display: inline-flex;
   padding: 13px 20px;
@@ -71,7 +77,9 @@ a {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
+  cursor: pointer;
 }
 
 /* Sidebar  */
@@ -99,7 +107,7 @@ a {
   /* margin-bottom: 30px; */
 }
 
-.sidebar-title > span {
+.sidebar-title>span {
   display: none;
 }
 
@@ -137,9 +145,11 @@ a {
   background: #9b65e4;
   position: relative;
 }
+
 .sidebar-list-item.sidebar-list-item-active {
   color: #fff;
 }
+
 .sidebar-list-item-active svg path {
   stroke: rgba(255, 255, 255, 1);
 }
@@ -149,7 +159,7 @@ a {
   cursor: pointer;
 } */
 
-.sidebar-list-item > a {
+.sidebar-list-item>a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -170,9 +180,11 @@ a {
   z-index: 99999999999999999999999 !important;
   width: 320px;
 }
+
 .mt-112 {
   margin-top: 112px;
 }
+
 .main-container {
   grid-area: main;
   /* overflow-y: hidden; */
@@ -183,10 +195,12 @@ a {
   /* padding-top: 24px; */
   /* padding-left: 30px; */
 }
+
 /* Eventos */
 .eventos {
   margin: 30px;
 }
+
 .eventos-header {
   background-image: url("./assets/images/eventos-bg.png");
   background-position: center;
@@ -196,6 +210,7 @@ a {
   border-radius: 16px;
   padding: 40px 37px;
 }
+
 .eventos-header h4 {
   color: #fff;
   font-family: Poppins;
@@ -216,6 +231,7 @@ a {
   width: 470px;
   margin-top: 10px;
 }
+
 .search-box {
   position: relative;
 }
@@ -229,6 +245,7 @@ a {
   border: 1px solid #ddd;
   background: rgba(155, 101, 228, 0.1);
 }
+
 .search-icon {
   position: absolute;
   left: 10px;
@@ -251,6 +268,7 @@ a {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
   margin-top: 30px;
 }
+
 .eventos-container h4 {
   color: #180e2c;
   font-family: Poppins;
@@ -261,12 +279,21 @@ a {
   text-transform: capitalize;
   margin-bottom: 10px;
 }
+
+.eventos-container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
 .flex {
   display: flex;
 
   align-items: center;
   gap: 12px;
 }
+
 .myselect {
   display: flex;
   padding: 10px 20px;
@@ -276,13 +303,334 @@ a {
   border-radius: 100px;
   border: 1px solid #ddd;
 }
+
 .myselect option {
   width: 126px;
 }
+
 .myselect option {
   display: flex;
   flex-direction: column;
 }
+
 .myselect option span {
   display: block;
+}
+
+.create-evento-btn {
+  display: inline-flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 100px;
+  background: #C90000;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 171.429% */
+  border: none;
+  cursor: pointer;
+}
+
+.eventos-table table {
+  width: 100%;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+.eventos-table table thead {
+
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+.eventos-table table th,
+td {
+  padding: 15px 21px !important;
+
+}
+
+.eventos-table table th {
+
+  text-align: left;
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.eventos-table table td h6 {
+  color: #1B212D;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.eventos-table table td p {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.eventos-table table td .location {
+  color: #444;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.eventos-table .vendiadas {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.eventos-table .vendiadas hr {
+  width: 92px;
+}
+
+.eventos-table .neto {
+  color: #1B212D;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.eventos-table .date {
+  color: #1B212D;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.eventos-table .time {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.eventos-table .estado-inactive {
+  color: #E41616;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.eventos-table .estado-active {
+  color: #4AAD31;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.eventos-table table td:last-child {
+  text-align: right;
+}
+
+.estado-inactive-bg {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+tr:first-child th:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.estado-inactive-bg td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.estado-inactive-bg td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.pagination-button-group {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.active-page {
+  display: flex;
+  padding: 7px 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  border-radius: 100px;
+  background: #9B65E4;
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 157.143% */
+  border: none;
+  cursor: pointer;
+}
+
+.page-btn {
+  color: #949CA9;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 157.143% */
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Create Event */
+
+.create-event {
+  margin: 30px;
+}
+
+.create-event>p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #180E2C;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.create-event-container {
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
+  padding: 30px 40px;
+}
+
+.create-event-container>h4 {
+  color: #180E2C;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.create-event-container .from-group label {
+  margin-bottom: 8px;
+}
+
+.create-event-container .from-group {
+  margin-bottom: 16px;
+
+
+}
+
+.create-event-container input {
+  width: 100%;
+  padding: 15px 12px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+
+  outline: none !important;
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.create-event-container ::placeholder {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.custom-select {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  appearance: none;
+  /* Hides default arrow */
+  -webkit-appearance: none;
+  /* For older versions of Chrome/Safari */
+  -moz-appearance: none;
+  /* For older versions of Firefox */
+
+  /* Adding custom arrow */
+  background-image: url('./assets/images/downarrow.svg');
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+
+  /* Adjust padding for the arrow */
+  outline: none;
+}
+
+.custom-select {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
 }

@@ -11,16 +11,16 @@ const DashBoardLayout = () => {
     setOpenSidebarToggle(!openSidebarToggle);
   };
   return (
-    <Container>
-      <div className='grid-container'>
-        <Header OpenSidebar={OpenSidebar}></Header>
-        <Sidebar
-          openSidebarToggle={openSidebarToggle}
-          OpenSidebar={OpenSidebar}
-        ></Sidebar>
-        <Outlet></Outlet>
-      </div>
-    </Container>
+
+    <div className='grid-container'>
+      <Header OpenSidebar={OpenSidebar}></Header>
+      <Sidebar
+        openSidebarToggle={openSidebarToggle}
+        OpenSidebar={OpenSidebar}
+      ></Sidebar>
+      <Outlet></Outlet>
+    </div>
+
   );
 };
 
