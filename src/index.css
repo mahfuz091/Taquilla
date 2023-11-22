@@ -21,6 +21,17 @@ body {
   height: 100%;
   /* overflow-x: hidden; */
 }
+.thm-btn {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  border-radius: 100px;
+  background: #9b65e4;
+  border: none;
+}
 
 /* Header  */
 .header {
@@ -752,9 +763,14 @@ input[type="radio"]:checked {
   background: #eaeaea;
   height: 1px;
   margin-top: 30px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   width: 100%;
+}
+.line-2 {
+  background: #eaeaea;
+  height: 1px;
+  margin-left: 20px;
 }
 .create-event-container-btn-group {
   display: flex;
@@ -784,4 +800,182 @@ input[type="radio"]:checked {
 .create-event-container-btn-group > button:hover {
   color: #fff;
   background: #9b65e4;
+}
+/* single Evento */
+.single-evento {
+  margin: 30px;
+}
+
+.single-evento > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.single-evento-contaner {
+  padding: 20px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.02);
+}
+.single-evento-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f2f4fe;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.single-evento-card .single-card-title {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.single-evento-card .single-card-desc {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.single-evento-card .single-card-location {
+  color: #444;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.single-card-content {
+  width: 100%;
+}
+.single-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-card-header .thm-btn {
+  padding: 10px 30px;
+}
+
+.single-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.single-card-footer p {
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.single-card-footer p span {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.entradas-container {
+  padding: 20px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.02);
+  margin-top: 20px;
+}
+.entradas-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+.entradas-container-header .thm-btn {
+  padding: 10px 27px;
+}
+
+.editar-btn {
+  padding: 5px 19px 6px 19px;
+  border-radius: 1000px;
+  background: rgba(74, 173, 49, 0.18);
+  color: #4aad31;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  margin-right: 10px;
+}
+.borrar-btn {
+  padding: 6px 19px 5px 17px;
+  border-radius: 1000px;
+  background: rgba(255, 0, 0, 0.1);
+  color: #f00;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+}
+.entradas-container-table .eventos-table table td:last-child {
+  text-align: left;
+}
+.aforo-btn {
+  width: 191px;
+  padding: 10px 30px;
+
+  gap: 6px;
+  border-radius: 5px;
+  background: rgba(155, 101, 228, 0.13);
+  color: var(--01, #180e2c);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  margin-right: 14px;
+  margin-left: 20px;
+}
+.aforo-btn span {
+  color: #9b65e4;
+}
+.cantidad-btn {
+  padding: 10px 30px;
+
+  gap: 6px;
+  border-radius: 5px;
+  background: rgba(155, 101, 228, 0.13);
+  color: var(--01, #180e2c);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+.cantidad-btn span {
+  color: #9b65e4;
 }
