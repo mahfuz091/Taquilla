@@ -5,6 +5,7 @@ import CreateEvent from "../Pages/DashBoard/Eventos/CreateEvent/CreateEvent";
 import SingleEvento from "../Pages/DashBoard/SingleEvento/SingleEvento";
 import EditarEvento from "../Pages/DashBoard/EditarEvento/EditarEvento";
 import EditarTicket from "../Pages/DashBoard/EditarTicket/EditarTicket";
+import Pedidos from "../Pages/DashBoard/Pedidos/Pedidos";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: 'eventos/editarTicket',
         element: <EditarTicket></EditarTicket>
+      },
+      {
+        path: 'pedidos',
+        element: <Pedidos></Pedidos>
       }
     ],
   },

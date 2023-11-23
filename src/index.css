@@ -1318,3 +1318,125 @@ input[type="radio"]:checked {
   border: 1px solid #EAEAEA;
   background: #FFF;
 }
+
+/* Pedidos */
+.pedidos {
+  margin: 30px 30px 0 30px;
+}
+
+.pedidos-header {
+  background-image: url("./assets/images/compras-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 40px 37px;
+
+}
+
+
+
+@media (min-width: 1440px) {
+  .pedidos-header {
+    padding: 40px 37px;
+  }
+}
+
+.pedidos-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.pedidos-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 470px;
+  margin-top: 10px;
+}
+
+.compras-container {
+  margin-top: 30px;
+  padding: 20px 20px 25px 20px;
+}
+
+.compras-container>h4 {
+  color: #180E2C;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.compras-container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.compras-container-header .search-box {
+  position: relative;
+
+}
+
+.compras-container-header .search {
+  width: 390px;
+  padding: 10px;
+  padding-left: 38px;
+
+  border-radius: 100px;
+  border: 1px solid #ddd;
+  background: rgba(155, 101, 228, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.compras-container-header .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.compras-container-header ::placeholder {
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pedidos-table table {
+  width: 100%;
+}
+
+.pedidos-table table thead {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+.pedidos-table table th,
+td {
+  padding: 15px 21px !important;
+}
+
+.pedidos-table table th {
+  text-align: left;
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
