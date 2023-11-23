@@ -35,7 +35,7 @@ const CreateEvent = () => {
         <form action=''>
           <Row>
             <Col xl={6}>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Titulo<span className='span'>*</span>
                 </label>
@@ -45,7 +45,7 @@ const CreateEvent = () => {
                   placeholder='Evento de prueba'
                 />
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Ciudad<span className='span'>*</span>
                 </label>
@@ -53,7 +53,7 @@ const CreateEvent = () => {
                   <option value=''>Dhaka</option>
                 </select>
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Vestimenta<span className='span'>*</span>
                 </label>
@@ -61,7 +61,7 @@ const CreateEvent = () => {
                   <option value=''>Dhaka</option>
                 </select>
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Apertura de puertas<span className='span'>*</span>
                 </label>
@@ -77,7 +77,7 @@ const CreateEvent = () => {
                   placeholderText='Select Date and Time'
                 />
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Apertura de venta<span className='span'>*</span>
                 </label>
@@ -94,7 +94,7 @@ const CreateEvent = () => {
                 />
               </div>
 
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   ¿Deseas destacar tu evento por solo un 3% más de G.d.g?
                 </label>
@@ -105,7 +105,7 @@ const CreateEvent = () => {
                   <label for='no'>No</label>
                 </div>
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Descripción<span className='span'>*</span>
                 </label>
@@ -117,7 +117,7 @@ const CreateEvent = () => {
               </div>
             </Col>
             <Col xl={6}>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Lugar<span className='span'>*</span>
                 </label>
@@ -127,7 +127,7 @@ const CreateEvent = () => {
                   placeholder='Shukrabad'
                 />
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Apertura de puertas<span className='span'>*</span>
                 </label>
@@ -141,7 +141,7 @@ const CreateEvent = () => {
                   placeholderText='Select Date'
                 />
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Fecha<span className='span'>*</span>
                 </label>
@@ -157,7 +157,7 @@ const CreateEvent = () => {
                   placeholderText='Select Date and Time'
                 />
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Cierre de puertas<span className='span'>*</span>
                 </label>
@@ -173,7 +173,7 @@ const CreateEvent = () => {
                   placeholderText='Select Date and Time'
                 />
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Cierre de venta<span className='span'>*</span>
                 </label>
@@ -189,7 +189,7 @@ const CreateEvent = () => {
                   placeholderText='Select Date and Time'
                 />
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Grupo de evento<span className='span'>*</span>
                 </label>
@@ -197,7 +197,7 @@ const CreateEvent = () => {
                   <option value=''>Evento de prueba</option>
                 </select>
               </div>
-              <div className='from-group'>
+              <div className='form-group'>
                 <label htmlFor=''>
                   Subir Imagen<span className='span'>*</span>
                 </label>

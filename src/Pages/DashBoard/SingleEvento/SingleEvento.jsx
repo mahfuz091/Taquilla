@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import single from "../../../assets/images/single.png";
 import location from "../../../assets/images/Location.svg";
 import SingleEventoTR from "./SingleEventoTR";
+import { Link } from "react-router-dom";
 const SingleEvento = () => {
   const [eventos, setEventos] = useState([]);
   useEffect(() => {
@@ -45,7 +46,7 @@ const SingleEvento = () => {
                 </p>
               </div>
               <div>
-                <button className='thm-btn'>Editar Evento</button>
+                <Link to='/eventos/editarEvento'><button className='thm-btn'>Editar Evento</button></Link>
               </div>
             </div>
             <hr className='line-1' />
@@ -97,6 +98,43 @@ const SingleEvento = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="publicar-evento-container">
+        <h4>Publicar evento</h4>
+        <form className="publicar-evento-form" action="">
+          <div className='from-group'>
+            <label htmlFor=''>
+              Enlace a tu evento<span className='span'>*</span>
+            </label>
+            <input
+              className='text-input'
+              type='text'
+              placeholder='panel.taquillacentral.com/eventos'
+            />
+          </div>
+          <div className='from-group'>
+            <label htmlFor=''>
+              Iframe de tu evento<span className='span'>*</span>
+            </label>
+            <p>Insert it into your website to start selling</p>
+            <input
+              className='text-input'
+              type='text'
+              placeholder='panel.taquillacentral.com/eventos'
+            />
+          </div>
+          <div className="form-group">
+            <button className="thm-btn">Publicar</button>
+          </div>
+        </form>
+      </div>
+      <div className="eliminar-evento-container">
+        <h4>Eliminar evento</h4>
+        <p>Ingresa el nombre de tu evento para confirmar que deseas eliminarlo”*</p>
+        <div className="form-group">
+          <input type="text" placeholder="Ingrese su nombre" />
+          <button className="create-evento-btn">Borrar</button>
         </div>
       </div>
     </div>

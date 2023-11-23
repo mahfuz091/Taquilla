@@ -26,7 +26,7 @@ const SingleEventoTR = ({ evento }) => {
         <p className='time'>at {evento.time}</p>
       </td>
       <td>
-        <button className='editar-btn'>editar </button>{" "}
+        <Link to='/eventos/editarTicket'><button className='editar-btn'>editar </button></Link>
         <button className='borrar-btn'>Borrar</button>
       </td>
     </tr>
