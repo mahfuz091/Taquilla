@@ -46,7 +46,9 @@ const SingleEvento = () => {
                 </p>
               </div>
               <div>
-                <Link to='/eventos/editarEvento'><button className='thm-btn'>Editar Evento</button></Link>
+                <Link to='/eventos/editarEvento'>
+                  <button className='thm-btn'>Editar Evento</button>
+                </Link>
               </div>
             </div>
             <hr className='line-1' />
@@ -100,9 +102,9 @@ const SingleEvento = () => {
           </div>
         </div>
       </div>
-      <div className="publicar-evento-container">
+      <div className='publicar-evento-container'>
         <h4>Publicar evento</h4>
-        <form className="publicar-evento-form" action="">
+        <form className='publicar-evento-form' action=''>
           <div className='from-group'>
             <label htmlFor=''>
               Enlace a tu evento<span className='span'>*</span>
@@ -124,17 +126,19 @@ const SingleEvento = () => {
               placeholder='panel.taquillacentral.com/eventos'
             />
           </div>
-          <div className="form-group">
-            <button className="thm-btn">Publicar</button>
+          <div className='form-group'>
+            <button className='thm-btn'>Publicar</button>
           </div>
         </form>
       </div>
-      <div className="eliminar-evento-container">
+      <div className='eliminar-evento-container'>
         <h4>Eliminar evento</h4>
-        <p>Ingresa el nombre de tu evento para confirmar que deseas eliminarlo”*</p>
-        <div className="form-group">
-          <input type="text" placeholder="Ingrese su nombre" />
-          <button className="create-evento-btn">Borrar</button>
+        <p>
+          Ingresa el nombre de tu evento para confirmar que deseas eliminarlo”*
+        </p>
+        <div className='form-group'>
+          <input type='text' placeholder='Ingrese su nombre' />
+          <button className='create-evento-btn'>Borrar</button>
         </div>
       </div>
     </div>

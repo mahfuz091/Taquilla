@@ -149,7 +149,7 @@ body {
   /* margin-bottom: 30px; */
 }
 
-.sidebar-title>span {
+.sidebar-title > span {
   display: none;
 }
 
@@ -201,7 +201,7 @@ body {
   cursor: pointer;
 } */
 
-.sidebar-list-item>a {
+.sidebar-list-item > a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -566,9 +566,9 @@ tr:first-child th:last-child {
   margin: 30px 30px 0 30px;
 }
 
-.create-event>p,
-.editar-ticket>P,
-.detallesboleto>p {
+.create-event > p,
+.editar-ticket > P,
+.detallesboleto > p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -589,7 +589,7 @@ tr:first-child th:last-child {
   margin-top: 30px;
 }
 
-.create-event-container>h4 {
+.create-event-container > h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -822,7 +822,7 @@ input[type="radio"]:checked {
   gap: 24px;
 }
 
-.create-event-container-btn-group>button {
+.create-event-container-btn-group > button {
   display: flex;
   width: 213px;
   padding: 10px 30px;
@@ -842,7 +842,7 @@ input[type="radio"]:checked {
   /* 171.429% */
 }
 
-.create-event-container-btn-group>button:hover {
+.create-event-container-btn-group > button:hover {
   color: #fff;
   background: #9b65e4;
 }
@@ -852,7 +852,7 @@ input[type="radio"]:checked {
   margin: 30px 30px 0 30px;
 }
 
-.single-evento>p {
+.single-evento > p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1170,7 +1170,7 @@ input[type="radio"]:checked {
   margin-top: 30px;
 }
 
-.editar-ticket-container>h4 {
+.editar-ticket-container > h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1372,7 +1372,7 @@ input[type="radio"]:checked {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.compras-container>h4 {
+.compras-container > h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1481,7 +1481,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido>h6 {
+.pedidos-table .pedido > h6 {
   color: #444;
   font-family: Poppins;
   font-size: 13px;
@@ -1490,7 +1490,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido>p {
+.pedidos-table .pedido > p {
   color: #666;
   font-family: Poppins;
   font-size: 12px;
@@ -1545,7 +1545,7 @@ td {
   margin: 10px 0 0 20px;
 }
 
-.detallsboleto-container .detalls-form>h4 {
+.detallsboleto-container .detalls-form > h4 {
   color: #000;
   font-family: Poppins;
   font-size: 26px;
@@ -1562,7 +1562,7 @@ td {
   padding: 20px 20px 40px 20px;
 }
 
-.tipo-de-pago-container>h6 {
+.tipo-de-pago-container > h6 {
   color: #000;
   font-family: Poppins;
   font-size: 20px;
@@ -1890,7 +1890,8 @@ td {
 }
 
 @media (min-width: 1441px) {
-  .pagado-header {}
+  .pagado-header {
+  }
 }
 
 .pagado-header h4 {
@@ -1916,13 +1917,13 @@ td {
 
 .pagoda-container {
   border-radius: 16px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
   padding: 28px 30px 57px 30px;
 }
 
 .pagoda-container h4 {
-  color: #180E2C;
+  color: #180e2c;
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
@@ -1934,7 +1935,6 @@ td {
 
 .pagado-table table {
   width: 100%;
-
 }
 
 .pagado-table table thead {
@@ -1969,33 +1969,22 @@ td {
 }
 
 .pagado-table tr:nth-child(even) {
-  background: #F2F4FE;
-
-
+  background: #f2f4fe;
 }
 
-.pagado-td {
-  border-radius: 10px !important;
-}
-
-.pagado-td .evento {
+.pagado-tr td:first-child {
   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
 }
 
-tbody .pagado-td td:first-child {
-  border-top-left-radius: 10px !important;
-  border-bottom-left-radius: 10px !important;
-}
-
-tbody .pagado-td td:last-child {
+.pagado-tr td:last-child {
   border-top-right-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
 }
 
-.pagination>p {
-  color: #949CA9;
-  font-feature-settings: 'clig' off, 'liga' off;
+.pagination > p {
+  color: #949ca9;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -2004,9 +1993,9 @@ tbody .pagado-td td:last-child {
   /* 157.143% */
 }
 
-.pagination>p span {
+.pagination > p span {
   color: #000;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -2015,7 +2004,7 @@ tbody .pagado-td td:last-child {
 }
 
 .pagado-table .name {
-  color: #1B212D;
+  color: #1b212d;
   font-family: Poppins;
   font-size: 15px;
   font-style: normal;
@@ -2024,7 +2013,7 @@ tbody .pagado-td td:last-child {
 }
 
 .pagado-table .date {
-  color: #1B212D;
+  color: #1b212d;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -2034,7 +2023,7 @@ tbody .pagado-td td:last-child {
 
 .pagado-table .ingresos,
 .pagado-table .neto {
-  color: #1B212D;
+  color: #1b212d;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -2042,9 +2031,8 @@ tbody .pagado-td td:last-child {
   line-height: normal;
 }
 
-
-.pagado-table .estado-pagado {
-  color: #4AAD31;
+.estado-pagado {
+  color: #4aad31 !important;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -2052,27 +2040,27 @@ tbody .pagado-td td:last-child {
   line-height: normal;
 }
 
-.pagado-table .estado-proceso {
-  color: #0047D6;
+.estado-proceso {
+  color: #0047d6 !important;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: normal;
 }
 
-.pagado-table .estado-cancel {
-  color: #DB0000;
+.estado-cancel {
+  color: #db0000 !important;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: normal;
 }
 
 #example-collapse-text {
   border-radius: 0px 0px 8px 8px;
-  background: #F2F4FE;
+  background: #f2f4fe;
   margin-top: -10px;
 }
 
@@ -2081,8 +2069,6 @@ tbody .pagado-td td:last-child {
   align-items: center;
   gap: 8px;
   padding: 16px;
-
-
 
   color: #757575;
   font-family: Poppins;
@@ -2094,15 +2080,14 @@ tbody .pagado-td td:last-child {
 }
 
 .collaps-item-active {
-  background: rgba(155, 101, 228, 0.10);
-  color: #9B65E4;
+  background: rgba(155, 101, 228, 0.1);
+  color: #9b65e4;
   position: relative;
-
 }
 
 .collaps-item-active svg path {
-  fill: #9B65E4;
-  stroke: #9B65E4;
+  fill: #9b65e4;
+  stroke: #9b65e4;
 }
 
 .collaps-item img {
@@ -2115,4 +2100,430 @@ tbody .pagado-td td:last-child {
 
 .sidebar-list-item-active.finanzas-active {
   border-radius: 8px 8px 0 0;
+}
+
+/* facturas */
+
+.facturas {
+  margin: 30px 30px 0 30px;
+}
+.facturas-header {
+  background: #9b65e4;
+  color: white;
+  background-image: url(./assets/images/facturas.svg);
+  background-position: -7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 16px;
+  padding: 40px 37px;
+}
+.facturas-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.facturas-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 470px;
+  margin-top: 10px;
+}
+
+.facturas-container {
+  margin-top: 30px;
+  padding: 28px 30px 39px 30px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
+}
+.facturas-container > h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.facturas-table table {
+  width: 100%;
+}
+
+.facturas-table table thead {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+.facturas-table table th {
+  padding: 15px 21px !important;
+}
+.facturas-table table td:first-child {
+  padding: 31px 20px 26px 29px !important;
+}
+
+.facturas-table table th {
+  text-align: left;
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.facturas-table table tbody tr:nth-child(even) {
+  background: #f2f4fe;
+}
+.facturas-tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.facturas-tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.facturas-tr td {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.facturas-tr td:nth-child(3),
+.facturas-tr td:nth-child(4) {
+  font-weight: 600 !important;
+}
+.facturas-tr .sinfactura {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.facturas-tr .download-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 100px;
+  background: #9b65e4;
+  border: none;
+}
+.facturas-tr td:last-child {
+  text-align: right;
+}
+.facturas-table .note {
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  width: 433px;
+  margin-top: 32px;
+}
+.facturas-table .note span {
+  color: #f00;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  text-transform: capitalize;
+}
+.fiscal {
+  margin: 30px 30px 0 30px;
+}
+.fiscal-header {
+  background: #9b65e4;
+  color: white;
+  background-image: url(./assets/images/fiscal.png);
+  background-position: -7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 16px;
+  padding: 40px 37px;
+}
+@media (min-width: 1536px) {
+  .fiscal-header {
+    padding: 70px 37px;
+  }
+}
+.fiscal-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.fiscal-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 470px;
+  margin-top: 10px;
+}
+.fiscal-container {
+  margin-top: 30px;
+  padding: 27px 27px 40px 27px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
+}
+.fiscal-container h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fiscal-form {
+  margin-bottom: 50px;
+}
+
+.fiscal-form .radio-btn-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.fiscal-form .radio-btn-group label {
+  color: #666;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 14px;
+  margin-right: 20px;
+}
+
+.fiscal-form input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border: 6px solid transparent;
+}
+.fiscal-form input[type="radio"]:checked {
+  width: 20px;
+  height: 20px;
+  border-color: #9b65e4;
+
+  background-image: none;
+  background-color: transparent;
+}
+.fiscal-form .row {
+  --bs-gutter-x: 16px;
+}
+.fiscal-form::placeholder {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.fiscal-form .form-group {
+  margin-bottom: 16px;
+}
+.fiscal-form label {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.fiscal-form label .span {
+  color: #9b65e4;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.fiscal-form input[type="text"] {
+  width: 100%;
+  padding: 15px 12px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+.fiscal-container .create-event-container-btn-group {
+  padding-right: 0;
+}
+
+/* cuenta */
+.cuenta {
+  margin: 30px 30px 0 30px;
+}
+.cuenta-header {
+  background: #9b65e4;
+  color: white;
+  background-image: url(./assets/images/cuenta.png);
+  background-position: -7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 16px;
+  padding: 40px 37px;
+}
+@media (min-width: 1536px) {
+  .cuenta-header {
+    padding: 70px 37px;
+  }
+}
+.cuenta-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.cuenta-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 470px;
+  margin-top: 10px;
+}
+.cuenta-container {
+  margin-top: 30px;
+  padding: 27px 27px 40px 27px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
+}
+.cuenta-container h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.cuenta-form {
+  margin-bottom: 50px;
+}
+
+.cuenta-form .radio-btn-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.cuenta-form .radio-btn-group label {
+  color: #666;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 14px;
+  margin-right: 20px;
+}
+
+.cuenta-form input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border: 6px solid transparent;
+}
+.cuenta-form input[type="radio"]:checked {
+  width: 20px;
+  height: 20px;
+  border-color: #9b65e4;
+
+  background-image: none;
+  background-color: transparent;
+}
+.cuenta-form .row {
+  --bs-gutter-x: 16px;
+}
+.cuenta-form::placeholder {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.cuenta-form .form-group {
+  margin-bottom: 16px;
+}
+.cuenta-form label {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.cuenta-form label .span {
+  color: #9b65e4;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cuenta-form input[type="text"] {
+  width: 100%;
+  padding: 15px 12px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+.cuenta-container .create-event-container-btn-group {
+  padding-right: 0;
+}
+.cuenta .note {
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  width: 345px;
+}
+.cuenta .note span {
+  color: #f00;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  text-transform: capitalize;
 }

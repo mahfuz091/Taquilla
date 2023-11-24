@@ -1,0 +1,43 @@
+[
+    {
+        "id":"1",
+        "name": "Evento de prueba",
+        "sinfactura": "#456777",
+    
+        "image": "/images/img-1.png",
+       
+        "neto": "120.84",
+        "date": "14 Apr 2022",
+    
+        "estado": "Paid"
+        
+      },
+      
+      {
+        "id":"2",
+        "name": "Evento de prueba",
+        "sinfactura": "#456777",
+        
+        "image": "/images/img-2.png",
+       
+        "neto": "120.84",
+        "date": "14 Apr 2022",
+        
+        "estado": "Process"
+        
+      },
+      
+      {
+        "id":"3",
+        "name": "Evento de prueba",
+        "sinfactura": "#456777",
+       
+        "image": "/images/img-3.png",
+        "vendidas": "0/00",
+        "neto": "120.84",
+        "date": "14 Apr 2022",
+       
+        "estado": "Canceled"
+        
+      }
+]
