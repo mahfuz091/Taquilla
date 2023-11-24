@@ -11,6 +11,7 @@ a {
 p {
   margin-bottom: 0;
 }
+
 .h1,
 .h2,
 .h3,
@@ -148,7 +149,7 @@ body {
   /* margin-bottom: 30px; */
 }
 
-.sidebar-title > span {
+.sidebar-title>span {
   display: none;
 }
 
@@ -200,7 +201,7 @@ body {
   cursor: pointer;
 } */
 
-.sidebar-list-item > a {
+.sidebar-list-item>a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -565,9 +566,9 @@ tr:first-child th:last-child {
   margin: 30px 30px 0 30px;
 }
 
-.create-event > p,
-.editar-ticket > P,
-.detallesboleto > p {
+.create-event>p,
+.editar-ticket>P,
+.detallesboleto>p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -588,7 +589,7 @@ tr:first-child th:last-child {
   margin-top: 30px;
 }
 
-.create-event-container > h4 {
+.create-event-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -821,7 +822,7 @@ input[type="radio"]:checked {
   gap: 24px;
 }
 
-.create-event-container-btn-group > button {
+.create-event-container-btn-group>button {
   display: flex;
   width: 213px;
   padding: 10px 30px;
@@ -841,7 +842,7 @@ input[type="radio"]:checked {
   /* 171.429% */
 }
 
-.create-event-container-btn-group > button:hover {
+.create-event-container-btn-group>button:hover {
   color: #fff;
   background: #9b65e4;
 }
@@ -851,7 +852,7 @@ input[type="radio"]:checked {
   margin: 30px 30px 0 30px;
 }
 
-.single-evento > p {
+.single-evento>p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1169,7 +1170,7 @@ input[type="radio"]:checked {
   margin-top: 30px;
 }
 
-.editar-ticket-container > h4 {
+.editar-ticket-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1371,7 +1372,7 @@ input[type="radio"]:checked {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.compras-container > h4 {
+.compras-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1452,6 +1453,7 @@ td {
   font-weight: 400;
   line-height: normal;
 }
+
 .pedidos-table .name {
   color: #222;
   font-family: Poppins;
@@ -1460,6 +1462,7 @@ td {
   font-weight: 600;
   line-height: normal;
 }
+
 .pedidos-table .email {
   color: #444;
   font-family: Poppins;
@@ -1468,6 +1471,7 @@ td {
   font-weight: 400;
   line-height: normal;
 }
+
 .pedidos-table .dni {
   color: #444;
   font-family: Poppins;
@@ -1476,7 +1480,8 @@ td {
   font-weight: 400;
   line-height: normal;
 }
-.pedidos-table .pedido > h6 {
+
+.pedidos-table .pedido>h6 {
   color: #444;
   font-family: Poppins;
   font-size: 13px;
@@ -1484,15 +1489,18 @@ td {
   font-weight: 600;
   line-height: normal;
 }
-.pedidos-table .pedido > p {
+
+.pedidos-table .pedido>p {
   color: #666;
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
+  /* 133.333% */
   width: 142px;
 }
+
 .pedidos-table .importe {
   color: #1b212d;
   font-family: Poppins;
@@ -1510,6 +1518,7 @@ td {
   font-weight: 500;
   line-height: normal;
 }
+
 .pedidos-table .time {
   color: #757575;
   font-family: Poppins;
@@ -1523,6 +1532,7 @@ td {
 .detallesboleto {
   margin: 30px 30px 0 30px;
 }
+
 .detallsboleto-container {
   margin-top: 30px;
   border-radius: 16px;
@@ -1530,10 +1540,12 @@ td {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
   padding: 20px 20px 30px 20px;
 }
+
 .detallsboleto-container .detalls-form {
   margin: 10px 0 0 20px;
 }
-.detallsboleto-container .detalls-form > h4 {
+
+.detallsboleto-container .detalls-form>h4 {
   color: #000;
   font-family: Poppins;
   font-size: 26px;
@@ -1543,12 +1555,14 @@ td {
   text-transform: capitalize;
   margin-bottom: 30px;
 }
+
 .tipo-de-pago-container {
   border-radius: 16px;
   background: #f2f4fe;
   padding: 20px 20px 40px 20px;
 }
-.tipo-de-pago-container > h6 {
+
+.tipo-de-pago-container>h6 {
   color: #000;
   font-family: Poppins;
   font-size: 20px;
@@ -1558,6 +1572,7 @@ td {
   text-transform: capitalize;
   margin-bottom: 9px;
 }
+
 .credit-card {
   display: flex;
   align-items: center;
@@ -1566,6 +1581,7 @@ td {
   background: #fff;
   padding: 15px 8px;
 }
+
 .credit-card span {
   width: 26px;
   height: 26px;
@@ -1575,6 +1591,7 @@ td {
   align-items: center;
   border-radius: 50%;
 }
+
 .credit-card p {
   color: #444;
   font-family: Poppins;
@@ -1584,6 +1601,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .tipo-de-pago-container .operation {
   color: #000;
   font-family: Poppins;
@@ -1595,6 +1613,7 @@ td {
   margin-top: 17px;
   margin-bottom: 16px;
 }
+
 .tipo-de-pago-container .operation span {
   color: #555;
   font-family: Poppins;
@@ -1604,6 +1623,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .tipo-de-pago-container .qty {
   color: #000;
   font-family: Poppins;
@@ -1614,6 +1634,7 @@ td {
   text-transform: capitalize;
   margin-bottom: 16px;
 }
+
 .tipo-de-pago-container .qty span {
   color: #555;
   font-family: Poppins;
@@ -1633,6 +1654,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .tipo-de-pago-container .price span {
   color: #555;
   font-family: Poppins;
@@ -1642,11 +1664,13 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .tipo-de-pago-container .qr-code {
   margin: 0 auto;
   text-align: center;
   margin-top: 25px;
 }
+
 .tipo-de-pago-container .qr-code p {
   color: #000;
   font-family: Poppins;
@@ -1656,6 +1680,7 @@ td {
   line-height: normal;
   margin-top: 20px;
 }
+
 .tipo-de-pago-container .qr-code p span {
   color: rgba(0, 0, 0, 0.55);
   font-family: Poppins;
@@ -1664,6 +1689,7 @@ td {
   font-weight: 400;
   line-height: normal;
 }
+
 .detalls-form label {
   color: #1b212d;
   font-family: Poppins;
@@ -1674,10 +1700,12 @@ td {
 
   margin-bottom: 8px;
 }
+
 .detalls-form .form-group {
   margin-bottom: 16px;
   position: relative;
 }
+
 .detalls-form label .span {
   color: #9b65e4;
   font-family: Poppins;
@@ -1703,6 +1731,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .detalls-form .forward-btn {
   position: absolute;
   right: 6px;
@@ -1716,8 +1745,10 @@ td {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
 }
+
 .detalls-form .radio label {
   color: #757575;
   font-family: Poppins;
@@ -1728,9 +1759,11 @@ td {
   text-transform: capitalize;
   margin-top: 20px;
 }
+
 .detalls-form .thm-btn {
   padding: 10px 30px;
 }
+
 .detalls-venta-acceso-container {
   padding: 25px 108px 40px 25px;
   border-radius: 16px;
@@ -1740,6 +1773,7 @@ td {
   align-items: center;
   justify-content: space-between;
 }
+
 .detalls-venta-acceso-container h4 {
   color: #000;
   font-family: Poppins;
@@ -1750,6 +1784,7 @@ td {
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+
 .detalls-venta-acceso-container p {
   color: #000;
   font-family: Poppins;
@@ -1760,6 +1795,7 @@ td {
   text-transform: capitalize;
   margin-bottom: 16px;
 }
+
 .detalls-venta-acceso-container p span {
   color: #555;
   font-family: Poppins;
@@ -1769,11 +1805,13 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .detalls-venta-acceso-container .detallas-btn {
   display: flex;
   gap: 10px;
   align-items: baseline;
 }
+
 .detalls-venta-acceso-container .yes-btn {
   padding: 6px 10px 5px 11px;
 
@@ -1788,6 +1826,7 @@ td {
   border: none;
   margin-right: 8px;
 }
+
 .detalls-venta-acceso-container .no-btn {
   padding: 6px 12px 5px 12px;
 
@@ -1801,6 +1840,7 @@ td {
   line-height: normal;
   border: none;
 }
+
 .tipodepogo {
   display: flex;
   flex-direction: column;
@@ -1811,6 +1851,7 @@ td {
 .tipo-de-btn-group {
   text-align: right;
 }
+
 .tipo-de-btn-group button {
   padding: 10px 30px;
   border-radius: 100px;
@@ -1821,10 +1862,257 @@ td {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
   margin-left: 16px;
 }
+
 .tipo-de-btn-group button:hover {
   color: #fff;
   background: #9b65e4;
+}
+
+/* Pagados */
+.pagado {
+  margin: 30px 30px 0 30px;
+}
+
+.pagado-header {
+  background: #9b65e4;
+  color: white;
+  background-image: url(./assets/images/pagado-3.png);
+  background-position: -7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 16px;
+  padding: 40px 37px;
+}
+
+@media (min-width: 1441px) {
+  .pagado-header {}
+}
+
+.pagado-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.pagado-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 470px;
+  margin-top: 10px;
+}
+
+.pagoda-container {
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
+  padding: 28px 30px 57px 30px;
+}
+
+.pagoda-container h4 {
+  color: #180E2C;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.pagado-table table {
+  width: 100%;
+
+}
+
+.pagado-table table thead {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+.pagado-table table th,
+td {
+  padding: 15px 21px !important;
+}
+
+.pagado-table table th {
+  text-align: left;
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pagado-table .evento {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.pagado-table .evento img {
+  width: 52px;
+  height: 52px;
+}
+
+.pagado-table tr:nth-child(even) {
+  background: #F2F4FE;
+
+
+}
+
+.pagado-td {
+  border-radius: 10px !important;
+}
+
+.pagado-td .evento {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+tbody .pagado-td td:first-child {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+tbody .pagado-td td:last-child {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.pagination>p {
+  color: #949CA9;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 157.143% */
+}
+
+.pagination>p span {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.pagado-table .name {
+  color: #1B212D;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pagado-table .date {
+  color: #1B212D;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pagado-table .ingresos,
+.pagado-table .neto {
+  color: #1B212D;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.pagado-table .estado-pagado {
+  color: #4AAD31;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pagado-table .estado-proceso {
+  color: #0047D6;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pagado-table .estado-cancel {
+  color: #DB0000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#example-collapse-text {
+  border-radius: 0px 0px 8px 8px;
+  background: #F2F4FE;
+  margin-top: -10px;
+}
+
+.collaps-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+
+
+
+  color: #757575;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.collaps-item-active {
+  background: rgba(155, 101, 228, 0.10);
+  color: #9B65E4;
+  position: relative;
+
+}
+
+.collaps-item-active svg path {
+  fill: #9B65E4;
+  stroke: #9B65E4;
+}
+
+.collaps-item img {
+  display: none;
+}
+
+.collaps-item-active img {
+  display: block;
+}
+
+.sidebar-list-item-active.finanzas-active {
+  border-radius: 8px 8px 0 0;
 }

@@ -7,6 +7,7 @@ import EditarEvento from "../Pages/DashBoard/EditarEvento/EditarEvento";
 import EditarTicket from "../Pages/DashBoard/EditarTicket/EditarTicket";
 import Pedidos from "../Pages/DashBoard/Pedidos/Pedidos";
 import DetallesDelBoleto from "../Pages/DashBoard/DetallesDelBoleto/DetallesDelBoleto";
+import Pagado from "../Pages/DashBoard/Finanzas/Pagado/Pagado";
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +42,11 @@ export const router = createBrowserRouter([
         path: "pedidos/detallesboleto",
         element: <DetallesDelBoleto></DetallesDelBoleto>,
       },
+
+      {
+        path: 'finanzas/pagado',
+        element: <Pagado></Pagado>
+      }
     ],
   },
 ]);
