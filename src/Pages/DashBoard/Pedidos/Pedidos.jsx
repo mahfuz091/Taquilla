@@ -83,7 +83,7 @@ const Pedidos = () => {
             </div>
           </div>
         </div>
-        <div className='pedidos-table'>
+        <div className='pedidos-table table-responsive'>
           <table>
             <thead>
               <tr>

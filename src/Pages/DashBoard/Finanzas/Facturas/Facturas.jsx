@@ -63,7 +63,7 @@ const Facturas = () => {
             </div>
           </div>
         </div>
-        <div className='facturas-table'>
+        <div className='facturas-table table-responsive'>
           <table>
             <thead>
               <tr>

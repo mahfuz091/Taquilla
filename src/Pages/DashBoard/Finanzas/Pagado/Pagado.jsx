@@ -82,7 +82,7 @@ const Pagado = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pagado-table">
+                <div className="pagado-table table-responsive">
                     <table>
                         <thead>
                             <tr>

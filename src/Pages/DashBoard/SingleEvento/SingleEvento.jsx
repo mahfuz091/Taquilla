@@ -72,7 +72,7 @@ const SingleEvento = () => {
           <button className='thm-btn'>Crear tipo de entrada</button>
         </div>
         <div className='entradas-container-table'>
-          <div className='eventos-table'>
+          <div className='eventos-table table-responsive'>
             <table>
               <thead>
                 <tr>
