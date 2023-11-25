@@ -47,6 +47,15 @@ body {
   margin-bottom: 30px;
 }
 
+.close-btn {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-top: 3px;
+}
+
 .thm-btn {
   color: #fff;
   font-family: Poppins;
@@ -67,6 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   /* margin: 10px 10px 24px 10px; */
 
   padding: 0 30px;
@@ -139,19 +149,86 @@ body {
   border-radius: 16px;
   background: #fff;
   box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
+
+}
+
+.hambargur-btn {
+
+  border: none;
+  background: none;
+}
+
+@media (min-width: 992px) {
+  .hambargur-btn {
+    display: none;
+  }
+}
+
+.hambargur-btn img {
+  width: 30px;
+}
+
+.header-right .create-event-btn {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .header-right .create-event-btn {
+    display: block;
+  }
 }
 
 .sidebar-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  /* margin-bottom: 30px; */
-}
-
-.sidebar-title > span {
   display: none;
 }
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 3fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+
+  #sidebar {
+    position: absolute;
+    left: -500px;
+    z-index: 99999999999999999999;
+    height: 100%;
+    width: 320px;
+    margin-left: 0;
+    margin-top: 0;
+    overflow-y: scroll;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(240, 109, 35, 0.16);
+    background: #fff;
+    padding: 8px 10px;
+  }
+
+  .sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* margin-bottom: 30px; */
+  }
+
+
+
+}
+
+
+
+
 
 .sidebar-brand {
   margin-top: 15px;
@@ -201,7 +278,7 @@ body {
   cursor: pointer;
 } */
 
-.sidebar-list-item > a {
+.sidebar-list-item>a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -213,6 +290,8 @@ body {
   left: 0 !important;
   z-index: 99999999999999999999999 !important;
   width: 320px;
+  overflow-y: scroll;
+
 }
 
 .mt-112 {
@@ -566,9 +645,9 @@ tr:first-child th:last-child {
   margin: 30px 30px 0 30px;
 }
 
-.create-event > p,
-.editar-ticket > P,
-.detallesboleto > p {
+.create-event>p,
+.editar-ticket>P,
+.detallesboleto>p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -589,7 +668,7 @@ tr:first-child th:last-child {
   margin-top: 30px;
 }
 
-.create-event-container > h4 {
+.create-event-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -822,7 +901,7 @@ input[type="radio"]:checked {
   gap: 24px;
 }
 
-.create-event-container-btn-group > button {
+.create-event-container-btn-group>button {
   display: flex;
   width: 213px;
   padding: 10px 30px;
@@ -842,7 +921,7 @@ input[type="radio"]:checked {
   /* 171.429% */
 }
 
-.create-event-container-btn-group > button:hover {
+.create-event-container-btn-group>button:hover {
   color: #fff;
   background: #9b65e4;
 }
@@ -852,7 +931,7 @@ input[type="radio"]:checked {
   margin: 30px 30px 0 30px;
 }
 
-.single-evento > p {
+.single-evento>p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1170,7 +1249,7 @@ input[type="radio"]:checked {
   margin-top: 30px;
 }
 
-.editar-ticket-container > h4 {
+.editar-ticket-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1372,7 +1451,7 @@ input[type="radio"]:checked {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.compras-container > h4 {
+.compras-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1481,7 +1560,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido > h6 {
+.pedidos-table .pedido>h6 {
   color: #444;
   font-family: Poppins;
   font-size: 13px;
@@ -1490,7 +1569,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido > p {
+.pedidos-table .pedido>p {
   color: #666;
   font-family: Poppins;
   font-size: 12px;
@@ -1545,7 +1624,7 @@ td {
   margin: 10px 0 0 20px;
 }
 
-.detallsboleto-container .detalls-form > h4 {
+.detallsboleto-container .detalls-form>h4 {
   color: #000;
   font-family: Poppins;
   font-size: 26px;
@@ -1562,7 +1641,7 @@ td {
   padding: 20px 20px 40px 20px;
 }
 
-.tipo-de-pago-container > h6 {
+.tipo-de-pago-container>h6 {
   color: #000;
   font-family: Poppins;
   font-size: 20px;
@@ -1890,8 +1969,7 @@ td {
 }
 
 @media (min-width: 1441px) {
-  .pagado-header {
-  }
+  .pagado-header {}
 }
 
 .pagado-header h4 {
@@ -1982,7 +2060,7 @@ td {
   border-bottom-right-radius: 10px !important;
 }
 
-.pagination > p {
+.pagination>p {
   color: #949ca9;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -1993,7 +2071,7 @@ td {
   /* 157.143% */
 }
 
-.pagination > p span {
+.pagination>p span {
   color: #000;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -2107,6 +2185,7 @@ td {
 .facturas {
   margin: 30px 30px 0 30px;
 }
+
 .facturas-header {
   background: #9b65e4;
   color: white;
@@ -2118,6 +2197,7 @@ td {
   border-radius: 16px;
   padding: 40px 37px;
 }
+
 .facturas-header h4 {
   color: #fff;
   font-family: Poppins;
@@ -2146,7 +2226,8 @@ td {
   background: #fff;
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
-.facturas-container > h4 {
+
+.facturas-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 24px;
@@ -2169,6 +2250,7 @@ td {
 .facturas-table table th {
   padding: 15px 21px !important;
 }
+
 .facturas-table table td:first-child {
   padding: 31px 20px 26px 29px !important;
 }
@@ -2182,9 +2264,11 @@ td {
   font-weight: 500;
   line-height: normal;
 }
+
 .facturas-table table tbody tr:nth-child(even) {
   background: #f2f4fe;
 }
+
 .facturas-tr td:first-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -2194,6 +2278,7 @@ td {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .facturas-tr td {
   color: #1b212d;
   font-family: Poppins;
@@ -2202,10 +2287,12 @@ td {
   font-weight: 500;
   line-height: normal;
 }
+
 .facturas-tr td:nth-child(3),
 .facturas-tr td:nth-child(4) {
   font-weight: 600 !important;
 }
+
 .facturas-tr .sinfactura {
   color: #1b212d;
   font-family: Poppins;
@@ -2214,6 +2301,7 @@ td {
   font-weight: 500;
   line-height: normal;
 }
+
 .facturas-tr .download-btn {
   width: 44px;
   height: 44px;
@@ -2227,9 +2315,11 @@ td {
   background: #9b65e4;
   border: none;
 }
+
 .facturas-tr td:last-child {
   text-align: right;
 }
+
 .facturas-table .note {
   color: #666;
   font-family: Poppins;
@@ -2240,18 +2330,22 @@ td {
   width: 433px;
   margin-top: 32px;
 }
+
 .facturas-table .note span {
   color: #f00;
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
   text-transform: capitalize;
 }
+
 .fiscal {
   margin: 30px 30px 0 30px;
 }
+
 .fiscal-header {
   background: #9b65e4;
   color: white;
@@ -2263,11 +2357,13 @@ td {
   border-radius: 16px;
   padding: 40px 37px;
 }
+
 @media (min-width: 1536px) {
   .fiscal-header {
     padding: 70px 37px;
   }
 }
+
 .fiscal-header h4 {
   color: #fff;
   font-family: Poppins;
@@ -2288,6 +2384,7 @@ td {
   width: 470px;
   margin-top: 10px;
 }
+
 .fiscal-container {
   margin-top: 30px;
   padding: 27px 27px 40px 27px;
@@ -2295,6 +2392,7 @@ td {
   background: #fff;
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
+
 .fiscal-container h4 {
   color: #180e2c;
   font-family: Poppins;
@@ -2304,6 +2402,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .fiscal-form {
   margin-bottom: 50px;
 }
@@ -2313,6 +2412,7 @@ td {
   display: flex;
   align-items: center;
 }
+
 .fiscal-form .radio-btn-group label {
   color: #666;
   font-family: Poppins;
@@ -2329,6 +2429,7 @@ td {
   height: 20px;
   border: 6px solid transparent;
 }
+
 .fiscal-form input[type="radio"]:checked {
   width: 20px;
   height: 20px;
@@ -2337,9 +2438,11 @@ td {
   background-image: none;
   background-color: transparent;
 }
+
 .fiscal-form .row {
   --bs-gutter-x: 16px;
 }
+
 .fiscal-form::placeholder {
   color: #757575;
   font-family: Poppins;
@@ -2349,9 +2452,11 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .fiscal-form .form-group {
   margin-bottom: 16px;
 }
+
 .fiscal-form label {
   color: #1b212d;
   font-family: Poppins;
@@ -2361,6 +2466,7 @@ td {
   line-height: normal;
   margin-bottom: 8px;
 }
+
 .fiscal-form label .span {
   color: #9b65e4;
   font-family: Poppins;
@@ -2369,12 +2475,14 @@ td {
   font-weight: 500;
   line-height: normal;
 }
+
 .fiscal-form input[type="text"] {
   width: 100%;
   padding: 15px 12px;
   border-radius: 6px;
   border: 1px solid #eaeaea;
 }
+
 .fiscal-container .create-event-container-btn-group {
   padding-right: 0;
 }
@@ -2383,6 +2491,7 @@ td {
 .cuenta {
   margin: 30px 30px 0 30px;
 }
+
 .cuenta-header {
   background: #9b65e4;
   color: white;
@@ -2394,11 +2503,13 @@ td {
   border-radius: 16px;
   padding: 40px 37px;
 }
+
 @media (min-width: 1536px) {
   .cuenta-header {
     padding: 70px 37px;
   }
 }
+
 .cuenta-header h4 {
   color: #fff;
   font-family: Poppins;
@@ -2419,6 +2530,7 @@ td {
   width: 470px;
   margin-top: 10px;
 }
+
 .cuenta-container {
   margin-top: 30px;
   padding: 27px 27px 40px 27px;
@@ -2426,6 +2538,7 @@ td {
   background: #fff;
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
+
 .cuenta-container h4 {
   color: #180e2c;
   font-family: Poppins;
@@ -2435,6 +2548,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .cuenta-form {
   margin-bottom: 50px;
 }
@@ -2444,6 +2558,7 @@ td {
   display: flex;
   align-items: center;
 }
+
 .cuenta-form .radio-btn-group label {
   color: #666;
   font-family: Poppins;
@@ -2460,6 +2575,7 @@ td {
   height: 20px;
   border: 6px solid transparent;
 }
+
 .cuenta-form input[type="radio"]:checked {
   width: 20px;
   height: 20px;
@@ -2468,9 +2584,11 @@ td {
   background-image: none;
   background-color: transparent;
 }
+
 .cuenta-form .row {
   --bs-gutter-x: 16px;
 }
+
 .cuenta-form::placeholder {
   color: #757575;
   font-family: Poppins;
@@ -2480,9 +2598,11 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .cuenta-form .form-group {
   margin-bottom: 16px;
 }
+
 .cuenta-form label {
   color: #1b212d;
   font-family: Poppins;
@@ -2492,6 +2612,7 @@ td {
   line-height: normal;
   margin-bottom: 8px;
 }
+
 .cuenta-form label .span {
   color: #9b65e4;
   font-family: Poppins;
@@ -2500,15 +2621,18 @@ td {
   font-weight: 500;
   line-height: normal;
 }
+
 .cuenta-form input[type="text"] {
   width: 100%;
   padding: 15px 12px;
   border-radius: 6px;
   border: 1px solid #eaeaea;
 }
+
 .cuenta-container .create-event-container-btn-group {
   padding-right: 0;
 }
+
 .cuenta .note {
   color: #666;
   font-family: Poppins;
@@ -2518,12 +2642,14 @@ td {
   line-height: 18px;
   width: 345px;
 }
+
 .cuenta .note span {
   color: #f00;
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
   text-transform: capitalize;
 }

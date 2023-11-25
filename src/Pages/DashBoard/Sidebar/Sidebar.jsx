@@ -11,6 +11,7 @@ import setting from "../../../assets/images/Setting.svg";
 import management from "../../../assets/images/Management.svg";
 import help from "../../../assets/images/Help.svg";
 import arrow from "../../../assets/images/bxs_up-arrow.png";
+import logo from '../../../assets/images/logo.png';
 const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
   const [open, setOpen] = useState(false);
   const [oo, setOo] = useState(false);
@@ -26,8 +27,9 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
       className={openSidebarToggle ? "sidebar-responsive" : ""}
     >
       <div className='sidebar-title'>
+        <img src={logo} alt="" />
         <span
-          className='  close-btn mr-5 flex justify-center items-center pl-2 pt-[3px]'
+          className='close-btn'
           onClick={OpenSidebar}
         >
           ✕
@@ -104,7 +106,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
             setOo(false);
             setOpen(false);
           }}
-          // onClick={() => setOpen(false)}
+        // onClick={() => setOpen(false)}
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'

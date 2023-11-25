@@ -3,11 +3,13 @@ import logo from "../../../assets/images/logo.png";
 import profile from "../../../assets/images/profile.png";
 import plus from "../../../assets/images/plus.png";
 import downarrow from "../../../assets/images/downarrow.png";
+import burgermenu from '../../../assets/images/burger-menu-svgrepo-com.svg'
 
-const Header = () => {
+const Header = ({ OpenSidebar }) => {
   return (
     <div className='header'>
       <img src={logo} alt='' />
+
       <div className='header-right'>
         <button className='create-event-btn'>
           <img src={plus} alt='' />
@@ -20,7 +22,15 @@ const Header = () => {
             <img src={downarrow} alt='' />
           </div>
         </div>
+
+        <button onClick={OpenSidebar} className="hambargur-btn">
+          <img src={burgermenu} alt="" />
+        </button>
+
+
       </div>
+
+
     </div>
   );
 };

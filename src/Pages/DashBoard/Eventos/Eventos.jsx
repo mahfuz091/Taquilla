@@ -90,7 +90,7 @@ const Eventos = () => {
             <button className='create-evento-btn'>Crear Evento</button>
           </Link>
         </div>
-        <div className='eventos-table'>
+        <div className='eventos-table table-responsive'>
           <table>
             <thead>
               <tr>
