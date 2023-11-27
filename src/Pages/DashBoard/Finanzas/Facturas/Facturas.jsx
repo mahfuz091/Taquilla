@@ -20,7 +20,7 @@ const Facturas = () => {
       <div className='facturas-container'>
         <h4>Detalles de pagos</h4>
         <div className='compras-container-header'>
-          <div className='flex'>
+          <div className='flex '>
             <div className='search-box'>
               <input
                 className='search'

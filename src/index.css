@@ -35,6 +35,14 @@ body {
   --bs-gutter-x: 40px;
 }
 
+@media (max-width: 992px) {
+  .row .col-xl-6:last-child {
+    margin-top: 15px;
+  }
+}
+
+
+
 .grid-container {
   display: grid;
   grid-template-columns: 254px 1fr 1fr 1fr;
@@ -192,10 +200,12 @@ body {
   }
 
   #sidebar {
+
     position: absolute;
     left: -500px;
+    top: 0;
     z-index: 99999999999999999999;
-    height: 100%;
+
     width: 320px;
     margin-left: 0;
     margin-top: 0;
@@ -350,6 +360,7 @@ body {
   width: 341px;
   padding: 14px;
   padding-left: 38px;
+  height: 44px;
 
   border-radius: 100px;
   border: 1px solid #ddd;
@@ -647,7 +658,8 @@ tr:first-child th:last-child {
 
 .create-event>p,
 .editar-ticket>P,
-.detallesboleto>p {
+.detallesboleto>p,
+.payment-details>P {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -886,6 +898,7 @@ input[type="radio"]:checked {
 
   width: 100%;
 }
+
 
 .line-2 {
   background: #eaeaea;
@@ -1998,6 +2011,7 @@ td {
   background: #fff;
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
   padding: 28px 30px 57px 30px;
+  margin-top: 30px;
 }
 
 .pagoda-container h4 {
@@ -2652,4 +2666,208 @@ td {
   line-height: 18px;
   /* 150% */
   text-transform: capitalize;
+}
+
+/* payment-details */
+
+.payment-details {
+  margin: 30px 30px 0 30px;
+}
+
+.paymemt-details-header {
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 8px 10px 60px 0px rgba(0, 0, 0, 0.06);
+  padding: 28px 30px;
+  margin-top: 32px;
+}
+
+.paymemt-details-header>h4 {
+  color: #180E2C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.paymemt-details-header .line {
+  height: 1px;
+
+  background: #EEE;
+}
+
+.paymemt-details-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymemt-details-content .estado {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.paymemt-details-content .estado span {
+  color: #4AAD31;
+}
+
+.paymemt-details-content .pago {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.paymemt-details-content .pago span {
+  color: #555;
+}
+
+.paymemt-details-content .iban {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.paymemt-details-content .iban span {
+  color: #555;
+}
+
+.administration-container {
+  padding: 28px 31px 30px 30px;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 8px 10px 60px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
+}
+
+.administration-container>h4 {
+  color: #180E2C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.administration-table table {
+  width: 100%;
+}
+
+.administration-table table thead {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+.administration-table table th,
+td {
+  padding: 15px 21px !important;
+}
+
+.administration-table table th {
+  text-align: left;
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.administration-table table {
+  /* border-collapse: collapse !important; */
+  position: relative;
+  overflow: hidden;
+}
+
+.administration-table .secound-row td:first-child {
+  /* margin-left: 100px !important; */
+  padding-left: 115px !important;
+
+
+}
+
+.administration-table .secound-row {
+
+  padding-left: 100px !important;
+  position: relative;
+}
+
+.row-line {
+  position: absolute;
+  top: 142px;
+  left: 54px;
+}
+
+.administration-table .secound-row td {
+  margin-right: 100px;
+}
+
+.administration-table .third-row td:first-child {
+  padding-left: 115px !important;
+}
+
+.administration-table table .table-img {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+
+/* Responsive Css */
+
+@media (max-width: 992px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .cuenta .note {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cuenta-header p,
+  .facturas-header p {
+    width: 100%;
+  }
+
+  .facturas-table .note {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .compras-container-header .search {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .eventos-container-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
 }

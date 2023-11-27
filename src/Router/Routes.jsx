@@ -12,6 +12,7 @@ import Facturas from "../Pages/DashBoard/Finanzas/Facturas/Facturas";
 import Fiscal from "../Pages/DashBoard/Finanzas/Fiscal/Fiscal";
 import Cuenta from "../Pages/DashBoard/Finanzas/Cuenta/Cuenta";
 import Informes from "../Pages/DashBoard/Informes/Informes";
+import PaymentDetails from "../Pages/DashBoard/PaymentDetails/PaymentDetails";
 
 export const router = createBrowserRouter([
   {
@@ -27,8 +28,12 @@ export const router = createBrowserRouter([
         element: <Eventos />,
       },
       {
-        path: "createEvento",
+        path: "eventos/createEvento",
         element: <CreateEvent></CreateEvent>,
+      },
+      {
+        path: "eventos/paymentDetails",
+        element: <PaymentDetails></PaymentDetails>,
       },
       {
         path: "eventos/singleEvento",
