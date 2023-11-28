@@ -3,6 +3,61 @@ import single from "../../../assets/images/single.png";
 import location from "../../../assets/images/Location.svg";
 import SingleEventoTR from "./SingleEventoTR";
 import { Link } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
+import {
+  BarChart,
+  Bar,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+const data = [
+  {
+    name: "00.00",
+    uv: 40,
+  },
+  {
+    name: "01.00",
+    uv: 20,
+  },
+  {
+    name: "02.00",
+    uv: 30,
+  },
+  {
+    name: "03.00",
+    uv: 10,
+  },
+  {
+    name: "04.00",
+    uv: 18,
+  },
+  {
+    name: "05.00",
+    uv: 23,
+  },
+  {
+    name: "06.00",
+    uv: 34,
+  },
+  {
+    name: "07.00",
+    uv: 38,
+  },
+  {
+    name: "08.00",
+    uv: 34,
+  },
+  {
+    name: "09.00",
+    uv: 20,
+  },
+];
+
 const SingleEvento = () => {
   const [eventos, setEventos] = useState([]);
   useEffect(() => {
@@ -64,6 +119,80 @@ const SingleEvento = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className='single-evento-chart'>
+          <Row>
+            <Col xl={8}>
+              <div className='evento-chart'>
+                <div className='evento-chart-header'>
+                  <div>
+                    <h4>Ventas</h4>
+                    <p>
+                      Entradas vendidas hoy: <span>€344</span>
+                    </p>
+                    <p>
+                      Ventas netas hoy: <span>€344</span>
+                    </p>
+                  </div>
+                  <div className='chart-btn-group'>
+                    <select name='' id=''>
+                      <option value=''>Dec 1, 2023</option>
+                    </select>
+                    <button className='thm-btn'>Abrir informe completo</button>
+                  </div>
+                </div>
+                <hr className='line-chart' />
+                <div className='chart'>
+                  <BarChart width={680} height={358} data={data}>
+                    <XAxis dataKey='name' />
+                    <YAxis></YAxis>
+                    <Bar width={35} dataKey='uv' fill='#9B65E4' />
+                  </BarChart>
+                </div>
+              </div>
+            </Col>
+            <Col xl={4}>
+              <div className='accesos'>
+                <h4>Accesos</h4>
+                <p>
+                  Consulta la cantidad de asistentes que han accedido a tu
+                  evento
+                </p>
+                <div className='accesos-card'>
+                  <h6>Aforo total</h6>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='95'
+                    height='6'
+                    viewBox='0 0 95 6'
+                    fill='none'
+                  >
+                    <path
+                      d='M95 3.00001L90 0.113256L90 5.88676L95 3.00001ZM-4.37114e-08 3.5L90.5 3.50001L90.5 2.50001L4.37114e-08 2.5L-4.37114e-08 3.5Z'
+                      fill='black'
+                    />
+                  </svg>
+                  <p>500</p>
+                </div>
+                <div className='accesos-card'>
+                  <h6>Cantidad de asistente</h6>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='30'
+                    height='6'
+                    viewBox='0 0 30 6'
+                    fill='none'
+                  >
+                    <path
+                      d='M30 3L25 0.113251L25 5.88675L30 3ZM-4.37114e-08 3.5L25.5 3.5L25.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z'
+                      fill='black'
+                    />
+                  </svg>
+                  <p>376</p>
+                </div>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
       <div className='entradas-container'>

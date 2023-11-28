@@ -41,8 +41,6 @@ body {
   }
 }
 
-
-
 .grid-container {
   display: grid;
   grid-template-columns: 254px 1fr 1fr 1fr;
@@ -157,11 +155,9 @@ body {
   border-radius: 16px;
   background: #fff;
   box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
-
 }
 
 .hambargur-btn {
-
   border: none;
   background: none;
 }
@@ -182,7 +178,7 @@ body {
 
 @media (min-width: 992px) {
   .header-right .create-event-btn {
-    display: block;
+    display: inline-flex;
   }
 }
 
@@ -200,7 +196,6 @@ body {
   }
 
   #sidebar {
-
     position: absolute;
     left: -500px;
     top: 0;
@@ -231,14 +226,7 @@ body {
 
     /* margin-bottom: 30px; */
   }
-
-
-
 }
-
-
-
-
 
 .sidebar-brand {
   margin-top: 15px;
@@ -288,7 +276,7 @@ body {
   cursor: pointer;
 } */
 
-.sidebar-list-item>a {
+.sidebar-list-item > a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -301,7 +289,6 @@ body {
   z-index: 99999999999999999999999 !important;
   width: 320px;
   overflow-y: scroll;
-
 }
 
 .mt-112 {
@@ -455,6 +442,7 @@ body {
   /* 171.429% */
   border: none;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .eventos-table table {
@@ -656,10 +644,10 @@ tr:first-child th:last-child {
   margin: 30px 30px 0 30px;
 }
 
-.create-event>p,
-.editar-ticket>P,
-.detallesboleto>p,
-.payment-details>P {
+.create-event > p,
+.editar-ticket > P,
+.detallesboleto > p,
+.payment-details > P {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -680,7 +668,7 @@ tr:first-child th:last-child {
   margin-top: 30px;
 }
 
-.create-event-container>h4 {
+.create-event-container > h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -899,7 +887,6 @@ input[type="radio"]:checked {
   width: 100%;
 }
 
-
 .line-2 {
   background: #eaeaea;
   height: 1px;
@@ -914,7 +901,7 @@ input[type="radio"]:checked {
   gap: 24px;
 }
 
-.create-event-container-btn-group>button {
+.create-event-container-btn-group > button {
   display: flex;
   width: 213px;
   padding: 10px 30px;
@@ -934,7 +921,7 @@ input[type="radio"]:checked {
   /* 171.429% */
 }
 
-.create-event-container-btn-group>button:hover {
+.create-event-container-btn-group > button:hover {
   color: #fff;
   background: #9b65e4;
 }
@@ -944,7 +931,7 @@ input[type="radio"]:checked {
   margin: 30px 30px 0 30px;
 }
 
-.single-evento>p {
+.single-evento > p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1040,6 +1027,134 @@ input[type="radio"]:checked {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.evento-chart {
+  border-radius: 16px;
+  background: #f2f4fe;
+  margin-top: 20px;
+}
+.recharts-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
+.chart {
+  padding-right: 24px;
+}
+@media (max-width: 992px) {
+  .recharts-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.evento-chart-header {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evento-chart-header .chart-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.evento-chart-header select {
+  padding: 10px 35px 10px 18px;
+  color: #757575;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  border-radius: 168px;
+  background: #fff;
+  border: none;
+  appearance: none;
+  background-image: url(./assets/images/downarrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+.evento-chart-header .thm-btn {
+  padding: 10px 18px 10px 23px;
+}
+.evento-chart-header h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 100% */
+  text-transform: capitalize;
+  margin-bottom: 9px;
+}
+.evento-chart-header p {
+  color: var(--01, #180e2c);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.evento-chart-header p span {
+  color: #9b65e4;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.accesos {
+  margin-top: 20px;
+  padding: 20px 23px 25px 20px;
+  border-radius: 16px;
+  background: #f2f4fe;
+}
+.accesos > h4 {
+  color: var(--01, #180e2c);
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.accesos > p {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 20px;
+}
+.accesos-card {
+  padding: 22px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+.accesos-card > h6 {
+  color: var(--01, #180e2c);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.accesos-card > p {
+  color: #9b65e4;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
 .entradas-container {
@@ -1262,7 +1377,7 @@ input[type="radio"]:checked {
   margin-top: 30px;
 }
 
-.editar-ticket-container>h4 {
+.editar-ticket-container > h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1464,7 +1579,7 @@ input[type="radio"]:checked {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.compras-container>h4 {
+.compras-container > h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1573,7 +1688,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido>h6 {
+.pedidos-table .pedido > h6 {
   color: #444;
   font-family: Poppins;
   font-size: 13px;
@@ -1582,7 +1697,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido>p {
+.pedidos-table .pedido > p {
   color: #666;
   font-family: Poppins;
   font-size: 12px;
@@ -1637,7 +1752,7 @@ td {
   margin: 10px 0 0 20px;
 }
 
-.detallsboleto-container .detalls-form>h4 {
+.detallsboleto-container .detalls-form > h4 {
   color: #000;
   font-family: Poppins;
   font-size: 26px;
@@ -1654,7 +1769,7 @@ td {
   padding: 20px 20px 40px 20px;
 }
 
-.tipo-de-pago-container>h6 {
+.tipo-de-pago-container > h6 {
   color: #000;
   font-family: Poppins;
   font-size: 20px;
@@ -1982,7 +2097,8 @@ td {
 }
 
 @media (min-width: 1441px) {
-  .pagado-header {}
+  .pagado-header {
+  }
 }
 
 .pagado-header h4 {
@@ -2074,7 +2190,7 @@ td {
   border-bottom-right-radius: 10px !important;
 }
 
-.pagination>p {
+.pagination > p {
   color: #949ca9;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -2085,7 +2201,7 @@ td {
   /* 157.143% */
 }
 
-.pagination>p span {
+.pagination > p span {
   color: #000;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -2241,7 +2357,7 @@ td {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.facturas-container>h4 {
+.facturas-container > h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 24px;
@@ -2676,14 +2792,14 @@ td {
 
 .paymemt-details-header {
   border-radius: 16px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 8px 10px 60px 0px rgba(0, 0, 0, 0.06);
   padding: 28px 30px;
   margin-top: 32px;
 }
 
-.paymemt-details-header>h4 {
-  color: #180E2C;
+.paymemt-details-header > h4 {
+  color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -2696,7 +2812,7 @@ td {
 .paymemt-details-header .line {
   height: 1px;
 
-  background: #EEE;
+  background: #eee;
 }
 
 .paymemt-details-content {
@@ -2716,7 +2832,7 @@ td {
 }
 
 .paymemt-details-content .estado span {
-  color: #4AAD31;
+  color: #4aad31;
 }
 
 .paymemt-details-content .pago {
@@ -2750,13 +2866,13 @@ td {
 .administration-container {
   padding: 28px 31px 30px 30px;
   border-radius: 16px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 8px 10px 60px 0px rgba(0, 0, 0, 0.06);
   margin-top: 30px;
 }
 
-.administration-container>h4 {
-  color: #180E2C;
+.administration-container > h4 {
+  color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -2798,20 +2914,17 @@ td {
 
 .administration-table .secound-row td:first-child {
   /* margin-left: 100px !important; */
-  padding-left: 115px !important;
-
-
+  padding-left: 90px !important;
 }
 
 .administration-table .secound-row {
-
   padding-left: 100px !important;
   position: relative;
 }
 
 .row-line {
   position: absolute;
-  top: 142px;
+  top: 116px;
   left: 54px;
 }
 
@@ -2820,7 +2933,7 @@ td {
 }
 
 .administration-table .third-row td:first-child {
-  padding-left: 115px !important;
+  padding-left: 90px !important;
 }
 
 .administration-table table .table-img {
@@ -2829,7 +2942,84 @@ td {
   align-items: center;
 }
 
-
+.payment-summary {
+  padding: 30px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 8px 10px 60px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
+}
+.payment-summary > h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.payment-summary .payment-row {
+  padding: 20px 30px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-summary .payment-row p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.payment-summary .payment-row .amount {
+  color: #555;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.payment-summary .payment-row:nth-child(3) {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+.payment-summary .payment-row-total {
+  padding: 20px 30px 20px 20px;
+  border-radius: 5px;
+  background: #9b65e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-summary .payment-row-total p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.payment-summary .payment-row-total .amount {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.payment-summary .text-center {
+  margin-top: 30px;
+}
+.payment-summary .thm-btn {
+  padding: 10px 30px;
+}
 /* Responsive Css */
 
 @media (max-width: 992px) {
@@ -2855,7 +3045,6 @@ td {
     flex-direction: column;
     align-items: flex-start;
   }
-
 
   .compras-container-header .search {
     width: 100%;
