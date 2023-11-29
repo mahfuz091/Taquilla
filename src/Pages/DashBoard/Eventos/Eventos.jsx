@@ -20,6 +20,7 @@ const Eventos = () => {
     control: (provided, state) => ({
       ...provided,
       height: "44px",
+      width: "208px",
       padding: "0px 20px 10px 20px",
       border: "1px solid #DDD",
       borderRadius: "100px",

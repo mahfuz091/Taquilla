@@ -1,6 +1,17 @@
 import React, { useEffect, useState } from "react";
 import mask from "../../../assets/images/Mask group.png";
 import SinglePedidosTableRow from "./SinglePedidosTableRow";
+import Select from "react-select";
+const options = [
+  { value: "Todos los eventos", label: "Mostrar compras de" },
+  { value: "Todos los eventos", label: "Mostrar compras de" },
+  { value: "Todos los eventos", label: "Mostrar compras de" },
+];
+const options2 = [
+  { value: "Más recientes", label: "Ordenar por" },
+  { value: "Más recientes", label: "Ordenar por" },
+  { value: "Más recientes", label: "Ordenar por" },
+];
 
 const Pedidos = () => {
   const [pedidos, setPedidos] = useState([]);
@@ -27,6 +38,37 @@ const Pedidos = () => {
 
   const goToPrevPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
+
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      height: "44px",
+      width: "208px",
+      padding: "0px 20px 10px 20px",
+      border: "1px solid #DDD",
+      borderRadius: "100px",
+      boxShadow: state.isFocused ? "0 0 0 2px #ffff" : "none",
+      "&:hover": {
+        borderColor: state.isFocused ? "#ffff" : "#ccc",
+        background: "#FFFF",
+      },
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      display: "flex",
+      flexDirection: "column",
+      backgroundColor: state.isSelected
+        ? "#fff"
+        : state.isFocused
+        ? "#E6F0FF"
+        : "white",
+    }),
+  };
+  const defaultOption = options[0];
+  const defaultOption2 = options2[0];
+  const handleSelectChange = (selectedOption) => {
+    console.log("Selected value:", selectedOption.value);
   };
   return (
     <div className='main-container pedidos'>
@@ -72,14 +114,62 @@ const Pedidos = () => {
               </svg>
             </div>
             <div>
-              <select id='mySelect' className='myselect'>
-                <option value='default'>
-                  <span>Ordenar por</span> <span>Más recientes</span>
-                </option>
-                <option value='option1'>Option 1</option>
-                <option value='option2'>Option 2</option>
-                <option value='option3'>Option 3</option>
-              </select>
+              <Select
+                className='select-wrap'
+                options={options2.map((option) => ({
+                  label: (
+                    <div>
+                      <span className='label-text'>{option.label}</span>
+                      <span className='d-block value-text '>
+                        {option.value}
+                      </span>
+                    </div>
+                  ),
+                  value: option.value,
+                }))}
+                styles={customStyles}
+                defaultValue={{
+                  label: (
+                    <div>
+                      <span className='label-text'>{defaultOption.label}</span>
+                      <span className='d-block value-text'>
+                        {defaultOption.value}
+                      </span>
+                    </div>
+                  ),
+                  value: defaultOption.value,
+                }}
+                onChange={handleSelectChange}
+              />
+            </div>
+            <div>
+              <Select
+                className='select-wrap'
+                options={options.map((option) => ({
+                  label: (
+                    <div>
+                      <span className='label-text'>{option.label}</span>
+                      <span className='d-block value-text '>
+                        {option.value}
+                      </span>
+                    </div>
+                  ),
+                  value: option.value,
+                }))}
+                styles={customStyles}
+                defaultValue={{
+                  label: (
+                    <div>
+                      <span className='label-text'>{defaultOption2.label}</span>
+                      <span className='d-block value-text'>
+                        {defaultOption2.value}
+                      </span>
+                    </div>
+                  ),
+                  value: defaultOption2.value,
+                }}
+                onChange={handleSelectChange}
+              />
             </div>
           </div>
         </div>

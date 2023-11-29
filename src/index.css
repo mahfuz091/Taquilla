@@ -3048,6 +3048,9 @@ td {
 .css-1u9des2-indicatorSeparator {
   display: none;
 }
+.css-1dimb5e-singleValue {
+  margin-top: -6px;
+}
 /* Responsive Css */
 
 @media (max-width: 575px) {
