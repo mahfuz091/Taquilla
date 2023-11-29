@@ -317,6 +317,15 @@ body {
   border-radius: 16px;
   padding: 40px 37px;
 }
+.pagination p span {
+  color: #180e2c;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
 
 .eventos-header h4 {
   color: #fff;
@@ -335,7 +344,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 470px;
+  width: 398px;
   margin-top: 10px;
 }
 
@@ -1567,7 +1576,7 @@ input[type="radio"]:checked {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 470px;
+  width: 395px;
   margin-top: 10px;
 }
 
@@ -3020,7 +3029,32 @@ td {
 .payment-summary .thm-btn {
   padding: 10px 30px;
 }
+.label-text {
+  color: #666;
+  font-family: Poppins;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 9.9px */
+}
+.value-text {
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+}
+.css-1u9des2-indicatorSeparator {
+  display: none;
+}
 /* Responsive Css */
+
+@media (max-width: 575px) {
+  .eventos-header p {
+    width: 100%;
+  }
+}
 
 @media (max-width: 992px) {
   .d-flex {
@@ -3058,5 +3092,98 @@ td {
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
+  }
+}
+@media (max-width: 575px) {
+  .single-evento-card > img {
+    width: 150px;
+  }
+  .single-evento-card {
+    flex-direction: column;
+  }
+  .single-evento-card .single-card-title {
+    font-size: 20px;
+  }
+  .single-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .single-card-header .thm-btn {
+    margin-top: 10px;
+  }
+  .single-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .evento-chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .evento-chart-header .chart-btn-group {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .entradas-container-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .entradas-container-header button {
+    margin-top: 10px;
+  }
+  .cantidad-btn {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .borrar-btn {
+    margin-top: 8px;
+  }
+  .create-event-container-btn-group {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .pedidos-header p {
+    width: 100%;
+  }
+  .detalls-venta-acceso-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+  .single-evento-card > img {
+    width: 180px;
+  }
+  .single-evento-card .single-card-title {
+    font-size: 20px;
+  }
+  .single-evento-card .single-card-desc {
+    font-size: 14px;
+    width: 200px;
+  }
+  .borrar-btn {
+    margin-top: 8px;
+  }
+}
+.tipodepogo {
+  margin-top: 10px;
+}
+.tipo-de-btn-group {
+  margin-top: 10px;
+}
+@media (max-width: 440px) {
+  .tipo-de-btn-group button:last-child {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tipodepogo {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 42px;
   }
 }

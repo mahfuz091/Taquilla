@@ -51,7 +51,7 @@ const DetallesDelBoleto = () => {
                   <button className='forward-btn'>Reenviar</button>
                 </div>
                 <Row>
-                  <Col>
+                  <Col md={6}>
                     <div className='form-group'>
                       <label htmlFor=''>
                         NDI/Passport/ID<span className='span'>*</span>
@@ -63,7 +63,7 @@ const DetallesDelBoleto = () => {
                       />
                     </div>
                   </Col>
-                  <Col>
+                  <Col md={6}>
                     <div className='form-group'>
                       <label htmlFor=''>
                         Fecha de Nacimiento<span className='span'>*</span>

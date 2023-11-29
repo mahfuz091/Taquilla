@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import SingleEventoTD from "./SingleEventoTD";
 import { Link } from "react-router-dom";
+import Select from "react-select";
+const options = [
+  { value: "Más recientes", label: "Ordenar por" },
+  { value: "Más recientes", label: "Ordenar por" },
+  { value: "Más recientes", label: "Ordenar por" },
+];
 
 const Eventos = () => {
   const [eventos, setEventos] = useState([]);
@@ -9,6 +15,36 @@ const Eventos = () => {
       .then((response) => response.json())
       .then((data) => setEventos(data));
   }, []);
+
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      height: "44px",
+      padding: "0px 20px 10px 20px",
+      border: "1px solid #DDD",
+      borderRadius: "100px",
+      boxShadow: state.isFocused ? "0 0 0 2px #ffff" : "none",
+      "&:hover": {
+        borderColor: state.isFocused ? "#ffff" : "#ccc",
+        background: "#FFFF",
+      },
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      display: "flex",
+      flexDirection: "column",
+      backgroundColor: state.isSelected
+        ? "#fff"
+        : state.isFocused
+        ? "#E6F0FF"
+        : "white",
+    }),
+  };
+  const defaultOption = options[0];
+  const handleSelectChange = (selectedOption) => {
+    console.log("Selected value:", selectedOption.value);
+  };
+
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 5;
   const totalPages = Math.ceil(eventos.length / eventsPerPage);
@@ -72,18 +108,42 @@ const Eventos = () => {
               </svg>
             </div>
             <div>
-              <select id='mySelect' className='myselect'>
+              {/* <select id='mySelect' className='myselect'>
                 <option value='default'>
                   <span>Ordenar por</span> <span>Más recientes</span>
-                  {/* <div className='op-1'>
-                  <h5>Ordenar por</h5>
-                  <p>Más recientes</p>
-                </div> */}
+                 
                 </option>
                 <option value='option1'>Option 1</option>
                 <option value='option2'>Option 2</option>
                 <option value='option3'>Option 3</option>
-              </select>
+              </select> */}
+              <Select
+                className='select-wrap'
+                options={options.map((option) => ({
+                  label: (
+                    <div>
+                      <span className='label-text'>{option.label}</span>
+                      <span className='d-block value-text '>
+                        {option.value}
+                      </span>
+                    </div>
+                  ),
+                  value: option.value,
+                }))}
+                styles={customStyles}
+                defaultValue={{
+                  label: (
+                    <div>
+                      <span className='label-text'>{defaultOption.label}</span>
+                      <span className='d-block value-text'>
+                        {defaultOption.value}
+                      </span>
+                    </div>
+                  ),
+                  value: defaultOption.value,
+                }}
+                onChange={handleSelectChange}
+              />
             </div>
           </div>
           <Link to='createEvento'>
@@ -109,7 +169,9 @@ const Eventos = () => {
         </div>
         {/* Pagination */}
         <div className='pagination'>
-          <p>Showing 1 to 5 items</p>
+          <p>
+            Showing <span>1 to 5</span> items
+          </p>
           <div className='pagination-button-group'>
             <button
               className='page-btn'

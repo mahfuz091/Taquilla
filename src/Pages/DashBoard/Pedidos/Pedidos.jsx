@@ -107,7 +107,9 @@ const Pedidos = () => {
         </div>
         {/* Pagination */}
         <div className='pagination'>
-          <p>Showing 1 to 5 items</p>
+          <p>
+            Showing <span>1 to 5</span> items
+          </p>
           <div className='pagination-button-group'>
             <button
               className='page-btn'
