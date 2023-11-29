@@ -34,7 +34,9 @@ body {
 .row {
   --bs-gutter-x: 40px;
 }
-
+.gap-20 {
+  gap: 20px;
+}
 @media (max-width: 992px) {
   .row .col-xl-6:last-child {
     margin-top: 15px;
@@ -2318,7 +2320,15 @@ td {
 .sidebar-list-item-active.finanzas-active {
   border-radius: 8px 8px 0 0;
 }
-
+.svg-open {
+  margin-left: 25px;
+  rotate: 180deg;
+  transition: all 0.5s ease-in-out;
+}
+.svg-close {
+  margin-left: 25px;
+  transition: all 0.5s ease-in-out;
+}
 /* facturas */
 
 .facturas {
@@ -3151,9 +3161,15 @@ td {
   .detalls-venta-acceso-container {
     flex-direction: column;
   }
+  .compras-container-header .d-flex {
+    flex-direction: column !important;
+  }
 }
 
 @media (max-width: 768px) {
+  .compras-container-header .d-flex {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3169,6 +3185,9 @@ td {
   }
   .borrar-btn {
     margin-top: 8px;
+  }
+  .compras-container-header .d-flex {
+    flex-direction: row;
   }
 }
 .tipodepogo {
@@ -3188,5 +3207,9 @@ td {
     margin-top: 20px;
     margin-left: 20px;
     padding-right: 42px;
+  }
+  .compras-container-header .flex {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

@@ -112,63 +112,70 @@ const Pagado = () => {
                 />
               </svg>
             </div>
-            <div>
-              <Select
-                className='select-wrap'
-                options={options2.map((option) => ({
-                  label: (
-                    <div>
-                      <span className='label-text'>{option.label}</span>
-                      <span className='d-block value-text '>
-                        {option.value}
-                      </span>
-                    </div>
-                  ),
-                  value: option.value,
-                }))}
-                styles={customStyles}
-                defaultValue={{
-                  label: (
-                    <div>
-                      <span className='label-text'>{defaultOption.label}</span>
-                      <span className='d-block value-text'>
-                        {defaultOption.value}
-                      </span>
-                    </div>
-                  ),
-                  value: defaultOption.value,
-                }}
-                onChange={handleSelectChange}
-              />
-            </div>
-            <div>
-              <Select
-                className='select-wrap'
-                options={options.map((option) => ({
-                  label: (
-                    <div>
-                      <span className='label-text'>{option.label}</span>
-                      <span className='d-block value-text '>
-                        {option.value}
-                      </span>
-                    </div>
-                  ),
-                  value: option.value,
-                }))}
-                styles={customStyles}
-                defaultValue={{
-                  label: (
-                    <div>
-                      <span className='label-text'>{defaultOption2.label}</span>
-                      <span className='d-block value-text'>
-                        {defaultOption2.value}
-                      </span>
-                    </div>
-                  ),
-                  value: defaultOption2.value,
-                }}
-                onChange={handleSelectChange}
-              />
+            <div className='d-flex gap-3'>
+              {" "}
+              <div>
+                <Select
+                  className='select-wrap'
+                  options={options2.map((option) => ({
+                    label: (
+                      <div>
+                        <span className='label-text'>{option.label}</span>
+                        <span className='d-block value-text '>
+                          {option.value}
+                        </span>
+                      </div>
+                    ),
+                    value: option.value,
+                  }))}
+                  styles={customStyles}
+                  defaultValue={{
+                    label: (
+                      <div>
+                        <span className='label-text'>
+                          {defaultOption.label}
+                        </span>
+                        <span className='d-block value-text'>
+                          {defaultOption.value}
+                        </span>
+                      </div>
+                    ),
+                    value: defaultOption.value,
+                  }}
+                  onChange={handleSelectChange}
+                />
+              </div>
+              <div>
+                <Select
+                  className='select-wrap'
+                  options={options.map((option) => ({
+                    label: (
+                      <div>
+                        <span className='label-text'>{option.label}</span>
+                        <span className='d-block value-text '>
+                          {option.value}
+                        </span>
+                      </div>
+                    ),
+                    value: option.value,
+                  }))}
+                  styles={customStyles}
+                  defaultValue={{
+                    label: (
+                      <div>
+                        <span className='label-text'>
+                          {defaultOption2.label}
+                        </span>
+                        <span className='d-block value-text'>
+                          {defaultOption2.value}
+                        </span>
+                      </div>
+                    ),
+                    value: defaultOption2.value,
+                  }}
+                  onChange={handleSelectChange}
+                />
+              </div>
             </div>
           </div>
         </div>

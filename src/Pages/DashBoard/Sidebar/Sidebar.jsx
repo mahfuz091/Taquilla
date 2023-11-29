@@ -11,7 +11,7 @@ import setting from "../../../assets/images/Setting.svg";
 import management from "../../../assets/images/Management.svg";
 import help from "../../../assets/images/Help.svg";
 import arrow from "../../../assets/images/bxs_up-arrow.png";
-import logo from '../../../assets/images/logo.png';
+import logo from "../../../assets/images/logo.png";
 const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
   const [open, setOpen] = useState(false);
   const [oo, setOo] = useState(false);
@@ -27,11 +27,8 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
       className={openSidebarToggle ? "sidebar-responsive" : ""}
     >
       <div className='sidebar-title'>
-        <img src={logo} alt="" />
-        <span
-          className='close-btn'
-          onClick={OpenSidebar}
-        >
+        <img src={logo} alt='' />
+        <span className='close-btn' onClick={OpenSidebar}>
           ✕
         </span>
       </div>
@@ -106,7 +103,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
             setOo(false);
             setOpen(false);
           }}
-        // onClick={() => setOpen(false)}
+          // onClick={() => setOpen(false)}
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -240,6 +237,22 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
             />
           </svg>
           Finanzas
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='14'
+            height='8'
+            viewBox='0 0 14 8'
+            fill='none'
+            className={open ? "svg-open" : "svg-close"}
+          >
+            <path
+              d='M12.625 1.1875L7 6.8125L1.375 1.1875'
+              stroke='#757575'
+              stroke-width='1.5'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+          </svg>
         </a>
         <Collapse in={open}>
           <div id='example-collapse-text'>
