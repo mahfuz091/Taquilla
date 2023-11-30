@@ -61,8 +61,8 @@ const Pedidos = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-          ? "#E6F0FF"
-          : "white",
+        ? "#E6F0FF"
+        : "white",
     }),
   };
   const defaultOption = options[0];
@@ -198,7 +198,13 @@ const Pedidos = () => {
         {/* Pagination */}
         <div className='pagination'>
           <p>
-            Showing <span>1 to 5</span> items
+            Showing{" "}
+            <span>
+              {" "}
+              {indexOfFirstEvent + 1} to{" "}
+              {Math.min(indexOfLastEvent, pedidos.length)}
+            </span>{" "}
+            items
           </p>
           <div className='pagination-button-group'>
             <button
@@ -215,7 +221,7 @@ const Pedidos = () => {
               >
                 <path
                   d='M6 1L1 6L6 11'
-                  stroke='#9B65E4'
+                  stroke='#949CA9'
                   stroke-width='1.5'
                   stroke-linecap='round'
                   stroke-linejoin='round'

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SingleEventoTD = ({ evento }) => {
   return (
-    <tr className={evento.estado === "Inactivo" ? "estado-inactive-bg" : ""}>
+    <tr>
       <td>
         <div className='flex'>
           <img src={evento.image} alt='' />

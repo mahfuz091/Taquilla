@@ -43,8 +43,8 @@ const Pagado = () => {
     control: (provided, state) => ({
       ...provided,
       height: "44px",
-      width: "200px",
-      padding: "2px 10px 10px 20px",
+      width: "208px",
+      padding: "0px 20px 10px 20px",
       border: "1px solid #DDD",
       borderRadius: "100px",
       boxShadow: state.isFocused ? "0 0 0 2px #ffff" : "none",
@@ -60,8 +60,8 @@ const Pagado = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-          ? "#E6F0FF"
-          : "white",
+        ? "#E6F0FF"
+        : "white",
     }),
   };
   const defaultOption = options[0];
@@ -112,7 +112,7 @@ const Pagado = () => {
                 />
               </svg>
             </div>
-            <div className='d-flex gap-3'>
+            <div className='d-flex gap-20'>
               {" "}
               <div>
                 <Select
@@ -200,7 +200,8 @@ const Pagado = () => {
         {/* Pagination */}
         <div className='pagination'>
           <p>
-            Mostrando de <span>1</span> a <span>3</span> artículos
+            Mostrando de <span>{indexOfFirstEvent + 1}</span> a{" "}
+            <span>{Math.min(indexOfLastEvent, pagados.length)}</span> artículos
           </p>
           <div className='pagination-button-group'>
             <button
@@ -217,7 +218,7 @@ const Pagado = () => {
               >
                 <path
                   d='M6 1L1 6L6 11'
-                  stroke='#9B65E4'
+                  stroke='#949CA9'
                   stroke-width='1.5'
                   stroke-linecap='round'
                   stroke-linejoin='round'
