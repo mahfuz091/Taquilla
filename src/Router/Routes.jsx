@@ -35,6 +35,11 @@ export const router = createBrowserRouter([
         path: "eventos/paymentDetails",
         element: <PaymentDetails></PaymentDetails>,
       },
+      // {
+      //   path: 'finanzas',
+      //   element: <Navigate to="/finanzas/pagado" ></Navigate>
+
+      // },
       {
         path: "eventos/singleEvento",
         element: <SingleEvento></SingleEvento>,

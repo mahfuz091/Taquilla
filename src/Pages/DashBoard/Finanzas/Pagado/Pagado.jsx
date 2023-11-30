@@ -43,8 +43,8 @@ const Pagado = () => {
     control: (provided, state) => ({
       ...provided,
       height: "44px",
-      width: "208px",
-      padding: "0px 20px 10px 20px",
+      width: "200px",
+      padding: "2px 10px 10px 20px",
       border: "1px solid #DDD",
       borderRadius: "100px",
       boxShadow: state.isFocused ? "0 0 0 2px #ffff" : "none",
@@ -60,8 +60,8 @@ const Pagado = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-        ? "#E6F0FF"
-        : "white",
+          ? "#E6F0FF"
+          : "white",
     }),
   };
   const defaultOption = options[0];

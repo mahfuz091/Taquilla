@@ -2,35 +2,7 @@ import React from "react";
 import img1 from "../../../../public/images/img-1.png";
 
 const PaymentDetails = () => {
-  const customStyles = {
-    control: (provided, state) => ({
-      ...provided,
-      height: "44px",
-      width: "208px",
-      padding: "0px 20px 10px 20px",
-      border: "1px solid #DDD",
-      borderRadius: "100px",
-      boxShadow: state.isFocused ? "0 0 0 2px #ffff" : "none",
-      "&:hover": {
-        borderColor: state.isFocused ? "#ffff" : "#ccc",
-        background: "#FFFF",
-      },
-    }),
-    option: (provided, state) => ({
-      ...provided,
-      display: "flex",
-      flexDirection: "column",
-      backgroundColor: state.isSelected
-        ? "#fff"
-        : state.isFocused
-        ? "#E6F0FF"
-        : "white",
-    }),
-  };
-  const defaultOption = options[0];
-  const handleSelectChange = (selectedOption) => {
-    console.log("Selected value:", selectedOption.value);
-  };
+
   return (
     <div className='payment-details main-container'>
       <p>
@@ -115,42 +87,41 @@ const PaymentDetails = () => {
               >
                 <path d='M1 0L1.00001 139' stroke='#EEEEEE' />
               </svg>
-              <tr>
-                <td className='table-img'>
-                  <img
-                    style={{ width: "52px", height: "52px" }}
-                    src={img1}
-                    alt=''
-                  />
-                  <p>Evento de prueba</p>
+              <span className="column-line-1" ></span>
+              <span className="column-line-2" ></span>
+              <tr className="fourth-row">
+                <td >
+                  <div className="table-img">
+                    <img
+                      style={{ width: "52px", height: "52px" }}
+                      src={img1}
+                      alt=''
+                    />
+                    <p>Evento de prueba</p>
+                  </div>
                 </td>
                 <td>15.00€</td>
                 <td>234</td>
                 <td>3810.50€</td>
               </tr>
-              <tr className='secound-row'>
+              <tr className='fifth-row'>
                 <td>G.d. Gestión</td>
                 <td>0.95€</td>
                 <td>234</td>
                 <td>241.30€</td>
               </tr>
 
-              <tr className='third-row'>
+              <tr className='sixth-row'>
                 <td>G.d SMS</td>
                 <td>0.50€</td>
                 <td>32</td>
                 <td>16.00€</td>
               </tr>
-              <svg
-                className='row-line'
-                xmlns='http://www.w3.org/2000/svg'
-                width='2'
-                height='139'
-                viewBox='0 0 2 139'
-                fill='none'
-              >
-                <path d='M1 0L1.00001 139' stroke='#EEEEEE' />
+              <svg className="row-line-2" xmlns="http://www.w3.org/2000/svg" width="2" height="149" viewBox="0 0 2 149" fill="none">
+                <path d="M1 0L1.00001 149" stroke="white" />
               </svg>
+              <span className="column-line-3" ></span>
+              <span className="column-line-4" ></span>
             </tbody>
           </table>
         </div>

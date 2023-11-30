@@ -34,9 +34,11 @@ body {
 .row {
   --bs-gutter-x: 40px;
 }
+
 .gap-20 {
   gap: 20px;
 }
+
 @media (max-width: 992px) {
   .row .col-xl-6:last-child {
     margin-top: 15px;
@@ -278,7 +280,7 @@ body {
   cursor: pointer;
 } */
 
-.sidebar-list-item > a {
+.sidebar-list-item>a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -319,6 +321,13 @@ body {
   border-radius: 16px;
   padding: 40px 37px;
 }
+
+@media (min-width: 1536px) {
+  .eventos-header {
+    padding: 70px 37px;
+  }
+}
+
 .pagination p span {
   color: #180e2c;
   font-feature-settings: "clig" off, "liga" off;
@@ -401,7 +410,7 @@ body {
 
 .eventos-container-header {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   margin-bottom: 24px;
 }
@@ -655,10 +664,10 @@ tr:first-child th:last-child {
   margin: 30px 30px 0 30px;
 }
 
-.create-event > p,
-.editar-ticket > P,
-.detallesboleto > p,
-.payment-details > P {
+.create-event>p,
+.editar-ticket>P,
+.detallesboleto>p,
+.payment-details>P {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -679,7 +688,7 @@ tr:first-child th:last-child {
   margin-top: 30px;
 }
 
-.create-event-container > h4 {
+.create-event-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -912,7 +921,7 @@ input[type="radio"]:checked {
   gap: 24px;
 }
 
-.create-event-container-btn-group > button {
+.create-event-container-btn-group>button {
   display: flex;
   width: 213px;
   padding: 10px 30px;
@@ -932,7 +941,7 @@ input[type="radio"]:checked {
   /* 171.429% */
 }
 
-.create-event-container-btn-group > button:hover {
+.create-event-container-btn-group>button:hover {
   color: #fff;
   background: #9b65e4;
 }
@@ -942,7 +951,7 @@ input[type="radio"]:checked {
   margin: 30px 30px 0 30px;
 }
 
-.single-evento > p {
+.single-evento>p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1045,13 +1054,16 @@ input[type="radio"]:checked {
   background: #f2f4fe;
   margin-top: 20px;
 }
+
 .recharts-wrapper {
   width: 100% !important;
   height: 100% !important;
 }
+
 .chart {
   padding-right: 24px;
 }
+
 @media (max-width: 992px) {
   .recharts-wrapper {
     width: 100% !important;
@@ -1071,6 +1083,7 @@ input[type="radio"]:checked {
   align-items: center;
   gap: 15px;
 }
+
 .evento-chart-header select {
   padding: 10px 35px 10px 18px;
   color: #757575;
@@ -1078,7 +1091,8 @@ input[type="radio"]:checked {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
   border-radius: 168px;
   background: #fff;
   border: none;
@@ -1087,19 +1101,23 @@ input[type="radio"]:checked {
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
+
 .evento-chart-header .thm-btn {
   padding: 10px 18px 10px 23px;
 }
+
 .evento-chart-header h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 100% */
+  line-height: 26px;
+  /* 100% */
   text-transform: capitalize;
   margin-bottom: 9px;
 }
+
 .evento-chart-header p {
   color: var(--01, #180e2c);
   font-family: Poppins;
@@ -1108,6 +1126,7 @@ input[type="radio"]:checked {
   font-weight: 400;
   line-height: normal;
 }
+
 .evento-chart-header p span {
   color: #9b65e4;
   font-family: Poppins;
@@ -1116,13 +1135,15 @@ input[type="radio"]:checked {
   font-weight: 600;
   line-height: normal;
 }
+
 .accesos {
   margin-top: 20px;
   padding: 20px 23px 25px 20px;
   border-radius: 16px;
   background: #f2f4fe;
 }
-.accesos > h4 {
+
+.accesos>h4 {
   color: var(--01, #180e2c);
   font-family: Poppins;
   font-size: 26px;
@@ -1132,15 +1153,18 @@ input[type="radio"]:checked {
   text-transform: capitalize;
   margin-bottom: 8px;
 }
-.accesos > p {
+
+.accesos>p {
   color: #757575;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   margin-bottom: 20px;
 }
+
 .accesos-card {
   padding: 22px 18px;
   display: flex;
@@ -1150,7 +1174,8 @@ input[type="radio"]:checked {
   background: #fff;
   margin-bottom: 12px;
 }
-.accesos-card > h6 {
+
+.accesos-card>h6 {
   color: var(--01, #180e2c);
   font-family: Poppins;
   font-size: 14px;
@@ -1158,7 +1183,8 @@ input[type="radio"]:checked {
   font-weight: 400;
   line-height: normal;
 }
-.accesos-card > p {
+
+.accesos-card>p {
   color: #9b65e4;
   font-family: Poppins;
   font-size: 30px;
@@ -1388,7 +1414,7 @@ input[type="radio"]:checked {
   margin-top: 30px;
 }
 
-.editar-ticket-container > h4 {
+.editar-ticket-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1555,9 +1581,9 @@ input[type="radio"]:checked {
   padding: 40px 37px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1536px) {
   .pedidos-header {
-    padding: 40px 37px;
+    padding: 70px 37px;
   }
 }
 
@@ -1590,7 +1616,7 @@ input[type="radio"]:checked {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.compras-container > h4 {
+.compras-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1699,7 +1725,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido > h6 {
+.pedidos-table .pedido>h6 {
   color: #444;
   font-family: Poppins;
   font-size: 13px;
@@ -1708,7 +1734,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido > p {
+.pedidos-table .pedido>p {
   color: #666;
   font-family: Poppins;
   font-size: 12px;
@@ -1763,7 +1789,7 @@ td {
   margin: 10px 0 0 20px;
 }
 
-.detallsboleto-container .detalls-form > h4 {
+.detallsboleto-container .detalls-form>h4 {
   color: #000;
   font-family: Poppins;
   font-size: 26px;
@@ -1780,7 +1806,7 @@ td {
   padding: 20px 20px 40px 20px;
 }
 
-.tipo-de-pago-container > h6 {
+.tipo-de-pago-container>h6 {
   color: #000;
   font-family: Poppins;
   font-size: 20px;
@@ -2107,10 +2133,14 @@ td {
   padding: 40px 37px;
 }
 
-@media (min-width: 1441px) {
-  .pagado-header {
+@media (min-width: 1536px) {
+  .pagadoc-header {
+    padding: 70px 37px;
   }
 }
+
+
+
 
 .pagado-header h4 {
   color: #fff;
@@ -2191,7 +2221,12 @@ td {
   background: #f2f4fe;
 }
 
-.pagado-tr td:first-child {
+.pagado-table tr td:first-child {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+.pagado-tr .evento {
   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
 }
@@ -2201,7 +2236,7 @@ td {
   border-bottom-right-radius: 10px !important;
 }
 
-.pagination > p {
+.pagination>p {
   color: #949ca9;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -2212,7 +2247,7 @@ td {
   /* 157.143% */
 }
 
-.pagination > p span {
+.pagination>p span {
   color: #000;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -2320,15 +2355,18 @@ td {
 .sidebar-list-item-active.finanzas-active {
   border-radius: 8px 8px 0 0;
 }
+
 .svg-open {
   margin-left: 25px;
   rotate: 180deg;
   transition: all 0.5s ease-in-out;
 }
+
 .svg-close {
   margin-left: 25px;
   transition: all 0.5s ease-in-out;
 }
+
 /* facturas */
 
 .facturas {
@@ -2345,6 +2383,12 @@ td {
 
   border-radius: 16px;
   padding: 40px 37px;
+}
+
+@media (min-width: 1536px) {
+  .facturas-header {
+    padding: 70px 37px;
+  }
 }
 
 .facturas-header h4 {
@@ -2376,7 +2420,7 @@ td {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.facturas-container > h4 {
+.facturas-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 24px;
@@ -2817,7 +2861,7 @@ td {
   margin-top: 32px;
 }
 
-.paymemt-details-header > h4 {
+.paymemt-details-header>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
@@ -2890,7 +2934,7 @@ td {
   margin-top: 30px;
 }
 
-.administration-container > h4 {
+.administration-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
@@ -2941,10 +2985,59 @@ td {
   position: relative;
 }
 
+
 .row-line {
   position: absolute;
-  top: 116px;
+  top: 106px;
   left: 54px;
+}
+
+.row-line-2 {
+  position: absolute;
+  top: 300px;
+  left: 54px;
+}
+
+.column-line-1 {
+  position: absolute;
+  top: 130px;
+  left: 54px;
+  height: 1px;
+  width: 100%;
+  background: #EEE;
+}
+
+.column-line-2 {
+  position: absolute;
+  top: 185px;
+  left: 54px;
+  height: 1px;
+  width: 100%;
+  background: #EEE;
+}
+
+.column-line-3 {
+  position: absolute;
+  top: 320px;
+  left: 54px;
+  height: 1px;
+  width: 100%;
+  background-color: #FFF !important;
+}
+
+.column-line-4 {
+  position: absolute;
+  top: 376px;
+  left: 54px;
+  height: 1px;
+  width: 100%;
+  background: #FFF !important;
+}
+
+.fourth-row,
+.fifth-row,
+.sixth-row {
+  background: #F2F4FE;
 }
 
 .administration-table .secound-row td {
@@ -2955,11 +3048,45 @@ td {
   padding-left: 90px !important;
 }
 
+
+
+.administration-table .fifth-row td:first-child {
+  padding-left: 90px !important;
+
+}
+
+.administration-table .fourth-row td:first-child {
+  border-top-left-radius: 10px !important;
+}
+
+.table-img {
+  border-top-left-radius: 10px !important;
+}
+
+
+
+.administration-table .fourth-row td:last-child {
+  border-top-right-radius: 10px !important;
+}
+
+.administration-table .sixth-row td:first-child {
+  border-bottom-left-radius: 10px !important;
+}
+
+.administration-table .sixth-row td:last-child {
+  border-bottom-right-radius: 10px !important;
+}
+
+.administration-table .sixth-row td:first-child {
+  padding-left: 90px !important;
+}
+
 .administration-table table .table-img {
   display: flex;
   gap: 16px;
   align-items: center;
 }
+
 
 .payment-summary {
   padding: 30px;
@@ -2968,7 +3095,8 @@ td {
   box-shadow: 8px 10px 60px 0px rgba(0, 0, 0, 0.06);
   margin-top: 30px;
 }
-.payment-summary > h4 {
+
+.payment-summary>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
@@ -2977,12 +3105,14 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .payment-summary .payment-row {
   padding: 20px 30px 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .payment-summary .payment-row p {
   color: #000;
   font-family: Poppins;
@@ -2992,6 +3122,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .payment-summary .payment-row .amount {
   color: #555;
   text-align: right;
@@ -3002,10 +3133,12 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .payment-summary .payment-row:nth-child(3) {
   border-radius: 5px;
   background: rgba(87, 118, 242, 0.08);
 }
+
 .payment-summary .payment-row-total {
   padding: 20px 30px 20px 20px;
   border-radius: 5px;
@@ -3014,6 +3147,7 @@ td {
   justify-content: space-between;
   align-items: center;
 }
+
 .payment-summary .payment-row-total p {
   color: #fff;
   font-family: Poppins;
@@ -3023,6 +3157,7 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .payment-summary .payment-row-total .amount {
   color: #fff;
   text-align: right;
@@ -3033,20 +3168,25 @@ td {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .payment-summary .text-center {
   margin-top: 30px;
 }
+
 .payment-summary .thm-btn {
   padding: 10px 30px;
 }
+
 .label-text {
   color: #666;
   font-family: Poppins;
   font-size: 9px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 9.9px */
+  line-height: 110%;
+  /* 9.9px */
 }
+
 .value-text {
   color: #666;
   font-family: Poppins;
@@ -3055,18 +3195,61 @@ td {
   font-weight: 500;
   line-height: 110%;
 }
+
 .css-1u9des2-indicatorSeparator {
   display: none;
 }
+
 .css-1dimb5e-singleValue {
   margin-top: -6px;
 }
+
 /* Responsive Css */
+
+@media (max-width:440px) {
+  .pagination {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 @media (max-width: 575px) {
   .eventos-header p {
     width: 100%;
   }
+
+  .column-line-1 {
+
+    top: 150px;
+
+  }
+
+  .column-line-2 {
+
+    top: 225px;
+
+  }
+
+  .row-line {
+    height: 200px;
+  }
+
+  .column-line-3 {
+
+    top: 410px;
+
+  }
+
+  .column-line-4 {
+
+    top: 485px;
+
+  }
+
+  .row-line-2 {
+    height: 345px;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -3101,66 +3284,86 @@ td {
     width: 100%;
   }
 
+
+}
+
+@media(max-width:1100px) {
   .eventos-container-header {
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
   }
 }
+
 @media (max-width: 575px) {
-  .single-evento-card > img {
+  .single-evento-card>img {
     width: 150px;
   }
+
   .single-evento-card {
     flex-direction: column;
   }
+
   .single-evento-card .single-card-title {
     font-size: 20px;
   }
+
   .single-card-header {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .single-card-header .thm-btn {
     margin-top: 10px;
   }
+
   .single-card-footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .evento-chart-header {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .evento-chart-header .chart-btn-group {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 10px;
   }
+
   .entradas-container-header {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .entradas-container-header button {
     margin-top: 10px;
   }
+
   .cantidad-btn {
     margin-top: 10px;
     margin-left: 20px;
   }
+
   .borrar-btn {
     margin-top: 8px;
   }
+
   .create-event-container-btn-group {
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .pedidos-header p {
     width: 100%;
   }
+
   .detalls-venta-acceso-container {
     flex-direction: column;
   }
+
   .compras-container-header .d-flex {
     flex-direction: column !important;
   }
@@ -3173,29 +3376,36 @@ td {
 }
 
 @media (max-width: 1024px) {
-  .single-evento-card > img {
+  .single-evento-card>img {
     width: 180px;
   }
+
   .single-evento-card .single-card-title {
     font-size: 20px;
   }
+
   .single-evento-card .single-card-desc {
     font-size: 14px;
     width: 200px;
   }
+
   .borrar-btn {
     margin-top: 8px;
   }
+
   .compras-container-header .d-flex {
     flex-direction: row;
   }
 }
+
 .tipodepogo {
   margin-top: 10px;
 }
+
 .tipo-de-btn-group {
   margin-top: 10px;
 }
+
 @media (max-width: 440px) {
   .tipo-de-btn-group button:last-child {
     margin-top: 10px;
@@ -3208,6 +3418,7 @@ td {
     margin-left: 20px;
     padding-right: 42px;
   }
+
   .compras-container-header .flex {
     flex-direction: column;
     align-items: flex-start;

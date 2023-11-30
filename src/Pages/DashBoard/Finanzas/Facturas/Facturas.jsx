@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
 import FacturasTR from "./FacturasTR";
+import Select from "react-select";
+const options = [
+  { value: "Más recientes", label: "Ordenar por" },
+  { value: "Más recientes", label: "Ordenar por" },
+  { value: "Más recientes", label: "Ordenar por" },
+];
 
 const Facturas = () => {
   const [facturas, setFacturas] = useState([]);
@@ -8,13 +14,45 @@ const Facturas = () => {
       .then((response) => response.json())
       .then((data) => setFacturas(data));
   }, []);
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      height: "44px",
+      width: "200px",
+      padding: "2px 10px 10px 20px",
+      border: "1px solid #DDD",
+      borderRadius: "100px",
+      boxShadow: state.isFocused ? "0 0 0 2px #ffff" : "none",
+      "&:hover": {
+        borderColor: state.isFocused ? "#ffff" : "#ccc",
+        background: "#FFFF",
+      },
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      display: "flex",
+      flexDirection: "column",
+      backgroundColor: state.isSelected
+        ? "#fff"
+        : state.isFocused
+          ? "#E6F0FF"
+          : "white",
+    }),
+  };
+  const defaultOption = options[0];
+  const handleSelectChange = (selectedOption) => {
+    console.log("Selected value:", selectedOption.value);
+  };
+
+
+
   return (
     <div className='facturas main-container'>
       <div className='facturas-header'>
-        <h4>pagado</h4>
+        <h4>Facturas</h4>
         <p>
-          Solicita el pago de tu evento tres días después ha finalizado o
-          comprueba su estado
+          Consulta las facturas de gastos derivados.
+          de la venta de tus eventos
         </p>
       </div>
       <div className='facturas-container'>
@@ -52,14 +90,41 @@ const Facturas = () => {
               </svg>
             </div>
             <div>
-              <select id='mySelect' className='myselect'>
+              {/* <select id='mySelect' className='myselect'>
                 <option value='default'>
                   <span>Ordenar por</span> <span>Más recientes</span>
                 </option>
                 <option value='option1'>Option 1</option>
                 <option value='option2'>Option 2</option>
                 <option value='option3'>Option 3</option>
-              </select>
+              </select> */}
+              <Select
+                className='select-wrap'
+                options={options.map((option) => ({
+                  label: (
+                    <div>
+                      <span className='label-text'>{option.label}</span>
+                      <span className='d-block value-text '>
+                        {option.value}
+                      </span>
+                    </div>
+                  ),
+                  value: option.value,
+                }))}
+                styles={customStyles}
+                defaultValue={{
+                  label: (
+                    <div>
+                      <span className='label-text'>{defaultOption.label}</span>
+                      <span className='d-block value-text'>
+                        {defaultOption.value}
+                      </span>
+                    </div>
+                  ),
+                  value: defaultOption.value,
+                }}
+                onChange={handleSelectChange}
+              />
             </div>
           </div>
         </div>
