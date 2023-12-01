@@ -35,7 +35,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
 
       <ul className='sidebar-list'>
         <NavLink
-          to='home'
+          to='/'
           className={({ isActive }) =>
             isActive
               ? "sidebar-list-item sidebar-list-item-active"
@@ -176,7 +176,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           Informes
         </NavLink>
         <NavLink
-          to='analytics'
+          to='/'
           className={({ isActive }) =>
             isActive
               ? "sidebar-list-item sidebar-list-item-active"
@@ -360,7 +360,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           </div>
         </Collapse>
         <NavLink
-          to='/setting'
+          to='/'
           className={({ isActive }) =>
             isActive
               ? "sidebar-list-item sidebar-list-item-active"
@@ -391,7 +391,8 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           </svg>
           Setting
         </NavLink>
-        <NavLink className='sidebar-list-item mt-112'>
+        <NavLink to="/" className='sidebar-list-item mt-112'>
+
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'
@@ -409,7 +410,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           </svg>
           Management
         </NavLink>
-        <NavLink className='sidebar-list-item'>
+        <NavLink to='/' className='sidebar-list-item'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'

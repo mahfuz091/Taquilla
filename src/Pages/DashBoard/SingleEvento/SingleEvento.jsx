@@ -143,7 +143,7 @@ const SingleEvento = () => {
                 </div>
                 <hr className='line-chart' />
                 <div className='chart'>
-                  <BarChart width={680} height={358} data={data}>
+                  <BarChart width={680} height={225} data={data}>
                     <XAxis dataKey='name' />
                     <YAxis></YAxis>
                     <Bar width={35} dataKey='uv' fill='#9B65E4' />
