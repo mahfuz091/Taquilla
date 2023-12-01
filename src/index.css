@@ -2921,6 +2921,12 @@ td {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 710px) {
+  .paymemt-details-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .paymemt-details-content .estado {
   color: #000;
