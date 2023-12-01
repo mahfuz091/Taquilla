@@ -207,9 +207,9 @@ const SingleEvento = () => {
                 <tr>
                   <th>Evento</th>
                   <th>Vendidas</th>
-                  <th>Neto</th>
+                  <th style={{ minWidth: "106px" }}>Neto</th>
                   <th>Fecha</th>
-                  <th>Estado</th>
+                  <th style={{ minWidth: "212px" }}>Estado</th>
                 </tr>
               </thead>
               {eventos.slice(0, 5).map((evento) => (

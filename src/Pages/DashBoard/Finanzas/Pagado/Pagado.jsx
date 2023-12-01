@@ -60,8 +60,8 @@ const Pagado = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-          ? "#E6F0FF"
-          : "white",
+        ? "#E6F0FF"
+        : "white",
     }),
   };
   const defaultOption = options[0];
@@ -184,9 +184,9 @@ const Pagado = () => {
             <thead>
               <tr>
                 <th>Evento</th>
-                <th>Fecha</th>
-                <th>Ingresos brutos</th>
-                <th>Pago neto</th>
+                <th style={{ minWidth: "125px" }}>Fecha</th>
+                <th style={{ minWidth: "102px" }}>Ingresos brutos</th>
+                <th style={{ minWidth: "106px" }}>Pago neto</th>
                 <th>Estado</th>
               </tr>
             </thead>

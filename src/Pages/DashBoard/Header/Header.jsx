@@ -3,7 +3,7 @@ import logo from "../../../assets/images/logo.png";
 import profile from "../../../assets/images/profile.png";
 import plus from "../../../assets/images/plus.png";
 import downarrow from "../../../assets/images/downarrow.png";
-import burgermenu from '../../../assets/images/burger-menu-svgrepo-com.svg'
+import burgermenu from "../../../assets/images/burger-menu-svgrepo-com.svg";
 
 const Header = ({ OpenSidebar }) => {
   return (
@@ -18,19 +18,15 @@ const Header = ({ OpenSidebar }) => {
         <div className='header-right-profile'>
           <img src={profile} alt='' />
           <div className='header-right-profile-desc'>
-            <h4>Minhaj Uddin</h4>
+            <h4>John Deo</h4>
             <img src={downarrow} alt='' />
           </div>
         </div>
 
-        <button onClick={OpenSidebar} className="hambargur-btn">
-          <img src={burgermenu} alt="" />
+        <button onClick={OpenSidebar} className='hambargur-btn'>
+          <img src={burgermenu} alt='' />
         </button>
-
-
       </div>
-
-
     </div>
   );
 };

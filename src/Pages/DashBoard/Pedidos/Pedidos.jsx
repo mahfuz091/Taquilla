@@ -61,8 +61,8 @@ const Pedidos = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-          ? "#E6F0FF"
-          : "white",
+        ? "#E6F0FF"
+        : "white",
     }),
   };
   const defaultOption = options[0];
@@ -113,7 +113,7 @@ const Pedidos = () => {
                 />
               </svg>
             </div>
-            <div className="select-group">
+            <div className='select-group'>
               <div>
                 <Select
                   className='select-wrap'
@@ -132,7 +132,9 @@ const Pedidos = () => {
                   defaultValue={{
                     label: (
                       <div>
-                        <span className='label-text'>{defaultOption.label}</span>
+                        <span className='label-text'>
+                          {defaultOption.label}
+                        </span>
                         <span className='d-block value-text'>
                           {defaultOption.value}
                         </span>
@@ -161,7 +163,9 @@ const Pedidos = () => {
                   defaultValue={{
                     label: (
                       <div>
-                        <span className='label-text'>{defaultOption2.label}</span>
+                        <span className='label-text'>
+                          {defaultOption2.label}
+                        </span>
                         <span className='d-block value-text'>
                           {defaultOption2.value}
                         </span>
@@ -179,13 +183,13 @@ const Pedidos = () => {
           <table>
             <thead>
               <tr>
-                <th>Localizador</th>
-                <th>Nombre</th>
+                <th style={{ minWidth: "136px" }}>Localizador</th>
+                <th style={{ minWidth: "136px" }}>Nombre</th>
                 <th>Correo</th>
                 <th>DNI</th>
                 <th>Tipo</th>
                 <th>Importe</th>
-                <th>Fecha de compra</th>
+                <th style={{ minWidth: "156px" }}>Fecha de compra</th>
                 <th></th>
               </tr>
             </thead>

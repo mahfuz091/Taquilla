@@ -35,8 +35,8 @@ const Facturas = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-          ? "#E6F0FF"
-          : "white",
+        ? "#E6F0FF"
+        : "white",
     }),
   };
   const defaultOption = options[0];
@@ -44,15 +44,12 @@ const Facturas = () => {
     console.log("Selected value:", selectedOption.value);
   };
 
-
-
   return (
     <div className='facturas main-container'>
       <div className='facturas-header'>
         <h4>Facturas</h4>
         <p>
-          Consulta las facturas de gastos derivados.
-          de la venta de tus eventos
+          Consulta las facturas de gastos derivados. de la venta de tus eventos
         </p>
       </div>
       <div className='facturas-container'>
@@ -133,9 +130,9 @@ const Facturas = () => {
             <thead>
               <tr>
                 <th>Sin factura</th>
-                <th>Fecha</th>
-                <th>Evento</th>
-                <th>Cantidad</th>
+                <th style={{ minWidth: "125px" }}>Fecha</th>
+                <th style={{ minWidth: "170px" }}>Evento</th>
+                <th style={{ minWidth: "102px" }}>Cantidad</th>
                 <th>Estado</th>
                 <th></th>
               </tr>

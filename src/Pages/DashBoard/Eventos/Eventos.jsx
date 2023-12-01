@@ -157,7 +157,7 @@ const Eventos = () => {
               <tr>
                 <th>Evento</th>
                 <th>Vendidas</th>
-                <th>Neto</th>
+                <th style={{ minWidth: "106px" }}>Neto</th>
                 <th>Fecha</th>
                 <th>Estado</th>
                 <th></th>
