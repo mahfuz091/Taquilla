@@ -7,7 +7,7 @@ const SingleEventoTD = ({ evento }) => {
     <tr>
       <td>
         <div className='flex'>
-          <img src={evento.image} alt='' />
+          <img className='evento-img' src={evento.image} alt='' />
           <div>
             <h6>{evento.name}</h6>
             <p>{evento.description}</p>
