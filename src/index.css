@@ -2131,6 +2131,10 @@ td {
   margin-left: 16px;
 }
 
+.tipo-de-btn-group button:last-child {
+  margin-top: 10px;
+}
+
 .tipo-de-btn-group button:hover {
   color: #fff;
   background: #9b65e4;
