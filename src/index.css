@@ -3031,7 +3031,7 @@ td {
 
 .row-line {
   position: absolute;
-  top: 106px;
+  top: 115px;
   left: 54px;
 }
 
@@ -3300,20 +3300,12 @@ td {
     top: 185px;
   }
 
-  .row-line {
-    height: 200px;
-  }
-
   .column-line-3 {
     top: 320px;
   }
 
   .column-line-4 {
     top: 375px;
-  }
-
-  .row-line-2 {
-    height: 345px;
   }
 }
 

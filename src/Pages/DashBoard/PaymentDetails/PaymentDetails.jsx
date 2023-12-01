@@ -2,7 +2,6 @@ import React from "react";
 import img1 from "../../../../public/images/img-1.png";
 
 const PaymentDetails = () => {
-
   return (
     <div className='payment-details main-container'>
       <p>
@@ -81,17 +80,17 @@ const PaymentDetails = () => {
                 className='row-line'
                 xmlns='http://www.w3.org/2000/svg'
                 width='2'
-                height='139'
+                height='120'
                 viewBox='0 0 2 139'
                 fill='none'
               >
                 <path d='M1 0L1.00001 139' stroke='#EEEEEE' />
               </svg>
-              <span className="column-line-1" ></span>
-              <span className="column-line-2" ></span>
-              <tr className="fourth-row">
-                <td >
-                  <div className="table-img">
+              <span className='column-line-1'></span>
+              <span className='column-line-2'></span>
+              <tr className='fourth-row'>
+                <td>
+                  <div className='table-img'>
                     <img
                       style={{ width: "52px", height: "52px" }}
                       src={img1}
@@ -117,11 +116,18 @@ const PaymentDetails = () => {
                 <td>32</td>
                 <td>16.00€</td>
               </tr>
-              <svg className="row-line-2" xmlns="http://www.w3.org/2000/svg" width="2" height="149" viewBox="0 0 2 149" fill="none">
-                <path d="M1 0L1.00001 149" stroke="white" />
+              <svg
+                className='row-line-2'
+                xmlns='http://www.w3.org/2000/svg'
+                width='2'
+                height='120'
+                viewBox='0 0 2 149'
+                fill='none'
+              >
+                <path d='M1 0L1.00001 149' stroke='white' />
               </svg>
-              <span className="column-line-3" ></span>
-              <span className="column-line-4" ></span>
+              <span className='column-line-3'></span>
+              <span className='column-line-4'></span>
             </tbody>
           </table>
         </div>
