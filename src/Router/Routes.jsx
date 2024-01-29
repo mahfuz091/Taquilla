@@ -5,14 +5,18 @@ import CreateEvent from "../Pages/DashBoard/Eventos/CreateEvent/CreateEvent";
 import SingleEvento from "../Pages/DashBoard/SingleEvento/SingleEvento";
 import EditarEvento from "../Pages/DashBoard/EditarEvento/EditarEvento";
 import EditarTicket from "../Pages/DashBoard/EditarTicket/EditarTicket";
-import Pedidos from "../Pages/DashBoard/Pedidos/Pedidos";
+
 import DetallesDelBoleto from "../Pages/DashBoard/DetallesDelBoleto/DetallesDelBoleto";
 import Pagado from "../Pages/DashBoard/Finanzas/Pagado/Pagado";
 import Facturas from "../Pages/DashBoard/Finanzas/Facturas/Facturas";
 import Fiscal from "../Pages/DashBoard/Finanzas/Fiscal/Fiscal";
 import Cuenta from "../Pages/DashBoard/Finanzas/Cuenta/Cuenta";
-import Informes from "../Pages/DashBoard/Informes/Informes";
+// import Informes from "../Pages/DashBoard/Informes/Informes";
 import PaymentDetails from "../Pages/DashBoard/PaymentDetails/PaymentDetails";
+import Compras from "../Pages/DashBoard/Compras/Compras";
+import Acceso from "../Pages/DashBoard/Informes/Acceso/Acceso";
+import Ventas from "../Pages/DashBoard/Informes/Ventas/Ventas";
+import Trafico from "../Pages/DashBoard/Informes/Trafico/Trafico";
 
 export const router = createBrowserRouter([
   {
@@ -53,17 +57,25 @@ export const router = createBrowserRouter([
         element: <EditarTicket></EditarTicket>,
       },
       {
-        path: "pedidos",
-        element: <Pedidos></Pedidos>,
+        path: "compras",
+        element: <Compras />,
       },
 
       {
-        path: "pedidos/detallesboleto",
+        path: "compras/detallesboleto",
         element: <DetallesDelBoleto></DetallesDelBoleto>,
       },
       {
-        path: "informes",
-        element: <Informes></Informes>,
+        path: "informes/acceso",
+        element: <Acceso />,
+      },
+      {
+        path: "informes/ventas",
+        element: <Ventas />,
+      },
+      {
+        path: "informes/trafico",
+        element: <Trafico />,
       },
 
       {

@@ -55,7 +55,7 @@ th {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 254px 1fr 1fr 1fr;
+  grid-template-columns: 285px 1fr 1fr 1fr;
   grid-template-rows: 0fr 3fr;
   grid-template-areas:
     "header header header header"
@@ -550,7 +550,8 @@ td {
   width: 92px;
 }
 
-.eventos-table .neto {
+.eventos-table .neto,
+.acceso-table .neto {
   color: #1b212d;
   font-family: Poppins;
   font-size: 14px;
@@ -559,8 +560,12 @@ td {
   line-height: normal;
   width: max-content !important;
 }
+.acceso-table .neto {
+  padding-left: 70px !important;
+}
 
-.eventos-table .date {
+.eventos-table .date,
+.acceso-table .date {
   color: #1b212d;
   font-family: Poppins;
   font-size: 14px;
@@ -569,7 +574,8 @@ td {
   line-height: normal;
 }
 
-.eventos-table .time {
+.eventos-table .time,
+.acceso-table .time {
   color: #757575;
   font-family: Poppins;
   font-size: 12px;
@@ -578,7 +584,8 @@ td {
   line-height: normal;
 }
 
-.eventos-table .estado-inactive {
+.eventos-table .estado-inactive,
+.acceso-table .estado-inactive {
   color: #e41616;
   font-family: Poppins;
   font-size: 14px;
@@ -587,7 +594,8 @@ td {
   line-height: normal;
 }
 
-.eventos-table .estado-active {
+.eventos-table .estado-active,
+.acceso-table .estado-active {
   color: #4aad31;
   font-family: Poppins;
   font-size: 14px;
@@ -600,7 +608,8 @@ td {
   text-align: right;
 }
 
-.eventos-table tbody tr:nth-child(even) {
+.eventos-table tbody tr:nth-child(even),
+.acceso-table tbody tr:nth-child(even) {
   border-radius: 5px;
   background: rgba(87, 118, 242, 0.08);
 }
@@ -3276,6 +3285,245 @@ td {
   margin-top: -6px;
 }
 
+.collapse {
+  margin-bottom: 14px;
+}
+
+/* Acceso */
+
+.acceso {
+  margin: 30px 30px 0 30px;
+}
+
+.acceso-header {
+  background-image: url("./assets/images/acceso-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 40px 37px;
+}
+
+@media (min-width: 1536px) {
+  .acceso-header {
+    padding: 70px 37px;
+  }
+}
+
+.acceso-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.acceso-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 300px;
+  margin-top: 10px;
+}
+.acceso-table table {
+  width: 100%;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+.acceso-table table thead {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+.acceso-table table th,
+td {
+  padding: 15px 21px !important;
+}
+
+.acceso-table table th {
+  text-align: left;
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.acceso-table table td h6 {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: max-content;
+}
+
+.acceso-table table td p {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: max-content;
+}
+
+/* Ventas */
+
+.ventas {
+  margin: 30px 30px 0 30px;
+}
+
+.ventas-header {
+  background-image: url("./assets/images/ventas-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 40px 37px;
+}
+
+@media (min-width: 1536px) {
+  .ventas-header {
+    padding: 70px 37px;
+  }
+}
+
+.ventas-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.ventas-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 440px;
+  margin-top: 10px;
+}
+.ventas-table table {
+  width: 100%;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+.ventas-table table thead {
+  border-radius: 5px;
+  background: rgba(87, 118, 242, 0.08);
+}
+
+.ventas-table table th,
+td {
+  padding: 15px 21px !important;
+}
+
+.ventas-table table th {
+  text-align: left;
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ventas-table table td h6 {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: max-content;
+}
+
+.ventas-table table td p {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: max-content;
+}
+
+/* Trafico */
+.trafico {
+  margin: 30px 30px 0 30px;
+}
+
+.trafico-header {
+  background-image: url("./assets/images/trafico-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 40px 37px;
+}
+
+@media (min-width: 1536px) {
+  .trafico-header {
+    padding: 70px 37px;
+  }
+}
+
+.trafico-header h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.trafico-header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 452px;
+  margin-top: 10px;
+}
+.trafico-table .visitantes {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.trafico-table .compras {
+  color: #1b212d;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 /* Responsive Css */
 
 @media (max-width: 440px) {
@@ -3288,7 +3536,8 @@ td {
 @media (max-width: 575px) {
   .eventos-header p,
   .pagado-header p,
-  .fiscal-header p {
+  .fiscal-header p,
+  .acceso-header p {
     width: 100%;
   }
 
@@ -3500,6 +3749,18 @@ td {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.progress {
+  padding: 3px;
+  height: 21px;
+  border-radius: 100px;
+  border: 1px solid #9b65e4;
+  background: white;
+}
+.progress-bar {
+  border-radius: 100px;
+  background: #9b65e4;
 }
 
 /* chart */

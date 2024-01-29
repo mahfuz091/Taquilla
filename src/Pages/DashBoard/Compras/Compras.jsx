@@ -13,7 +13,7 @@ const options2 = [
   { value: "Más recientes", label: "Ordenar por" },
 ];
 
-const Pedidos = () => {
+const Compras = () => {
   const [pedidos, setPedidos] = useState([]);
   useEffect(() => {
     fetch("/pedidos.json")
@@ -274,4 +274,4 @@ const Pedidos = () => {
   );
 };
 
-export default Pedidos;
+export default Compras;
