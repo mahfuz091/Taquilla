@@ -13,11 +13,55 @@ import {
   PieChart,
   Pie,
 } from "recharts";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 const piData = [
   { name: "Group A", value: 123 },
   { name: "Group B", value: 234 },
   { name: "Group C", value: 143 },
   { name: "Group D", value: 45 },
+];
+const data = [
+  {
+    name: "00.00",
+    uv: 40,
+  },
+  {
+    name: "01.00",
+    uv: 20,
+  },
+  {
+    name: "02.00",
+    uv: 30,
+  },
+  {
+    name: "03.00",
+    uv: 10,
+  },
+  {
+    name: "04.00",
+    uv: 18,
+  },
+  {
+    name: "05.00",
+    uv: 23,
+  },
+  {
+    name: "06.00",
+    uv: 34,
+  },
+  {
+    name: "07.00",
+    uv: 38,
+  },
+  {
+    name: "08.00",
+    uv: 34,
+  },
+  {
+    name: "09.00",
+    uv: 20,
+  },
 ];
 
 const COLORS = ["#9B65E4", "#FFD047", "#E4579A", "#4691FF"];
@@ -203,7 +247,44 @@ const TraficoDashBoard = () => {
         </Row>
         <div className='trafico-y-ventas-container'>
           <Row>
-            <Col xl={8}></Col>
+            <Col xl={8}>
+              <div>
+                <h4>Tráfico y ventas por días</h4>
+                <form action=''>
+                  <div className='form-group'>
+                    <label htmlFor=''>Desde</label>
+                    <DatePicker
+                      className='date-picker'
+                      //   selected={selectedDateTime}
+                      //   onChange={handleDateTimeChange}
+
+                      dateFormat='d MMM yyyy'
+                      //   timeCaption='Time'
+                      placeholderText='23.12.2024'
+                    />
+                  </div>
+                  <div className='form-group'>
+                    <label htmlFor=''>Hasta</label>
+                    <DatePicker
+                      className='date-picker'
+                      //   selected={selectedDateTime}
+                      //   onChange={handleDateTimeChange}
+
+                      dateFormat='d MMM yyyy'
+                      //   timeCaption='Time'
+                      placeholderText='23.12.2024'
+                    />
+                  </div>
+                </form>
+                <div className='chart'>
+                  <BarChart width={680} height={225} data={data}>
+                    <XAxis dataKey='name' />
+                    <YAxis></YAxis>
+                    <Bar width={35} dataKey='uv' fill='#9B65E4' />
+                  </BarChart>
+                </div>
+              </div>
+            </Col>
             <Col xl={4}>
               <div className='trafico-y-ventas-right'>
                 <h4>18 Noviembre 2024</h4>
@@ -216,6 +297,25 @@ const TraficoDashBoard = () => {
                 <div className='d-flex justify-content-between entradas'>
                   <h5>Entradas vendidas</h5>
                   <p>123</p>
+                </div>
+                <div className='fuente'>
+                  <h5>Fuente del tráfico</h5>
+                  <p>
+                    <span>Web de Taquilla Central</span>
+                    <span>234</span>
+                  </p>
+                  <p>
+                    <span>Iframe en página externa</span>
+                    <span>567</span>
+                  </p>
+                  <p>
+                    <span>Links de referidos</span>
+                    <span>23</span>
+                  </p>
+                  <p>
+                    <span>Campañas de publicidad</span>
+                    <span>457</span>
+                  </p>
                 </div>
               </div>
             </Col>

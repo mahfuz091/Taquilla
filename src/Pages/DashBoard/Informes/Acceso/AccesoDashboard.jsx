@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Col, Row } from "react-bootstrap";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -98,9 +98,29 @@ const data = [
     uv: 20,
   },
 ];
+const horizontalData = [
+  { name: "18 años", value: 56 },
+  { name: "17 años", value: 20 },
+  { name: "16 años", value: 16 },
+  { name: "15 años", value: 10 },
+  { name: "14 años", value: 7 },
+];
+const CustomizedLabel = ({ x, y, fill, value }) => (
+  <text
+    x={x}
+    y={y}
+    fontSize='16'
+    fontFamily='sans-serif'
+    fill={fill}
+    textAnchor='start'
+  >
+    {value}%
+  </text>
+);
 
 const AccesoDashboard = () => {
   const percentage = 40;
+
   return (
     <div className='main-container detallesboleto'>
       <p>
@@ -228,6 +248,12 @@ const AccesoDashboard = () => {
               </div>
               <div className='edad'>
                 <h6>Edad</h6>
+                <div className=''>
+                  <img
+                    src='../../../../src/assets/images/horizontalBar.png'
+                    alt=''
+                  />
+                </div>
               </div>
             </div>
           </Col>
