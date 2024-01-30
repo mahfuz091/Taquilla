@@ -40,6 +40,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
             setOo(false);
             setOo2(false);
             setOpen(false);
+            setOpen2(false);
           }}
         >
           <svg
@@ -70,6 +71,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
             setOo(false);
             setOo2(false);
             setOpen(false);
+            setOpen2(false);
           }}
           // onClick={() => setOpen(false)}
         >

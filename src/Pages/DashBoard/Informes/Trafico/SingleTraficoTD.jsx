@@ -6,19 +6,21 @@ import { Link } from "react-router-dom";
 const SingleTraficoTD = ({ evento }) => {
   return (
     <tr>
-      <td>
-        <div className='flex'>
-          <img className='evento-img' src={evento.image} alt='' />
-          <div>
-            <h6>{evento.name}</h6>
-            {/* <p>{evento.description}</p>
+      <Link to='dashboard'>
+        <td>
+          <div className='flex'>
+            <img className='evento-img' src={evento.image} alt='' />
+            <div>
+              <h6>{evento.name}</h6>
+              {/* <p>{evento.description}</p>
             <p className='location'>
               {" "}
               <img src={location} alt='' /> {evento.location}
             </p> */}
+            </div>
           </div>
-        </div>
-      </td>
+        </td>
+      </Link>
       <td>
         <p className='date'>{evento.date}</p>
         <p className='time'>at {evento.time}</p>

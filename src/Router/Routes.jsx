@@ -17,6 +17,8 @@ import Compras from "../Pages/DashBoard/Compras/Compras";
 import Acceso from "../Pages/DashBoard/Informes/Acceso/Acceso";
 import Ventas from "../Pages/DashBoard/Informes/Ventas/Ventas";
 import Trafico from "../Pages/DashBoard/Informes/Trafico/Trafico";
+import AccesoDashboard from "../Pages/DashBoard/Informes/Acceso/AccesoDashboard";
+import TraficoDashBoard from "../Pages/DashBoard/Informes/Trafico/TraficoDashBoard";
 
 export const router = createBrowserRouter([
   {
@@ -70,12 +72,20 @@ export const router = createBrowserRouter([
         element: <Acceso />,
       },
       {
+        path: "informes/acceso/dashboard",
+        element: <AccesoDashboard />,
+      },
+      {
         path: "informes/ventas",
         element: <Ventas />,
       },
       {
         path: "informes/trafico",
         element: <Trafico />,
+      },
+      {
+        path: "informes/trafico/dashboard",
+        element: <TraficoDashBoard />,
       },
 
       {

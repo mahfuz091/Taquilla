@@ -2404,13 +2404,13 @@ td {
 }
 
 .svg-open {
-  margin-left: 25px;
+  margin-left: auto;
   rotate: 180deg;
   transition: all 0.5s ease-in-out;
 }
 
 .svg-close {
-  margin-left: 25px;
+  margin-left: auto;
   transition: all 0.5s ease-in-out;
 }
 
@@ -3377,7 +3377,134 @@ td {
   line-height: normal;
   width: max-content;
 }
+.acceso-dashboard-container {
+  margin-top: 32px;
+}
 
+.acceso-dashboard-container .accesos-hora {
+  background: #fff;
+  filter: drop-shadow(10px 12px 60px rgba(0, 0, 0, 0.08));
+  border-radius: 16px;
+  padding: 25px 25px 28px 20px;
+}
+.acceso-dashboard-container .accesos-hora > h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 118.182% */
+  text-transform: capitalize;
+}
+
+.acceso-dashboard-container .acceso-totales {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+}
+.acceso-dashboard-container .acceso-totales > h5 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 118.182% */
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+
+.acceso-dashboard-container .acceso-totales > p {
+  color: #222;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.acceso-dashboard-container .acceso-card {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.acceso-dashboard-container .acceso-card > h6 {
+  color: #222;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.acceso-dashboard-container .acceso-card:first-child > p {
+  color: #777;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  text-transform: capitalize;
+  padding-left: 8px;
+  border-left: 2px solid #4aad31;
+  margin-top: 4px;
+}
+.acceso-dashboard-container .acceso-card:last-child > p {
+  color: #777;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  text-transform: capitalize;
+  padding-left: 8px;
+  border-left: 2px solid #db0000;
+  margin-top: 4px;
+}
+
+.acceso-dashboard-container .sexo-edad {
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  border-radius: 16px 0px 0px 16px;
+  background: #fff;
+}
+.acceso-dashboard-container .sexo-edad h6 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 118.182% */
+  text-transform: capitalize;
+}
+.acceso-dashboard-container .sexo-edad .sexo {
+  border-right: 1px dashed #eee;
+  padding-right: 48px;
+}
+.acceso-dashboard-container .sexo-edad .edad {
+  padding-left: 32px;
+}
+.pichart-des {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.pichart-des p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15.046px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.57px; /* 150% */
+}
 /* Ventas */
 
 .ventas {
@@ -3522,6 +3649,148 @@ td {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.trafico-dashboard-container {
+  margin-top: 32px;
+}
+.trafico-dashboard-container .row {
+  --bs-gutter-x: 30px;
+}
+
+.trafico-dashboard-container .trafico-card {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
+  padding: 50px 90px 40px 25px;
+}
+.trafico-dashboard-container .trafico-card h6 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 118.182% */
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.trafico-dashboard-container .trafico-card p {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.trafico-dashboard-container .row .col-xl-8 .row {
+  --bs-gutter-y: 30px;
+  --bs-gutter-x: 30px;
+}
+
+.trafico-dashboard-container .fuente-card {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+}
+.trafico-dashboard-container .fuente-card h6 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 118.182% */
+  text-transform: capitalize;
+  /* margin-bottom: 14px; */
+}
+
+.trafico-dashboard-container .fuente-card .pi-card {
+  padding: 12px 8px 2px 10px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background: #fff;
+}
+.trafico-dashboard-container .fuente-card p:first-child {
+  display: flex;
+  gap: 6px;
+  color: #222;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  text-transform: capitalize;
+}
+.trafico-dashboard-container .fuente-card p:last-child {
+  color: #222;
+
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  /* margin-top: 10px; */
+  margin-left: 18px;
+}
+.trafico-dashboard-container .fuente-card .row {
+  --bs-gutter-y: 10px;
+  --bs-gutter-x: 10px;
+}
+
+.trafico-y-ventas-container {
+  padding: 25px 20px;
+  background: #fff;
+  border-radius: 16px;
+  filter: drop-shadow(4px 6px 60px rgba(0, 0, 0, 0.07));
+  margin-top: 30px;
+}
+.trafico-y-ventas-right {
+  padding: 20px 20px 41px 20px;
+  border-radius: 16px;
+  background: #f2f4fe;
+}
+.trafico-y-ventas-right h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dbdade;
+}
+.trafico-y-ventas-right .visitas h5,
+.trafico-y-ventas-right .entradas h5 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+  text-transform: capitalize;
+}
+
+.trafico-y-ventas-right .visitas,
+.trafico-y-ventas-right .entradas {
+  margin-top: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dbdade;
+}
+
+.trafico-y-ventas-right .visitas p,
+.trafico-y-ventas-right .entradas p {
+  color: #000;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  text-transform: capitalize;
 }
 
 /* Responsive Css */
@@ -3763,6 +4032,13 @@ td {
   background: #9b65e4;
 }
 
+.accesos-hora .chart {
+  margin-top: 96px;
+}
+.accesos-hora .chart .recharts-layer .recharts-bar-rectangle {
+  padding-right: 40px !important;
+}
+
 /* chart */
 .recharts-layer .recharts-bar-rectangle {
   padding-right: 23px !important;
@@ -3774,4 +4050,12 @@ td {
 
 .recharts-cartesian-axis-tick-line {
   display: none;
+}
+
+.recharts-layer.recharts-bar-rectangle path {
+  width: 20px !important;
+}
+.sexo-edad .recharts-surface,
+.fuente-card .recharts-surface {
+  rotate: -55deg;
 }
