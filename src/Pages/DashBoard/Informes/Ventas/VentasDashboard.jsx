@@ -359,7 +359,7 @@ const VentasDashboard = () => {
                 <tr>
                   <th>Evento</th>
 
-                  <th style={{ minWidth: "160px" }}>Vendidas/Totals</th>
+                  <th style={{ minWidth: "250px" }}>Vendidas/Totals</th>
                   <th style={{ textAlign: "right", minWidth: "146px" }}>
                     Neto
                   </th>

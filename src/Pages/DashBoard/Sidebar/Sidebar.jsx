@@ -317,21 +317,11 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
         </Collapse>
 
         <a
-          // to='f'
-          //   className={
-          //     isDropdownOpen
-          //       ? "sidebar-list-item sidebar-list-item-active finanzas-active"
-          //       : "sidebar-list-item"
-          //   }
           className={
             oo
               ? "sidebar-list-item sidebar-list-item-active finanzas-active"
               : "sidebar-list-item"
           }
-          // onClick={() => {
-          //   () => setOpen(!open);
-          //   () => toggleDropdown();
-          // }}
           onClick={() => setOpen(!open)}
           aria-controls='example-collapse-text'
           aria-expanded={open}

@@ -619,6 +619,10 @@ td {
   border-radius: 5px;
   background: rgba(87, 118, 242, 0.08);
 }
+.acceso-table tbody tr:nth-child(even) td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 
 .estado-inactive-bg {
   border-radius: 5px;
@@ -3632,11 +3636,15 @@ td {
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+.ventas-dashboard-table .evento-img {
+  width: 75px;
+  height: 72px;
+}
 
 .progress-label {
   position: absolute;
-  top: 33px;
-  right: 77px;
+  top: 42px;
+  right: 100px;
   color: #9b65e4 !important;
 
   font-family: Poppins !important;
@@ -3716,6 +3724,7 @@ td {
 }
 .trafico-dashboard-container {
   margin-top: 32px;
+  background: #f9fafe;
 }
 .trafico-dashboard-container .row {
   --bs-gutter-x: 30px;
