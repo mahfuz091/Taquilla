@@ -4,7 +4,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
       <div>
-        <h4>Tooltip</h4>
+        <img src='../../../../src/assets/images/tooltip.png' alt='' />
       </div>
     );
   }

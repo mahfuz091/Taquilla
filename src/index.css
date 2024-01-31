@@ -47,11 +47,11 @@ th {
   width: max-content;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .row .col-xl-6:last-child {
     margin-top: 15px;
   }
-}
+} */
 
 .grid-container {
   display: grid;
@@ -545,11 +545,17 @@ td {
   font-weight: 500;
   line-height: normal;
 }
+.flex-1 {
+  flex: 1;
+}
 
 .eventos-table .vendiadas hr {
   width: 92px;
 }
-
+.acceso-table .evento-img {
+  width: 52px;
+  height: 52px;
+}
 .eventos-table .neto,
 .acceso-table .neto {
   color: #1b212d;
@@ -824,7 +830,7 @@ tr:first-child th:last-child {
   text-transform: capitalize;
 }
 
-.react-datepicker-wrapper {
+.create-event-container .react-datepicker-wrapper {
   width: 100%;
 }
 
@@ -3379,6 +3385,7 @@ td {
 }
 .acceso-dashboard-container {
   margin-top: 32px;
+  background: #f9fafe;
 }
 
 .acceso-dashboard-container .accesos-hora {
@@ -3386,6 +3393,7 @@ td {
   filter: drop-shadow(10px 12px 60px rgba(0, 0, 0, 0.08));
   border-radius: 16px;
   padding: 25px 25px 28px 20px;
+  margin-top: 30px;
 }
 .acceso-dashboard-container .accesos-hora > h4 {
   color: #180e2c;
@@ -3399,7 +3407,7 @@ td {
 
 .acceso-dashboard-container .acceso-totales {
   padding: 20px;
-  margin-bottom: 30px;
+
   border-radius: 16px;
 }
 .acceso-dashboard-container .acceso-totales > h5 {
@@ -3464,7 +3472,9 @@ td {
   border-left: 2px solid #db0000;
   margin-top: 4px;
 }
-
+.acceso-card.ventas-card p {
+  border-left: 2px solid #4aad31 !important;
+}
 .acceso-dashboard-container .sexo-edad {
   padding: 20px 20px 40px 20px;
   display: flex;
@@ -3483,6 +3493,11 @@ td {
 .acceso-dashboard-container .sexo-edad .sexo {
   border-right: 1px dashed #eee;
   padding-right: 48px;
+}
+
+.acceso-dashboard-container .sexo-edad .sexo .recharts-wrapper {
+  width: 224px !important;
+  height: 224px !important;
 }
 .acceso-dashboard-container .sexo-edad .edad {
   padding-left: 32px;
@@ -3596,6 +3611,27 @@ td {
   line-height: normal;
   width: max-content;
 }
+.ventas-hora-title {
+  margin-bottom: 50px;
+}
+
+.ventas-entrada-container {
+  padding: 20px;
+  margin-top: 30px;
+  background: #fff;
+  border-radius: 16px;
+  filter: drop-shadow(4px 6px 60px rgba(0, 0, 0, 0.07));
+}
+.ventas-entrada-container h4 {
+  color: #180e2c;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 118.182% */
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
 
 /* Trafico */
 .trafico {
@@ -3637,6 +3673,10 @@ td {
   width: 452px;
   margin-top: 10px;
 }
+.trafico-table .evento-img {
+  width: 52px;
+  height: 52px;
+}
 .trafico-table .visitantes {
   color: #1b212d;
   font-family: Poppins;
@@ -3658,6 +3698,7 @@ td {
 }
 .trafico-dashboard-container .row {
   --bs-gutter-x: 30px;
+  --bs-gutter-y: 30px;
 }
 
 .trafico-dashboard-container .trafico-card {

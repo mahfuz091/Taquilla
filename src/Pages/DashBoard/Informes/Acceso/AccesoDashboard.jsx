@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { Col, Row } from "react-bootstrap";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import leftArrow from "../../../../assets/images/leftarrow.png";
 import {
   BarChart,
   Bar,
@@ -124,27 +125,13 @@ const AccesoDashboard = () => {
   return (
     <div className='main-container detallesboleto'>
       <p>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='26'
-          height='27'
-          viewBox='0 0 26 27'
-          fill='none'
-        >
-          <path
-            d='M16.5732 21.3918L8.68145 13.5L16.5732 5.60818'
-            stroke='black'
-            stroke-width='2.10448'
-            stroke-linecap='round'
-            stroke-linejoin='round'
-          />
-        </svg>
+        <img src={leftArrow} alt='' />
         Atrás
       </p>
       <div className='acceso-dashboard-container'>
         <Row>
           <Col xl={4}>
-            <div className='bg-white acceso-totales'>
+            <div className='bg-white acceso-totales h-100'>
               <h5>Accesos totales</h5>
               <div className='mx-auto' style={{ width: 137, height: 137 }}>
                 <CircularProgressbar
@@ -185,11 +172,15 @@ const AccesoDashboard = () => {
             </div>
           </Col>
           <Col xl={8}>
-            <div className='sexo-edad'>
+            <div className='sexo-edad h-100'>
               <div className='sexo'>
                 <h6>Sexo</h6>
 
-                <PieChart width={292} height={292}>
+                <PieChart
+                  width={170}
+                  height={170}
+                  style={{ margin: "29px auto 47px" }}
+                >
                   <Pie
                     data={piData}
                     cx='50%'

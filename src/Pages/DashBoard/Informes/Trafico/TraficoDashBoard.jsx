@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import leftArrow from "../../../../assets/images/leftarrow.png";
 import {
   BarChart,
   Bar,
@@ -96,21 +97,7 @@ const TraficoDashBoard = () => {
   return (
     <div className='main-container detallesboleto'>
       <p>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='26'
-          height='27'
-          viewBox='0 0 26 27'
-          fill='none'
-        >
-          <path
-            d='M16.5732 21.3918L8.68145 13.5L16.5732 5.60818'
-            stroke='black'
-            stroke-width='2.10448'
-            stroke-linecap='round'
-            stroke-linejoin='round'
-          />
-        </svg>
+        <img src={leftArrow} alt='' />
         Atrás
       </p>
       <div className='trafico-dashboard-container'>
@@ -125,20 +112,20 @@ const TraficoDashBoard = () => {
               </Col>
               <Col xl={6}>
                 <div className='trafico-card'>
-                  <h6>Visitas a la página</h6>
-                  <p>12k</p>
+                  <h6>Compras realizadas</h6>
+                  <p>7k</p>
                 </div>
               </Col>
               <Col xl={6}>
                 <div className='trafico-card'>
-                  <h6>Visitas a la página</h6>
-                  <p>12k</p>
+                  <h6>Entradas vendidas</h6>
+                  <p>600</p>
                 </div>
               </Col>
               <Col xl={6}>
                 <div className='trafico-card'>
-                  <h6>Visitas a la página</h6>
-                  <p>12k</p>
+                  <h6>Tasa de conversión</h6>
+                  <p>70%</p>
                 </div>
               </Col>
             </Row>
@@ -276,7 +263,7 @@ const TraficoDashBoard = () => {
                     />
                   </div>
                 </form>
-                <div className='chart'>
+                <div className='chart overflow-x-auto'>
                   <BarChart width={680} height={225} data={data}>
                     <XAxis dataKey='name' />
                     <YAxis></YAxis>

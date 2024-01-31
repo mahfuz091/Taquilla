@@ -19,6 +19,7 @@ import Ventas from "../Pages/DashBoard/Informes/Ventas/Ventas";
 import Trafico from "../Pages/DashBoard/Informes/Trafico/Trafico";
 import AccesoDashboard from "../Pages/DashBoard/Informes/Acceso/AccesoDashboard";
 import TraficoDashBoard from "../Pages/DashBoard/Informes/Trafico/TraficoDashBoard";
+import VentasDashboard from "../Pages/DashBoard/Informes/Ventas/VentasDashboard";
 
 export const router = createBrowserRouter([
   {
@@ -78,6 +79,10 @@ export const router = createBrowserRouter([
       {
         path: "informes/ventas",
         element: <Ventas />,
+      },
+      {
+        path: "informes/ventas/dashboard",
+        element: <VentasDashboard></VentasDashboard>,
       },
       {
         path: "informes/trafico",
