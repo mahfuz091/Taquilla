@@ -3633,6 +3633,27 @@ td {
   margin-bottom: 20px;
 }
 
+.progress-label {
+  position: absolute;
+  top: 33px;
+  right: 77px;
+  color: #9b65e4 !important;
+
+  font-family: Poppins !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.progress-label2 {
+  color: #1b212d !important;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+}
+
 /* Trafico */
 .trafico {
   margin: 30px 30px 0 30px;
@@ -3705,7 +3726,7 @@ td {
   border-radius: 16px;
   background: #fff;
   box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
-  padding: 50px 90px 40px 25px;
+  padding: 50px 68px 40px 25px;
 }
 .trafico-dashboard-container .trafico-card h6 {
   color: #180e2c;
@@ -3943,6 +3964,9 @@ td {
 
   .d-flex {
     flex-direction: column;
+  }
+  .ventas-dashboard-table .d-flex {
+    flex-direction: row;
   }
 
   .cuenta .note {

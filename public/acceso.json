@@ -12,7 +12,8 @@
         "time": "8:00 PM",
         "estado": "Abierto",
         "visitantes": "234",
-        "compras": "7317779G"
+        "compras": "7317779G",
+        "vendidas": "200"
         
       },
       
@@ -28,7 +29,8 @@
         "time": "8:00 PM",
         "estado": "Cerrado",
         "visitantes": "234",
-        "compras": "7317779G"
+        "compras": "7317779G",
+        "vendidas": "150"
         
       },
       
@@ -44,7 +46,8 @@
         "time": "8:00 PM",
         "estado": "Abierto",
         "visitantes": "234",
-        "compras": "7317779G"
+        "compras": "7317779G",
+        "vendidas": "300"
         
       },
       
@@ -60,7 +63,8 @@
         "time": "8:00 PM",
         "estado": "Cerrado",
         "visitantes": "234",
-        "compras": "7317779G"
+        "compras": "7317779G",
+        "vendidas": "200"
         
       },
       
@@ -76,7 +80,8 @@
         "time": "8:00 PM",
         "estado": "Abierto",
         "visitantes": "234",
-        "compras": "7317779G"
+        "compras": "7317779G",
+        "vendidas": "200"
         
       },
       

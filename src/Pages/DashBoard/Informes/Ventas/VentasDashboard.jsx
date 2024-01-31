@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import leftArrow from "../../../../assets/images/leftarrow.png";
 import { Col, Row } from "react-bootstrap";
 import { CircularProgressbar } from "react-circular-progressbar";
@@ -16,6 +16,7 @@ import {
   Pie,
 } from "recharts";
 import DatePicker from "react-datepicker";
+import SingleVentasDashboardTD from "./SingleVentasDashboardTD";
 
 const data = [
   {
@@ -98,6 +99,12 @@ const renderCustomizedLabel = ({
 };
 
 const VentasDashboard = () => {
+  const [eventos, setEventos] = useState([]);
+  useEffect(() => {
+    fetch("/acceso.json")
+      .then((response) => response.json())
+      .then((data) => setEventos(data));
+  }, []);
   const percentage = 40;
   return (
     <div className='main-container detallesboleto'>
@@ -346,6 +353,28 @@ const VentasDashboard = () => {
         </div>
         <div className='ventas-entrada-container'>
           <h4>Ventas por tipo de entrada</h4>
+          <div className='acceso-table ventas-dashboard-table table-responsive'>
+            <table>
+              <thead>
+                <tr>
+                  <th>Evento</th>
+
+                  <th style={{ minWidth: "160px" }}>Vendidas/Totals</th>
+                  <th style={{ textAlign: "right", minWidth: "146px" }}>
+                    Neto
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {eventos.slice(0, 4).map((evento) => (
+                  <SingleVentasDashboardTD
+                    key={evento.id}
+                    evento={evento}
+                  ></SingleVentasDashboardTD>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

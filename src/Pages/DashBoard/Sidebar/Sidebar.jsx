@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink, unstable_HistoryRouter, useLocation } from "react-router-dom";
 import Collapse from "react-bootstrap/Collapse";
 
 import arrow from "../../../assets/images/bxs_up-arrow.png";
@@ -15,6 +15,32 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  const location = useLocation();
+  // console.log(location);
+
+  useEffect(() => {
+    if (location) {
+      // Check if the current path includes "/finanzas/pagado"
+      const isPagadoPath = location.pathname.includes("/finanzas/pagado");
+      const isFacturasPath = location.pathname.includes("/finanzas/facturas");
+      const isFiscalPath = location.pathname.includes("/finanzas/fiscal");
+      const isCuentaPath = location.pathname.includes("/finanzas/cuenta");
+      const isVentasPath = location.pathname.includes("/informes/ventas");
+      const isAccesoPath = location.pathname.includes("/informes/acceso");
+      const istraficoPath = location.pathname.includes("/informes/trafico");
+      if (isPagadoPath || isFacturasPath || isFiscalPath || isCuentaPath) {
+        setOo(true);
+        setOpen(true);
+      }
+
+      if (istraficoPath || isVentasPath || isAccesoPath) {
+        setOo2(true);
+        setOpen2(true);
+      }
+
+      // Set the state based on the path check
+    }
+  }, [location]);
 
   return (
     <aside
