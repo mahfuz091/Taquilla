@@ -5,6 +5,7 @@ import CircularProgress from "../../../../assets/images/circularProgress.png";
 import "react-circular-progressbar/dist/styles.css";
 import leftArrow from "../../../../assets/images/leftarrow.png";
 import customTooltip from "../../../../assets/images/tooltip.png";
+import HorizontalBar from "../../../../assets/images/horizontalBar.png";
 import {
   BarChart,
   Bar,
@@ -243,10 +244,7 @@ const AccesoDashboard = () => {
               <div className='edad'>
                 <h6>Edad</h6>
                 <div className=''>
-                  <img
-                    src='../../../../src/assets/images/horizontalBar.png'
-                    alt=''
-                  />
+                  <img src={HorizontalBar} alt='' />
                 </div>
               </div>
             </div>
