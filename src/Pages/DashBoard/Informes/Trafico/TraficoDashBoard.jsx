@@ -104,25 +104,25 @@ const TraficoDashBoard = () => {
         <Row>
           <Col xl={8}>
             <Row>
-              <Col xl={6}>
+              <Col sm={6}>
                 <div className='trafico-card'>
                   <h6>Visitas a la página</h6>
                   <p>12k</p>
                 </div>
               </Col>
-              <Col xl={6}>
+              <Col sm={6}>
                 <div className='trafico-card'>
                   <h6>Compras realizadas</h6>
                   <p>7k</p>
                 </div>
               </Col>
-              <Col xl={6}>
+              <Col sm={6}>
                 <div className='trafico-card'>
                   <h6>Entradas vendidas</h6>
                   <p>600</p>
                 </div>
               </Col>
-              <Col xl={6}>
+              <Col sm={6}>
                 <div className='trafico-card'>
                   <h6>Tasa de conversión</h6>
                   <p>70%</p>
@@ -159,7 +159,7 @@ const TraficoDashBoard = () => {
               </div>
               <div>
                 <Row>
-                  <Col xl={6}>
+                  <Col sm={6}>
                     <div className='pi-card'>
                       <p>
                         <svg
@@ -176,7 +176,7 @@ const TraficoDashBoard = () => {
                       <p>123</p>
                     </div>
                   </Col>
-                  <Col xl={6}>
+                  <Col sm={6}>
                     <div className='pi-card'>
                       <p>
                         <svg
@@ -193,7 +193,7 @@ const TraficoDashBoard = () => {
                       <p>234</p>
                     </div>
                   </Col>
-                  <Col xl={6}>
+                  <Col sm={6}>
                     <div className='pi-card' style={{ height: "100%" }}>
                       <p>
                         <svg
@@ -210,7 +210,7 @@ const TraficoDashBoard = () => {
                       <p>45</p>
                     </div>
                   </Col>
-                  <Col xl={6}>
+                  <Col sm={6}>
                     <div className='pi-card'>
                       <p>
                         <svg
@@ -240,15 +240,17 @@ const TraficoDashBoard = () => {
                 <form action=''>
                   <div className='form-group'>
                     <label htmlFor=''>Desde</label>
-                    <DatePicker
-                      className='date-picker'
-                      //   selected={selectedDateTime}
-                      //   onChange={handleDateTimeChange}
+                    <div>
+                      <DatePicker
+                        className='date-picker'
+                        //   selected={selectedDateTime}
+                        //   onChange={handleDateTimeChange}
 
-                      dateFormat='d MMM yyyy'
-                      //   timeCaption='Time'
-                      placeholderText='23.12.2024'
-                    />
+                        dateFormat='d MMM yyyy'
+                        //   timeCaption='Time'
+                        placeholderText='23.12.2024'
+                      />
+                    </div>
                   </div>
                   <div className='form-group'>
                     <label htmlFor=''>Hasta</label>

@@ -231,17 +231,21 @@ const VentasDashboard = () => {
           <Row>
             <Col xl={8}>
               <div>
-                <div className='d-flex justify-content-between'>
+                <div
+                  className='trafico-y-ventas-header justify-content-between'
+                  style={{ marginBottom: "50px" }}
+                >
                   <h4 className='ventas-hora-title'>Ventas por hora</h4>
-                  <DatePicker
-                    className='date-picker'
-                    //   selected={selectedDateTime}
-                    //   onChange={handleDateTimeChange}
+                  <div>
+                    <DatePicker
+                      className='date-picker'
+                      //   selected={selectedDateTime}
+                      //   onChange={handleDateTimeChange}
 
-                    dateFormat='d MMM yyyy'
-                    //   timeCaption='Time'
-                    placeholderText='23.12.2024'
-                  />
+                      dateFormat='d MMM yyyy'
+                      placeholderText='23.12.2024'
+                    />
+                  </div>
                 </div>
 
                 <div className='chart overflow-x-auto'>
