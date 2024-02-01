@@ -535,6 +535,7 @@ td {
 .eventos-table table tr .evento-img {
   width: 52px;
   height: 52px;
+  border-radius: 5px;
 }
 
 .eventos-table .vendiadas {
@@ -555,6 +556,7 @@ td {
 .acceso-table .evento-img {
   width: 52px;
   height: 52px;
+  border-radius: 5px;
 }
 .eventos-table .neto,
 .acceso-table .neto {
@@ -3692,6 +3694,7 @@ td {
 .ventas-dashboard-table .evento-img {
   width: 75px;
   height: 72px;
+  border-radius: 5px;
 }
 
 .progress-label {
@@ -3762,6 +3765,7 @@ td {
 .trafico-table .evento-img {
   width: 52px;
   height: 52px;
+  border-radius: 5px;
 }
 .trafico-table .visitantes {
   color: #1b212d;
