@@ -194,7 +194,7 @@ const TraficoDashBoard = () => {
                     </div>
                   </Col>
                   <Col xl={6}>
-                    <div className='pi-card'>
+                    <div className='pi-card' style={{ height: "100%" }}>
                       <p>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'

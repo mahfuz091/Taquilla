@@ -143,12 +143,18 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
         </NavLink>
 
         <NavLink
-          to='/'
+          to='/marketing'
           className={({ isActive }) =>
             isActive
               ? "sidebar-list-item sidebar-list-item-active"
               : "sidebar-list-item"
           }
+          onClick={() => {
+            setOo(false);
+            setOo2(false);
+            setOpen(false);
+            setOpen2(false);
+          }}
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -481,12 +487,18 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           </div>
         </Collapse>
         <NavLink
-          to='/'
+          to='/ajustes'
           className={({ isActive }) =>
             isActive
               ? "sidebar-list-item sidebar-list-item-active"
               : "sidebar-list-item"
           }
+          onClick={() => {
+            setOo(false);
+            setOo2(false);
+            setOpen(false);
+            setOpen2(false);
+          }}
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -512,7 +524,20 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           </svg>
           Ajustes
         </NavLink>
-        <NavLink to='/' className='sidebar-list-item mt-112'>
+        <NavLink
+          to='/acortador'
+          className={({ isActive }) =>
+            isActive
+              ? "sidebar-list-item sidebar-list-item-active mt-112"
+              : "sidebar-list-item mt-112"
+          }
+          onClick={() => {
+            setOo(false);
+            setOo2(false);
+            setOpen(false);
+            setOpen2(false);
+          }}
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'
@@ -531,7 +556,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           </svg>
           Acortador URL
         </NavLink>
-        <NavLink to='/' className='sidebar-list-item'>
+        <NavLink to='/help' className='sidebar-list-item'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='24'

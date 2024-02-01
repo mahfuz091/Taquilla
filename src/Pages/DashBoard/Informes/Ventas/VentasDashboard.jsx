@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import leftArrow from "../../../../assets/images/leftarrow.png";
 import { Col, Row } from "react-bootstrap";
 import { CircularProgressbar } from "react-circular-progressbar";
+import CircularProgress from "./../../../../assets/images/circularProgress.png";
 import {
   BarChart,
   Bar,
@@ -112,37 +113,34 @@ const VentasDashboard = () => {
         <img src={leftArrow} alt='' />
         Atrás
       </p>
-      <div className='acceso-dashboard-container'>
+      <div className='acceso-dashboard-container ventas-dashboard-container'>
         <Row>
-          <Col xl={4}>
+          <Col xxl={4}>
             <div className='bg-white acceso-totales h-100'>
               <h5>Accesos totales</h5>
               <div className='mx-auto' style={{ width: 137, height: 137 }}>
-                <CircularProgressbar
+                {/* <CircularProgressbar
                   value={percentage}
                   text={`${percentage}%`}
                   styles={{
                     root: {},
                     path: {
-                      // Path color
                       stroke: "#9B65E4",
                     },
                     trail: {
-                      // Trail color
                       stroke: "##F1F1F1",
-                      // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
                     },
                     text: {
-                      // Text color
                       fill: "#192351",
-                      // Text size
+
                       fontSize: "16px",
                     },
                     background: {
                       fill: "red",
                     },
                   }}
-                />
+                /> */}
+                <img src={CircularProgress} alt='' />
               </div>
               <p className='text-center'>300/800</p>
               <div className='acceso-card ventas-card'>
@@ -151,7 +149,7 @@ const VentasDashboard = () => {
               </div>
             </div>
           </Col>
-          <Col xl={8}>
+          <Col xxl={8}>
             <div className='sexo-edad'>
               <div className='sexo'>
                 <h6>Sexo</h6>
@@ -359,7 +357,7 @@ const VentasDashboard = () => {
                 <tr>
                   <th>Evento</th>
 
-                  <th style={{ minWidth: "250px" }}>Vendidas/Totals</th>
+                  <th style={{ minWidth: "360px" }}>Vendidas/Totals</th>
                   <th style={{ textAlign: "right", minWidth: "146px" }}>
                     Neto
                   </th>

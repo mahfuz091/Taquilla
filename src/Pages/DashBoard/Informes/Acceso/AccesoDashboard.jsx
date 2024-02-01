@@ -1,8 +1,10 @@
 import React, { useMemo } from "react";
 import { Col, Row } from "react-bootstrap";
 import { CircularProgressbar } from "react-circular-progressbar";
+import CircularProgress from "../../../../assets/images/circularProgress.png";
 import "react-circular-progressbar/dist/styles.css";
 import leftArrow from "../../../../assets/images/leftarrow.png";
+import customTooltip from "../../../../assets/images/tooltip.png";
 import {
   BarChart,
   Bar,
@@ -64,11 +66,11 @@ const data = [
   },
   {
     name: "02.00",
-    uv: 30,
+    uv: 10,
   },
   {
     name: "03.00",
-    uv: 10,
+    uv: 30,
   },
   {
     name: "04.00",
@@ -134,31 +136,32 @@ const AccesoDashboard = () => {
             <div className='bg-white acceso-totales h-100'>
               <h5>Accesos totales</h5>
               <div className='mx-auto' style={{ width: 137, height: 137 }}>
-                <CircularProgressbar
+                {/* <CircularProgressbar
                   value={percentage}
                   text={`${percentage}%`}
                   styles={{
                     root: {},
                     path: {
-                      // Path color
+                      
                       stroke: "#9B65E4",
                     },
                     trail: {
-                      // Trail color
+                     
                       stroke: "##F1F1F1",
-                      // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                     
                     },
                     text: {
-                      // Text color
+                      
                       fill: "#192351",
-                      // Text size
+                      
                       fontSize: "16px",
                     },
                     background: {
                       fill: "red",
                     },
                   }}
-                />
+                /> */}
+                <img src={CircularProgress} alt='' />
               </div>
               <p className='text-center'>300/800</p>
               <div className='acceso-card'>
@@ -251,13 +254,14 @@ const AccesoDashboard = () => {
         </Row>
         <div className='bg-white accesos-hora'>
           <h4>Accesos por hora</h4>
-          <div className='chart overflow-x-auto'>
+          <div className='chart overflow-x-auto '>
             <BarChart width={1440} height={350} data={data} barCategoryGap={30}>
               <XAxis dataKey='name' />
               <YAxis></YAxis>
-              <Tooltip content={<CustomTooltip />} />
+
               <Bar width={35} dataKey='uv' fill='#9B65E4' />
             </BarChart>
+            <img className='tooltip-custom' src={customTooltip} alt='' />
           </div>
         </div>
       </div>

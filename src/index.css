@@ -3304,7 +3304,28 @@ td {
 .acceso {
   margin: 30px 30px 0 30px;
 }
+.tooltip-custom {
+  position: absolute;
+  top: 0;
+  left: 346px;
+  z-index: 9999999999999999999;
+}
+@media (max-width: 575px) {
+  .tooltip-custom {
+    top: 43px !important;
+    left: 30px !important;
 
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .tooltip-custom {
+    top: 0px;
+    left: 100px;
+
+    width: 50%;
+  }
+}
 .acceso-header {
   background-image: url("./assets/images/acceso-bg.png");
   background-position: center;
@@ -3391,6 +3412,10 @@ td {
   margin-top: 32px;
   background: #f9fafe;
 }
+.acceso-dashboard-container .row {
+  --bs-gutter-x: 22px;
+  --bs-gutter-y: 22px;
+}
 
 .acceso-dashboard-container .accesos-hora {
   background: #fff;
@@ -3405,7 +3430,7 @@ td {
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 118.182% */
+  line-height: 26px;
   text-transform: capitalize;
 }
 
@@ -3441,6 +3466,10 @@ td {
   border: 1px solid #eee;
   padding: 10px;
   margin-bottom: 10px;
+}
+.acceso-card.ventas-card {
+  padding: 22px 20px;
+  margin-top: 41px;
 }
 .acceso-dashboard-container .acceso-card > h6 {
   color: #222;
@@ -3496,7 +3525,7 @@ td {
 }
 .acceso-dashboard-container .sexo-edad .sexo {
   border-right: 1px dashed #eee;
-  padding-right: 48px;
+  padding-right: 18px;
 }
 
 .acceso-dashboard-container .sexo-edad .sexo .recharts-wrapper {
@@ -3661,6 +3690,10 @@ td {
   font-weight: 600 !important;
   line-height: normal;
 }
+.ventas-dashboard-container .row {
+  --bs-gutter-x: 22px;
+  --bs-gutter-y: 22px;
+}
 
 /* Trafico */
 .trafico {
@@ -3767,6 +3800,7 @@ td {
   background: #fff;
   box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
   padding: 20px;
+  height: 100%;
 }
 .trafico-dashboard-container .fuente-card h6 {
   color: #180e2c;
@@ -3787,9 +3821,9 @@ td {
   background: #fff;
 }
 @media (min-width: 1440px) {
-  .trafico-dashboard-container .fuente-card .pi-card p:first-child {
+  /* .trafico-dashboard-container .fuente-card .pi-card p:first-child {
     width: 120px;
-  }
+  } */
 }
 .trafico-dashboard-container .fuente-card p:first-child {
   display: flex;
@@ -3849,7 +3883,7 @@ td {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
   text-transform: capitalize;
 }
 
@@ -3937,7 +3971,9 @@ td {
   .eventos-header p,
   .pagado-header p,
   .fiscal-header p,
-  .acceso-header p {
+  .acceso-header p,
+  .ventas-header p,
+  .trafico-header p {
     width: 100%;
   }
 

@@ -12,11 +12,6 @@ const SingleVentasTD = ({ evento }) => {
             <img className='evento-img' src={evento.image} alt='' />
             <div>
               <h6>{evento.name}</h6>
-              {/* <p>{evento.description}</p>
-            <p className='location'>
-              {" "}
-              <img src={location} alt='' /> {evento.location}
-            </p> */}
             </div>
           </div>
         </td>

@@ -20,6 +20,9 @@ import Trafico from "../Pages/DashBoard/Informes/Trafico/Trafico";
 import AccesoDashboard from "../Pages/DashBoard/Informes/Acceso/AccesoDashboard";
 import TraficoDashBoard from "../Pages/DashBoard/Informes/Trafico/TraficoDashBoard";
 import VentasDashboard from "../Pages/DashBoard/Informes/Ventas/VentasDashboard";
+import Marketing from "../Pages/DashBoard/Marketing/Marketing";
+import Ajustes from "../Pages/DashBoard/Ajustes/Ajustes";
+import Acortador from "../Pages/DashBoard/Acortador/Acortador";
 
 export const router = createBrowserRouter([
   {
@@ -42,11 +45,10 @@ export const router = createBrowserRouter([
         path: "eventos/paymentDetails",
         element: <PaymentDetails></PaymentDetails>,
       },
-      // {
-      //   path: 'finanzas',
-      //   element: <Navigate to="/finanzas/pagado" ></Navigate>
-
-      // },
+      {
+        path: "marketing",
+        element: <Marketing />,
+      },
       {
         path: "eventos/singleEvento",
         element: <SingleEvento></SingleEvento>,
@@ -108,6 +110,14 @@ export const router = createBrowserRouter([
       {
         path: "finanzas/cuenta",
         element: <Cuenta></Cuenta>,
+      },
+      {
+        path: "ajustes",
+        element: <Ajustes />,
+      },
+      {
+        path: "acortador",
+        element: <Acortador />,
       },
     ],
   },
