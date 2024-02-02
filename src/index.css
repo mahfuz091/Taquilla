@@ -1803,7 +1803,6 @@ td {
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  /* 133.333% */
   width: 142px;
 }
 
@@ -2003,7 +2002,6 @@ td {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
   margin-bottom: 8px;
 }
 
@@ -2386,7 +2384,6 @@ td {
   align-items: center;
   gap: 8px;
   padding: 16px;
-
   color: #757575;
   font-family: Poppins;
   font-size: 14px;
@@ -2594,7 +2591,6 @@ td {
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
-  /* 150% */
   text-transform: capitalize;
 }
 
@@ -3320,7 +3316,6 @@ td {
   .tooltip-custom {
     top: 43px !important;
     left: 30px !important;
-
     width: 50%;
   }
 }
@@ -3328,7 +3323,6 @@ td {
   .tooltip-custom {
     top: 0px;
     left: 100px;
-
     width: 50%;
   }
 }
