@@ -1,5 +1,5 @@
 import React from "react";
-import threedot from "../../../assets/images/3-dot.svg";
+import eye from "../../../assets/images/eye-svgrepo-com.svg";
 import { Link } from "react-router-dom";
 
 const SinglePedidosTableRow = ({ pedido }) => {
@@ -19,8 +19,8 @@ const SinglePedidosTableRow = ({ pedido }) => {
         <p className='time'>{pedido.time}</p>
       </td>
       <td>
-        <Link to='detallesboleto'>
-          <img src={threedot} alt='' />
+        <Link to='detallesboleto' className='eye-btn'>
+          <img src={eye} alt='' />
         </Link>
       </td>
     </tr>

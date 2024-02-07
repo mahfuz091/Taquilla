@@ -145,9 +145,10 @@ const Ventas = () => {
             <thead>
               <tr>
                 <th>Evento</th>
-                <th>Fecha</th>
+                {/* <th>Fecha</th> */}
                 <th style={{ minWidth: "160px" }}>Ventas</th>
                 <th style={{ minWidth: "160px" }}>Total Recaudado</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>

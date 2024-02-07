@@ -145,9 +145,10 @@ const Trafico = () => {
             <thead>
               <tr>
                 <th>Evento</th>
-                <th>Fecha</th>
+                {/* <th>Fecha</th> */}
                 <th>Visitantes</th>
                 <th>Compras</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>

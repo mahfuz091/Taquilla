@@ -242,7 +242,7 @@ const TraficoDashBoard = () => {
                     <label htmlFor=''>Desde</label>
                     <div>
                       <DatePicker
-                        className='date-picker'
+                        className='date-picker-O'
                         //   selected={selectedDateTime}
                         //   onChange={handleDateTimeChange}
 
@@ -255,7 +255,7 @@ const TraficoDashBoard = () => {
                   <div className='form-group'>
                     <label htmlFor=''>Hasta</label>
                     <DatePicker
-                      className='date-picker'
+                      className='date-picker-O'
                       //   selected={selectedDateTime}
                       //   onChange={handleDateTimeChange}
 

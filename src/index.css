@@ -522,7 +522,8 @@ td {
   width: max-content;
 }
 
-.eventos-table table td .location {
+.eventos-table table td .location,
+.pagado-tr .location {
   color: #444;
   font-family: Poppins;
   font-size: 12px;
@@ -533,8 +534,8 @@ td {
   width: max-content;
 }
 .eventos-table table tr .evento-img {
-  width: 52px;
-  height: 52px;
+  width: 75px;
+  height: 75px;
   border-radius: 5px;
 }
 
@@ -552,10 +553,11 @@ td {
 
 .eventos-table .vendiadas hr {
   width: 92px;
+  margin: 0;
 }
 .acceso-table .evento-img {
-  width: 52px;
-  height: 52px;
+  width: 75px;
+  height: 75px;
   border-radius: 5px;
 }
 .eventos-table .neto,
@@ -576,14 +578,15 @@ td {
 .acceso-table .date {
   color: #1b212d;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 .eventos-table .time,
-.acceso-table .time {
+.acceso-table .time,
+.pagado-tr .time {
   color: #757575;
   font-family: Poppins;
   font-size: 12px;
@@ -1341,9 +1344,9 @@ input[type="radio"]:checked {
 
 .publicar-evento-container {
   margin-top: 30px;
-  padding: 30px 0px 30px 40px;
+  padding: 30px 30px 30px 40px;
   border-radius: 16px;
-  background: #f2f4fe;
+  background: #fff;
 }
 
 .publicar-evento-container h4 {
@@ -1409,7 +1412,7 @@ input[type="radio"]:checked {
 .eliminar-evento-container {
   padding: 30px 40px;
   border-radius: 16px;
-  background: rgba(255, 0, 0, 0.03);
+  background: #fff;
   margin-top: 30px;
 }
 
@@ -2273,9 +2276,9 @@ td {
   gap: 17px;
 }
 
-.pagado-table .evento img {
-  width: 52px;
-  height: 52px;
+.pagado-table .evento-img {
+  width: 75px;
+  height: 72px;
 }
 
 .pagado-table tr:nth-child(even) {
@@ -3376,7 +3379,7 @@ table {
 
 .acceso-table table th,
 td {
-  padding: 15px 21px !important;
+  padding: 15px 21px;
 }
 
 .acceso-table table th {
@@ -3669,7 +3672,7 @@ td {
 }
 
 .ventas-entrada-container {
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
   margin-top: 30px;
   background: #fff;
   border-radius: 16px;
@@ -3687,14 +3690,14 @@ td {
 }
 .ventas-dashboard-table .evento-img {
   width: 75px;
-  height: 72px;
+  height: 75px;
   border-radius: 5px;
 }
 
 .progress-label {
   position: absolute;
-  top: 42px;
-  right: 100px;
+  top: 6px;
+
   color: #9b65e4 !important;
 
   font-family: Poppins !important;
@@ -3757,8 +3760,8 @@ td {
   margin-top: 10px;
 }
 .trafico-table .evento-img {
-  width: 52px;
-  height: 52px;
+  width: 75px;
+  height: 75px;
   border-radius: 5px;
 }
 .trafico-table .visitantes {
@@ -4220,7 +4223,7 @@ td {
 
 .progress {
   padding: 3px;
-  height: 21px;
+  height: 28px;
   border-radius: 100px;
   border: 1px solid #9b65e4;
   background: white;
@@ -4228,6 +4231,8 @@ td {
 .progress-bar {
   border-radius: 100px;
   background: #9b65e4;
+  font-size: 14px;
+  padding-bottom: 2.5px;
 }
 
 .accesos-hora .chart {
@@ -4256,4 +4261,23 @@ td {
 .sexo-edad .sexo .recharts-surface,
 .fuente-card .recharts-surface {
   rotate: -55deg;
+}
+
+.w-14 {
+  width: 14px;
+}
+.eye-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0047d6;
+  border-radius: 50%;
+}
+.eye-btn img {
+  width: 25px;
+}
+.pl-60 {
+  padding-left: 100px !important;
 }

@@ -4,6 +4,9 @@ import location from "../../../assets/images/Location.svg";
 import SingleEventoTR from "./SingleEventoTR";
 import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
+import DatePicker from "react-datepicker";
+import arrowLine from "../../../assets/images/Arrow-line.svg";
+import "react-datepicker/dist/react-datepicker.css";
 import {
   BarChart,
   Bar,
@@ -135,9 +138,14 @@ const SingleEvento = () => {
                     </p>
                   </div>
                   <div className='chart-btn-group'>
-                    <select name='' id=''>
-                      <option value=''>Dec 1, 2023</option>
-                    </select>
+                    <DatePicker
+                      className='date-picker-O'
+                      //   selected={selectedDateTime}
+                      //   onChange={handleDateTimeChange}
+
+                      dateFormat='d MMM yyyy'
+                      placeholderText='Dec 1, 2023'
+                    />
                     <button className='thm-btn'>Abrir informe completo</button>
                   </div>
                 </div>
@@ -160,18 +168,7 @@ const SingleEvento = () => {
                 </p>
                 <div className='accesos-card'>
                   <h6>Aforo total</h6>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='95'
-                    height='6'
-                    viewBox='0 0 95 6'
-                    fill='none'
-                  >
-                    <path
-                      d='M95 3.00001L90 0.113256L90 5.88676L95 3.00001ZM-4.37114e-08 3.5L90.5 3.50001L90.5 2.50001L4.37114e-08 2.5L-4.37114e-08 3.5Z'
-                      fill='black'
-                    />
-                  </svg>
+                  <img src={arrowLine} alt='' />
                   <p>500</p>
                 </div>
                 <div className='accesos-card'>
@@ -197,7 +194,7 @@ const SingleEvento = () => {
       </div>
       <div className='entradas-container'>
         <div className='entradas-container-header'>
-          <h4>Entradas</h4>
+          <h4>Accessos</h4>
           <button className='thm-btn'>Crear tipo de entrada</button>
         </div>
         <div className='entradas-container-table'>
@@ -208,7 +205,7 @@ const SingleEvento = () => {
                   <th>Evento</th>
                   <th>Vendidas</th>
                   <th style={{ minWidth: "106px" }}>Neto</th>
-                  <th>Fecha</th>
+                  <th>Total</th>
                   <th style={{ minWidth: "212px" }}>Estado</th>
                 </tr>
               </thead>

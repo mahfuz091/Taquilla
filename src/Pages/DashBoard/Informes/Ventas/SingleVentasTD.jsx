@@ -2,35 +2,45 @@ import React from "react";
 import { ProgressBar } from "react-bootstrap";
 // import location from "../../../assets/images/Location.svg";
 import { Link } from "react-router-dom";
+import eye from "../../../../assets/images/eye-svgrepo-com.svg";
+
+import calender from "../../../../assets/images/date.svg";
+import location from "../../../../assets/images/Location.svg";
 
 const SingleVentasTD = ({ evento }) => {
   return (
     <tr>
-      <Link to='dashboard'>
-        <td>
-          <div className='flex'>
-            <img className='evento-img' src={evento.image} alt='' />
+      <td className='evento'>
+        <div className='flex'>
+          <img className='evento-img' src={evento.image} alt='' />
+          <div>
+            <h6>{evento.name}</h6>
+            <p>{evento.description}</p>
             <div>
-              <h6>{evento.name}</h6>
+              <span>
+                <img className='w-14' src={calender} alt='' />
+              </span>
+              <span className='date ms-1'>{evento.date}</span>
+              <span className='time ms-1'>at 8:00 PM</span>
             </div>
+            <p className='location'>
+              {" "}
+              <img src={location} alt='' /> Westheimer Ana, Illinois
+            </p>
           </div>
-        </td>
-      </Link>
-      <td>
-        <p className='date'>{evento.date}</p>
-        <p className='time'>at {evento.time}</p>
+        </div>
       </td>
+
       <td>
         <ProgressBar now={evento.acceso} label={`${evento.acceso}%`} />
       </td>
       <td className='neto'>€ {evento.neto}</td>
-      {/* <td
-        className={
-          evento.estado === "Inactivo" ? "estado-inactive" : "estado-active"
-        }
-      >
-        {evento.estado}
-      </td> */}
+
+      <td>
+        <Link to='dashboard' className='eye-btn'>
+          <img src={eye} alt='' />
+        </Link>
+      </td>
     </tr>
   );
 };

@@ -120,27 +120,6 @@ const VentasDashboard = () => {
             <div className='bg-white acceso-totales h-100'>
               <h5>Accesos totales</h5>
               <div className='mx-auto' style={{ width: 137, height: 137 }}>
-                {/* <CircularProgressbar
-                  value={percentage}
-                  text={`${percentage}%`}
-                  styles={{
-                    root: {},
-                    path: {
-                      stroke: "#9B65E4",
-                    },
-                    trail: {
-                      stroke: "##F1F1F1",
-                    },
-                    text: {
-                      fill: "#192351",
-
-                      fontSize: "16px",
-                    },
-                    background: {
-                      fill: "red",
-                    },
-                  }}
-                /> */}
                 <img src={CircularProgress} alt='' />
               </div>
               <p className='text-center'>300/800</p>
@@ -236,12 +215,12 @@ const VentasDashboard = () => {
                   <h4 className='ventas-hora-title'>Ventas por hora</h4>
                   <div>
                     <DatePicker
-                      className='date-picker'
+                      className='date-picker-O'
                       //   selected={selectedDateTime}
                       //   onChange={handleDateTimeChange}
 
                       dateFormat='d MMM yyyy'
-                      placeholderText='23.12.2024'
+                      placeholderText='Dec 1, 2023'
                     />
                   </div>
                 </div>
@@ -291,26 +270,28 @@ const VentasDashboard = () => {
                 <form action=''>
                   <div className='form-group'>
                     <label htmlFor=''>Desde</label>
-                    <DatePicker
-                      className='date-picker'
-                      //   selected={selectedDateTime}
-                      //   onChange={handleDateTimeChange}
+                    <div>
+                      <DatePicker
+                        className='date-picker-O'
+                        //   selected={selectedDateTime}
+                        //   onChange={handleDateTimeChange}
 
-                      dateFormat='d MMM yyyy'
-                      //   timeCaption='Time'
-                      placeholderText='23.12.2024'
-                    />
+                        dateFormat='d MMM yyyy'
+                        //   timeCaption='Time'
+                        placeholderText='Dec 1, 2023'
+                      />
+                    </div>
                   </div>
                   <div className='form-group'>
                     <label htmlFor=''>Hasta</label>
                     <DatePicker
-                      className='date-picker'
+                      className='date-picker-O'
                       //   selected={selectedDateTime}
                       //   onChange={handleDateTimeChange}
 
                       dateFormat='d MMM yyyy'
                       //   timeCaption='Time'
-                      placeholderText='23.12.2024'
+                      placeholderText='Dec 1, 2023'
                     />
                   </div>
                 </form>

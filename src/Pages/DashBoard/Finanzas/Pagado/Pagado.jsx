@@ -184,10 +184,11 @@ const Pagado = () => {
             <thead>
               <tr>
                 <th>Evento</th>
-                <th style={{ minWidth: "125px" }}>Fecha</th>
+
                 <th style={{ minWidth: "102px" }}>Ingresos brutos</th>
                 <th style={{ minWidth: "106px" }}>Pago neto</th>
                 <th>Estado</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>

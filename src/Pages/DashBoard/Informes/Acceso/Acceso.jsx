@@ -66,6 +66,12 @@ const Acceso = () => {
   const goToPrevPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
+  const thStyle = {
+    paddingLeft: "60px",
+    important: {
+      paddingLeft: "60px !important",
+    },
+  };
   return (
     <div className='main-container acceso'>
       <div className='acceso-header'>
@@ -142,9 +148,10 @@ const Acceso = () => {
             <thead>
               <tr>
                 <th>Evento</th>
-                <th>Fecha</th>
+                {/* <th>Fecha</th> */}
                 <th style={{ minWidth: "160px" }}>Acceso</th>
-                <th>Estado</th>
+                <th className='pl-60'>Estado</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
