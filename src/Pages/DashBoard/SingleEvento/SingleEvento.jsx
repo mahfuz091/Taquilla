@@ -59,6 +59,10 @@ const data = [
     name: "09.00",
     uv: 20,
   },
+  {
+    name: "10.00",
+    uv: 25,
+  },
 ];
 
 const SingleEvento = () => {
@@ -90,7 +94,7 @@ const SingleEvento = () => {
       </p>
       <div className='single-evento-contaner'>
         <div className='single-evento-card'>
-          <img src={single} alt='' />
+          <img className='single-evento-card-img' src={single} alt='' />
           <div className='single-card-content'>
             <div className='single-card-header'>
               <div>
@@ -150,11 +154,18 @@ const SingleEvento = () => {
                   </div>
                 </div>
                 <hr className='line-chart' />
-                <div className='chart'>
-                  <BarChart width={680} height={225} data={data}>
-                    <XAxis dataKey='name' />
-                    <YAxis></YAxis>
-                    <Bar width={35} dataKey='uv' fill='#9B65E4' />
+                <div className='chart overflow-x-auto'>
+                  <BarChart
+                    width={680}
+                    height={225}
+                    data={data}
+                    margin={{ bottom: 20 }}
+                    barCategoryGap={20}
+                    barGap={50}
+                  >
+                    <XAxis dataKey='name' dy={25} tick={{ fill: "#757575" }} />
+                    <YAxis tick={{ fill: "#757575" }}></YAxis>
+                    <Bar barSize={35} dataKey='uv' fill='#9B65E4' />
                   </BarChart>
                 </div>
               </div>
@@ -168,23 +179,22 @@ const SingleEvento = () => {
                 </p>
                 <div className='accesos-card'>
                   <h6>Aforo total</h6>
-                  <img src={arrowLine} alt='' />
+                  <img
+                    className='accesos-card-img1'
+                    style={{ width: "50%" }}
+                    src={arrowLine}
+                    alt=''
+                  />
                   <p>500</p>
                 </div>
                 <div className='accesos-card'>
                   <h6>Cantidad de asistente</h6>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='30'
-                    height='6'
-                    viewBox='0 0 30 6'
-                    fill='none'
-                  >
-                    <path
-                      d='M30 3L25 0.113251L25 5.88675L30 3ZM-4.37114e-08 3.5L25.5 3.5L25.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z'
-                      fill='black'
-                    />
-                  </svg>
+                  <img
+                    style={{ width: "30%" }}
+                    className='accesos-card-img2'
+                    src={arrowLine}
+                    alt=''
+                  />
                   <p>376</p>
                 </div>
               </div>

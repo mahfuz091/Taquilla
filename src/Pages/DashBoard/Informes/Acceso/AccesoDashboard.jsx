@@ -98,7 +98,7 @@ const data = [
     uv: 20,
   },
   {
-    name: "08.00",
+    name: "10.00",
     uv: 20,
   },
 ];
@@ -253,11 +253,23 @@ const AccesoDashboard = () => {
         <div className='bg-white accesos-hora'>
           <h4>Accesos por hora</h4>
           <div className='chart overflow-x-auto '>
-            <BarChart width={1440} height={350} data={data} barCategoryGap={30}>
+            {/* <BarChart width={1440} height={350} data={data} barCategoryGap={30}>
               <XAxis dataKey='name' />
               <YAxis></YAxis>
 
               <Bar width={35} dataKey='uv' fill='#9B65E4' />
+            </BarChart> */}
+            <BarChart
+              width={1040}
+              height={350}
+              data={data}
+              margin={{ bottom: 20 }}
+              barCategoryGap={30}
+              barGap={40}
+            >
+              <XAxis dataKey='name' dy={25} tick={{ fill: "#757575" }} />
+              <YAxis tick={{ fill: "#757575" }}></YAxis>
+              <Bar barSize={50} dataKey='uv' fill='#9B65E4' />
             </BarChart>
             <img className='tooltip-custom' src={customTooltip} alt='' />
           </div>

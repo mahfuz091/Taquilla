@@ -226,10 +226,20 @@ const VentasDashboard = () => {
                 </div>
 
                 <div className='chart overflow-x-auto'>
-                  <BarChart width={680} height={288} data={data}>
+                  {/* <BarChart width={680} height={288} data={data}>
                     <XAxis dataKey='name' />
                     <YAxis></YAxis>
                     <Bar width={35} dataKey='uv' fill='#9B65E4' />
+                  </BarChart> */}
+                  <BarChart
+                    width={680}
+                    height={225}
+                    data={data}
+                    margin={{ bottom: 20 }}
+                  >
+                    <XAxis dataKey='name' dy={25} tick={{ fill: "#757575" }} />
+                    <YAxis tick={{ fill: "#757575" }}></YAxis>
+                    <Bar barSize={35} dataKey='uv' fill='#9B65E4' />
                   </BarChart>
                 </div>
               </div>
@@ -296,10 +306,20 @@ const VentasDashboard = () => {
                   </div>
                 </form>
                 <div className='chart overflow-x-auto'>
-                  <BarChart width={680} height={225} data={data}>
+                  {/* <BarChart width={680} height={225} data={data}>
                     <XAxis dataKey='name' />
                     <YAxis></YAxis>
                     <Bar width={35} dataKey='uv' fill='#9B65E4' />
+                  </BarChart> */}
+                  <BarChart
+                    width={680}
+                    height={225}
+                    data={data}
+                    margin={{ bottom: 20 }}
+                  >
+                    <XAxis dataKey='name' dy={25} tick={{ fill: "#757575" }} />
+                    <YAxis tick={{ fill: "#757575" }}></YAxis>
+                    <Bar barSize={35} dataKey='uv' fill='#9B65E4' />
                   </BarChart>
                 </div>
               </div>

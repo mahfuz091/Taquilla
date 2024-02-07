@@ -241,7 +241,7 @@ const CreateEvent = () => {
             </Col>
           </Row>
         </form>
-        <hr className='line-1' />
+        <div className='line-1'></div>
         <div className='create-event-container-btn-group'>
           <button>Cancelar</button>
           <button>Guardar</button>

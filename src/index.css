@@ -1026,6 +1026,11 @@ input[type="radio"]:checked {
   align-items: center;
   gap: 40px;
 }
+.single-evento-card-img {
+  width: 253px;
+  height: 211px;
+  border-radius: 8px;
+}
 
 .single-evento-card .single-card-title {
   color: #1b212d;
@@ -1108,6 +1113,7 @@ input[type="radio"]:checked {
 
 .chart {
   padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 992px) {
@@ -3312,7 +3318,7 @@ td {
 .tooltip-custom {
   position: absolute;
   top: 0;
-  left: 346px;
+  left: 216px;
   z-index: 9999999999999999999;
 }
 @media (max-width: 575px) {
@@ -4238,14 +4244,8 @@ td {
 .accesos-hora .chart {
   margin-top: 96px;
 }
-.accesos-hora .chart .recharts-layer .recharts-bar-rectangle {
-  padding-right: 40px !important;
-}
 
 /* chart */
-.recharts-layer .recharts-bar-rectangle {
-  padding-right: 23px !important;
-}
 
 .recharts-cartesian-axis-line {
   display: none;
@@ -4280,4 +4280,62 @@ td {
 }
 .pl-60 {
   padding-left: 100px !important;
+}
+
+/* Scrollbar */
+
+.chart::-webkit-scrollbar {
+  height: 5px;
+  position: absolute;
+  bottom: 20px !important;
+  margin-left: 75px;
+}
+
+.chart::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(219, 218, 222);
+  border-radius: 10px;
+}
+
+.chart::-webkit-scrollbar-thumb {
+  background: rgb(203, 186, 254);
+  /* background-image: url(/public/horizontal-thumb.png); */
+  /* background-repeat: no-repeat; */
+  border-radius: 10px;
+  width: 100px;
+}
+.gap-35 {
+  gap: 27.5px;
+  margin-left: 74px;
+}
+
+@media (max-width: 575px) {
+  .accesos-card img {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .accesos-card-img1 {
+    width: 30% !important;
+  }
+  .accesos-card-img2 {
+    width: 20% !important;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1460px) {
+  .accesos-card-img1 {
+    width: 40% !important;
+  }
+  .accesos-card-img2 {
+    width: 25% !important;
+    margin-right: 5px;
+  }
+}
+@media (min-width: 1461px) and (max-width: 1600px) {
+  .accesos-card-img1 {
+    width: 45% !important;
+  }
+  .accesos-card-img2 {
+    width: 25% !important;
+    margin-right: 5px;
+  }
 }
