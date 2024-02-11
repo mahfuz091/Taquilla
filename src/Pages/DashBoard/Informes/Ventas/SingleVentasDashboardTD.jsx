@@ -12,7 +12,7 @@ const SingleVentasDashboardTD = ({ evento }) => {
           <img className='evento-img' src={evento.image} alt='' />
           <div>
             <h6>{evento.name}</h6>
-            <p>{evento.description}</p>
+            {/* <p>{evento.description}</p> */}
             <div>
               <span>
                 <img className='w-14' src={calender} alt='' />
@@ -44,7 +44,7 @@ const SingleVentasDashboardTD = ({ evento }) => {
           </p>
         </div>
       </td>
-      <td className='neto' style={{ textAlign: "right" }}>
+      <td className='neto pl-0' style={{ textAlign: "center", }}>
         € {evento.neto}
       </td>
     </tr>

@@ -24,7 +24,7 @@ const PaymentDetails = () => {
       </p>
       <div className='paymemt-details-header'>
         <h4>Detalles del pago</h4>
-        <hr className='line' />
+        <div className='line-5' />
         <div className='paymemt-details-content'>
           <p className='estado'>
             Estado: <span>Paid</span>

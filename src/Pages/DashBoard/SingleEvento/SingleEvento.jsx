@@ -113,7 +113,7 @@ const SingleEvento = () => {
                 </Link>
               </div>
             </div>
-            <hr className='line-1' />
+            <div className='line-1' />
             <div className='single-card-footer'>
               <p>
                 Vendidas: <span>500/341</span>
@@ -141,9 +141,10 @@ const SingleEvento = () => {
                       Ventas netas hoy: <span>€344</span>
                     </p>
                   </div>
-                  <div className='chart-btn-group'>
-                    <DatePicker
+                  <div className='chart-btn-group evento-datepicker'>
+                    <DatePicker style={{ width: '155px' }}
                       className='date-picker-O'
+
                       //   selected={selectedDateTime}
                       //   onChange={handleDateTimeChange}
 
@@ -153,7 +154,7 @@ const SingleEvento = () => {
                     <button className='thm-btn'>Abrir informe completo</button>
                   </div>
                 </div>
-                <hr className='line-chart' />
+                <div className='line-chart' ></div>
                 <div className='chart overflow-x-auto'>
                   <BarChart
                     width={680}

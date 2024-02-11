@@ -38,8 +38,8 @@ const Ventas = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-        ? "#E6F0FF"
-        : "white",
+          ? "#E6F0FF"
+          : "white",
     }),
   };
   const defaultOption = options[0];
@@ -147,7 +147,7 @@ const Ventas = () => {
                 <th>Evento</th>
                 {/* <th>Fecha</th> */}
                 <th style={{ minWidth: "160px" }}>Ventas</th>
-                <th style={{ minWidth: "160px" }}>Total Recaudado</th>
+                <th style={{ minWidth: "160px" }} className="text-center">Total Recaudado</th>
                 <th></th>
               </tr>
             </thead>

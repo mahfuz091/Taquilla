@@ -15,7 +15,7 @@ const SingleVentasTD = ({ evento }) => {
           <img className='evento-img' src={evento.image} alt='' />
           <div>
             <h6>{evento.name}</h6>
-            <p>{evento.description}</p>
+            {/* <p>{evento.description}</p> */}
             <div>
               <span>
                 <img className='w-14' src={calender} alt='' />
@@ -34,7 +34,7 @@ const SingleVentasTD = ({ evento }) => {
       <td>
         <ProgressBar now={evento.acceso} label={`${evento.acceso}%`} />
       </td>
-      <td className='neto'>€ {evento.neto}</td>
+      <td className='neto text-center'>€ {evento.neto}</td>
 
       <td>
         <Link to='dashboard' className='eye-btn'>

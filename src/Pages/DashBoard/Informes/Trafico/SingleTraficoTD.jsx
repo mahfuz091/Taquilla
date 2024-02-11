@@ -15,7 +15,7 @@ const SingleTraficoTD = ({ evento }) => {
           <img className='evento-img' src={evento.image} alt='' />
           <div>
             <h6>{evento.name}</h6>
-            <p>{evento.description}</p>
+            {/* <p>{evento.description}</p> */}
             <div>
               <span>
                 <img className='w-14' src={calender} alt='' />

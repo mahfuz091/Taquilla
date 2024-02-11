@@ -15,7 +15,7 @@ const SingleAccesoTD = ({ evento }) => {
           <img className='evento-img' src={evento.image} alt='' />
           <div>
             <h6>{evento.name}</h6>
-            <p>{evento.description}</p>
+            {/* <p>{evento.description}</p> */}
             <div>
               <span>
                 <img className='w-14' src={calender} alt='' />
@@ -37,8 +37,8 @@ const SingleAccesoTD = ({ evento }) => {
       <td
         className={
           evento.estado === "Cerrado"
-            ? "estado-inactive pl-60"
-            : "estado-active pl-60"
+            ? "estado-inactive pl-60 text-center"
+            : "estado-active pl-60 text-center"
         }
       >
         {evento.estado}

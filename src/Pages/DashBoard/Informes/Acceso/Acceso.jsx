@@ -38,8 +38,8 @@ const Acceso = () => {
       backgroundColor: state.isSelected
         ? "#fff"
         : state.isFocused
-        ? "#E6F0FF"
-        : "white",
+          ? "#E6F0FF"
+          : "white",
     }),
   };
   const defaultOption = options[0];
@@ -150,7 +150,7 @@ const Acceso = () => {
                 <th>Evento</th>
                 {/* <th>Fecha</th> */}
                 <th style={{ minWidth: "160px" }}>Acceso</th>
-                <th className='pl-60'>Estado</th>
+                <th className='pl-60 text-center'>Estado</th>
                 <th></th>
               </tr>
             </thead>
