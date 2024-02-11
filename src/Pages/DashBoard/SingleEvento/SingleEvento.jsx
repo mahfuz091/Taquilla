@@ -142,9 +142,9 @@ const SingleEvento = () => {
                     </p>
                   </div>
                   <div className='chart-btn-group evento-datepicker'>
-                    <DatePicker style={{ width: '155px' }}
+                    <DatePicker
+                      style={{ width: "155px" }}
                       className='date-picker-O'
-
                       //   selected={selectedDateTime}
                       //   onChange={handleDateTimeChange}
 
@@ -154,7 +154,7 @@ const SingleEvento = () => {
                     <button className='thm-btn'>Abrir informe completo</button>
                   </div>
                 </div>
-                <div className='line-chart' ></div>
+                <div className='line-chart'></div>
                 <div className='chart overflow-x-auto'>
                   <BarChart
                     width={680}
@@ -180,22 +180,18 @@ const SingleEvento = () => {
                 </p>
                 <div className='accesos-card'>
                   <h6>Aforo total</h6>
-                  <img
-                    className='accesos-card-img1'
-                    style={{ width: "50%" }}
-                    src={arrowLine}
-                    alt=''
-                  />
+                  <span className='arrow-line'></span>
                   <p>500</p>
                 </div>
                 <div className='accesos-card'>
                   <h6>Cantidad de asistente</h6>
-                  <img
+                  {/* <img
                     style={{ width: "30%" }}
                     className='accesos-card-img2'
                     src={arrowLine}
                     alt=''
-                  />
+                  /> */}
+                  <span className='arrow-line-2'></span>
                   <p>376</p>
                 </div>
               </div>
@@ -238,44 +234,45 @@ const SingleEvento = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className='publicar-evento-container'>
-        <h4>Publicar evento</h4>
-        <form className='publicar-evento-form' action=''>
-          <div className='from-group'>
-            <label htmlFor=''>
-              Enlace a tu evento<span className='span'>*</span>
-            </label>
-            <input
-              className='text-input'
-              type='text'
-              placeholder='panel.taquillacentral.com/eventos'
-            />
+        <div className='publicar-evento-container'>
+          <h4>Publicar evento</h4>
+          <form className='publicar-evento-form' action=''>
+            <div className='from-group'>
+              <label htmlFor=''>
+                Enlace a tu evento<span className='span'>*</span>
+              </label>
+              <input
+                className='text-input'
+                type='text'
+                placeholder='panel.taquillacentral.com/eventos'
+              />
+            </div>
+            <div className='from-group'>
+              <label htmlFor=''>
+                Iframe de tu evento<span className='span'>*</span>
+              </label>
+              <p>Insert it into your website to start selling</p>
+              <input
+                className='text-input'
+                type='text'
+                placeholder='panel.taquillacentral.com/eventos'
+              />
+            </div>
+            <div className='form-group'>
+              <button className='thm-btn'>Publicar</button>
+            </div>
+          </form>
+        </div>
+        <div className='eliminar-evento-container'>
+          <h4>Eliminar evento</h4>
+          <p>
+            Ingresa el nombre de tu evento para confirmar que deseas
+            eliminarlo”*
+          </p>
+          <div className='form-group  single-evento-create'>
+            <input type='text' placeholder='Ingrese su nombre' />
+            <button className='create-evento-btn'>Borrar</button>
           </div>
-          <div className='from-group'>
-            <label htmlFor=''>
-              Iframe de tu evento<span className='span'>*</span>
-            </label>
-            <p>Insert it into your website to start selling</p>
-            <input
-              className='text-input'
-              type='text'
-              placeholder='panel.taquillacentral.com/eventos'
-            />
-          </div>
-          <div className='form-group'>
-            <button className='thm-btn'>Publicar</button>
-          </div>
-        </form>
-      </div>
-      <div className='eliminar-evento-container'>
-        <h4>Eliminar evento</h4>
-        <p>
-          Ingresa el nombre de tu evento para confirmar que deseas eliminarlo”*
-        </p>
-        <div className='form-group'>
-          <input type='text' placeholder='Ingrese su nombre' />
-          <button className='create-evento-btn'>Borrar</button>
         </div>
       </div>
     </div>

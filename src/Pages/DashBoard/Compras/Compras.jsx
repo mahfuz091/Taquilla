@@ -183,7 +183,9 @@ const Compras = () => {
           <table>
             <thead>
               <tr>
-                <th style={{ minWidth: "136px" }}>Localizador</th>
+                <th style={{ minWidth: "136px", width: "200px" }}>
+                  Localizador
+                </th>
                 <th style={{ minWidth: "136px" }}>Nombre</th>
                 <th>Correo</th>
                 <th>DNI</th>

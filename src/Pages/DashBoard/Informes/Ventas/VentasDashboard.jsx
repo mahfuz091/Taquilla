@@ -198,7 +198,7 @@ const VentasDashboard = () => {
               <div className='edad'>
                 <h6>Edad</h6>
                 <div className=''>
-                  <img src={HorizontalBar} alt='' />
+                  <img className='w-100' src={HorizontalBar} alt='' />
                 </div>
               </div>
             </div>

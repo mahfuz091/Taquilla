@@ -148,7 +148,7 @@ const Trafico = () => {
                 {/* <th>Fecha</th> */}
                 <th>Visitantes</th>
                 <th>Compras</th>
-                <th></th>
+                <th style={{ width: "163px" }}></th>
               </tr>
             </thead>
             <tbody>
