@@ -331,7 +331,7 @@ th {
 
 /* Eventos */
 .eventos {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .eventos-header {
@@ -734,7 +734,7 @@ tr:first-child th:last-child {
 /* Create Event */
 
 .create-event {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .create-event > p,
@@ -1034,7 +1034,7 @@ input[type="radio"]:checked {
 
 /* single Evento */
 .single-evento {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .single-evento > p {
@@ -1398,7 +1398,7 @@ input[type="radio"]:checked {
 }
 
 .publicar-evento-container {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   padding: 30px 30px 30px 40px;
   border-radius: 16px;
   background: #f2f4fe;
@@ -1468,7 +1468,7 @@ input[type="radio"]:checked {
   padding: 30px 40px;
   border-radius: 16px;
   background: rgba(255, 0, 0, 0.03);
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .eliminar-evento-container h4 {
@@ -1512,7 +1512,7 @@ input[type="radio"]:checked {
 
 /* Editar Ticket */
 .editar-ticket {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .editar-ticket-container {
@@ -1678,7 +1678,7 @@ input[type="radio"]:checked {
 
 /* Pedidos */
 .pedidos {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .pedidos-header {
@@ -2241,7 +2241,7 @@ td {
 
 /* Pagados */
 .pagado {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .pagado-header {
@@ -2490,7 +2490,7 @@ td {
 /* facturas */
 
 .facturas {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .facturas-header {
@@ -2655,7 +2655,7 @@ td {
 }
 
 .fiscal {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .fiscal-header {
@@ -2801,7 +2801,7 @@ td {
 
 /* cuenta */
 .cuenta {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .cuenta-header {
@@ -3373,7 +3373,7 @@ td {
 /* Acceso */
 
 .acceso {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .tooltip-custom {
@@ -3665,7 +3665,7 @@ td {
 /* Ventas */
 
 .ventas {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .ventas-header {
@@ -3824,7 +3824,7 @@ td {
 
 /* Trafico */
 .trafico {
-  margin: 30px 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .trafico-header {
@@ -4368,7 +4368,10 @@ td {
   border-radius: 100px;
   background: #9b65e4;
   font-size: 14px;
-  padding-bottom: 2.5px;
+  /* padding-bottom: 2.5px; */
+}
+.acceso-table.ventas-dashboard-table .progress {
+  height: 29px;
 }
 
 .accesos-hora .chart {

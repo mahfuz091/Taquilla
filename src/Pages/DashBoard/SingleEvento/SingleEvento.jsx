@@ -234,6 +234,8 @@ const SingleEvento = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='entradas-container'>
         <div className='publicar-evento-container'>
           <h4>Publicar evento</h4>
           <form className='publicar-evento-form' action=''>
@@ -263,6 +265,8 @@ const SingleEvento = () => {
             </div>
           </form>
         </div>
+      </div>
+      <div className='entradas-container'>
         <div className='eliminar-evento-container'>
           <h4>Eliminar evento</h4>
           <p>
