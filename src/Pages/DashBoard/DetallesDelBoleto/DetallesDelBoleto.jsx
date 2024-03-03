@@ -5,7 +5,7 @@ import qr from "../../../assets/images/bi_qr-code-scan.svg";
 const DetallesDelBoleto = () => {
   return (
     <div className='main-container detallesboleto'>
-      <p>
+      <p className='m-30'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='26'
@@ -23,7 +23,7 @@ const DetallesDelBoleto = () => {
         </svg>
         Atrás
       </p>
-      <div className='detallsboleto-container'>
+      <div className='detallsboleto-container ml-30'>
         <Row>
           <Col xl={8}>
             <div className='detalls-form'>

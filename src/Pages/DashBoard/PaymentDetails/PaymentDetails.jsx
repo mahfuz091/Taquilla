@@ -4,7 +4,7 @@ import img1 from "../../../../public/images/img-1.png";
 const PaymentDetails = () => {
   return (
     <div className='payment-details main-container'>
-      <p>
+      <p className='m-30'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='26'
@@ -22,7 +22,7 @@ const PaymentDetails = () => {
         </svg>
         Atrás
       </p>
-      <div className='paymemt-details-header'>
+      <div className='paymemt-details-header ml-30'>
         <h4>Detalles del pago</h4>
         <div className='line-5' />
         <div className='paymemt-details-content'>
@@ -37,7 +37,7 @@ const PaymentDetails = () => {
           </p>
         </div>
       </div>
-      <div className='administration-container'>
+      <div className='administration-container ml-30'>
         <h4>Gastos de gestión</h4>
         <div className='administration-table table-responsive'>
           <table>
@@ -132,7 +132,7 @@ const PaymentDetails = () => {
           </table>
         </div>
       </div>
-      <div className='payment-summary'>
+      <div className='payment-summary ml-30'>
         <h4>Resumen de pago</h4>
         <div className='payment-row'>
           <p>Ingresos brutos:</p>

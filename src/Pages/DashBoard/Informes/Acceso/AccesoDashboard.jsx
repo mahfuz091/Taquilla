@@ -127,11 +127,11 @@ const AccesoDashboard = () => {
 
   return (
     <div className='main-container detallesboleto '>
-      <p>
+      <p className='m-30'>
         <img src={leftArrow} alt='' />
         Atrás
       </p>
-      <div className='acceso-dashboard-container'>
+      <div className='acceso-dashboard-container ml-30'>
         <Row>
           <Col xl={4}>
             <div className='bg-white acceso-totales h-100'>
@@ -250,9 +250,9 @@ const AccesoDashboard = () => {
             </div>
           </Col>
         </Row>
-        <div className='bg-white accesos-hora'>
+        <div className='bg-white accesos-hora position-relative'>
           <h4>Accesos por hora</h4>
-          <div className='chart overflow-x-auto '>
+          <div className='chart overflow-x-auto  '>
             {/* <BarChart width={1440} height={350} data={data} barCategoryGap={30}>
               <XAxis dataKey='name' />
               <YAxis></YAxis>

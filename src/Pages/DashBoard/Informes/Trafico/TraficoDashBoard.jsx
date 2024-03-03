@@ -96,11 +96,11 @@ const renderCustomizedLabel = ({
 const TraficoDashBoard = () => {
   return (
     <div className='main-container detallesboleto'>
-      <p>
+      <p className='m-30'>
         <img src={leftArrow} alt='' />
         Atrás
       </p>
-      <div className='trafico-dashboard-container'>
+      <div className='trafico-dashboard-container ml-30'>
         <Row>
           <Col xl={8}>
             <Row>
