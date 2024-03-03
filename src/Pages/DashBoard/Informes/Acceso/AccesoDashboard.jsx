@@ -126,7 +126,7 @@ const AccesoDashboard = () => {
   const percentage = 40;
 
   return (
-    <div className='main-container detallesboleto'>
+    <div className='main-container detallesboleto '>
       <p>
         <img src={leftArrow} alt='' />
         Atrás

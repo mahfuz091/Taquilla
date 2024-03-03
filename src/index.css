@@ -64,6 +64,7 @@ th {
   height: 100%;
   /* overflow-x: hidden; */
   margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .close-btn {
@@ -151,14 +152,17 @@ th {
   /* 171.429% */
   cursor: pointer;
 }
+
 .single-evento-create .create-evento-btn {
   margin-top: 10px;
 }
+
 @media (min-width: 575px) {
   .single-evento-create {
     display: flex;
     align-items: center;
   }
+
   .single-evento-create .create-evento-btn {
     margin-top: 0;
   }
@@ -180,6 +184,7 @@ th {
   border-radius: 16px;
   background: #fff;
   box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
+  margin-bottom: 50px;
 }
 
 .hambargur-btn {
@@ -301,7 +306,7 @@ th {
   cursor: pointer;
 } */
 
-.sidebar-list-item > a {
+.sidebar-list-item>a {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -738,10 +743,10 @@ tr:first-child th:last-child {
   padding: 30px 30px 0 30px;
 }
 
-.create-event > p,
-.editar-ticket > P,
-.detallesboleto > p,
-.payment-details > P {
+.create-event>p,
+.editar-ticket>P,
+.detallesboleto>p,
+.payment-details>P {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -762,7 +767,7 @@ tr:first-child th:last-child {
   margin-top: 30px;
 }
 
-.create-event-container > h4 {
+.create-event-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1008,7 +1013,7 @@ input[type="radio"]:checked {
   gap: 24px;
 }
 
-.create-event-container-btn-group > button {
+.create-event-container-btn-group>button {
   display: flex;
   width: 213px;
   padding: 10px 30px;
@@ -1028,7 +1033,7 @@ input[type="radio"]:checked {
   /* 171.429% */
 }
 
-.create-event-container-btn-group > button:hover {
+.create-event-container-btn-group>button:hover {
   color: #fff;
   background: #9b65e4;
 }
@@ -1038,7 +1043,7 @@ input[type="radio"]:checked {
   padding: 30px 30px 0 30px;
 }
 
-.single-evento > p {
+.single-evento>p {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1253,7 +1258,7 @@ input[type="radio"]:checked {
   background: #f2f4fe;
 }
 
-.accesos > h4 {
+.accesos>h4 {
   color: var(--01, #180e2c);
   font-family: Poppins;
   font-size: 26px;
@@ -1264,7 +1269,7 @@ input[type="radio"]:checked {
   margin-bottom: 8px;
 }
 
-.accesos > p {
+.accesos>p {
   color: #757575;
   font-family: Poppins;
   font-size: 16px;
@@ -1285,7 +1290,7 @@ input[type="radio"]:checked {
   margin-bottom: 12px;
 }
 
-.accesos-card > h6 {
+.accesos-card>h6 {
   color: var(--01, #180e2c);
   font-family: Poppins;
   font-size: 14px;
@@ -1294,7 +1299,7 @@ input[type="radio"]:checked {
   line-height: normal;
 }
 
-.accesos-card > p {
+.accesos-card>p {
   color: #9b65e4;
   font-family: Poppins;
   font-size: 30px;
@@ -1524,7 +1529,7 @@ input[type="radio"]:checked {
   margin-top: 30px;
 }
 
-.editar-ticket-container > h4 {
+.editar-ticket-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1726,7 +1731,7 @@ input[type="radio"]:checked {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.compras-container > h4 {
+.compras-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 26px;
@@ -1846,7 +1851,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido > h6 {
+.pedidos-table .pedido>h6 {
   color: #444;
   font-family: Poppins;
   font-size: 13px;
@@ -1855,7 +1860,7 @@ td {
   line-height: normal;
 }
 
-.pedidos-table .pedido > p {
+.pedidos-table .pedido>p {
   color: #666;
   font-family: Poppins;
   font-size: 12px;
@@ -1897,6 +1902,18 @@ td {
   margin: 30px 0px 0 30px;
 }
 
+.main-container.detallesboleto.ventas-dashboard {
+  margin: 0 0 30px 0;
+}
+
+.main-container.detallesboleto.ventas-dashboard p {
+  margin: 30px;
+}
+
+.main-container.detallesboleto.ventas-dashboard .ventas-dashboard-container {
+  margin-left: 30px;
+}
+
 .detallsboleto-container {
   margin-top: 30px;
   margin-right: 30px;
@@ -1910,7 +1927,7 @@ td {
   margin: 10px 0 0 20px;
 }
 
-.detallsboleto-container .detalls-form > h4 {
+.detallsboleto-container .detalls-form>h4 {
   color: #000;
   font-family: Poppins;
   font-size: 26px;
@@ -1927,7 +1944,7 @@ td {
   padding: 20px 20px 40px 20px;
 }
 
-.tipo-de-pago-container > h6 {
+.tipo-de-pago-container>h6 {
   color: #000;
   font-family: Poppins;
   font-size: 20px;
@@ -2358,7 +2375,7 @@ td {
   border-bottom-right-radius: 10px !important;
 }
 
-.pagination > p {
+.pagination>p {
   color: #949ca9;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -2369,7 +2386,7 @@ td {
   /* 157.143% */
 }
 
-.pagination > p span {
+.pagination>p span {
   color: #000;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
@@ -2541,7 +2558,7 @@ td {
   box-shadow: 10px 12px 60px 0px rgba(0, 0, 0, 0.08);
 }
 
-.facturas-container > h4 {
+.facturas-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 24px;
@@ -2982,7 +2999,7 @@ td {
   margin-right: 30px;
 }
 
-.paymemt-details-header > h4 {
+.paymemt-details-header>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
@@ -3063,7 +3080,7 @@ td {
   margin-right: 30px;
 }
 
-.administration-container > h4 {
+.administration-container>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
@@ -3187,9 +3204,11 @@ td {
 .table-img {
   border-top-left-radius: 10px !important;
 }
+
 .table-img img {
   border-radius: 5px;
 }
+
 .administration-table .fourth-row td:last-child {
   border-top-right-radius: 10px !important;
 }
@@ -3259,7 +3278,7 @@ td {
   margin-right: 30px;
 }
 
-.payment-summary > h4 {
+.payment-summary>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 18px;
@@ -3484,10 +3503,14 @@ td {
   width: max-content;
 }
 
+
+
+
 .acceso-dashboard-container {
   margin-top: 32px;
-  background: #f9fafe;
+  /* background: #f9fafe; */
   margin-right: 30px;
+
 }
 
 .acceso-dashboard-container .row {
@@ -3503,7 +3526,7 @@ td {
   margin-top: 30px;
 }
 
-.acceso-dashboard-container .accesos-hora > h4 {
+.acceso-dashboard-container .accesos-hora>h4 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 22px;
@@ -3519,7 +3542,7 @@ td {
   border-radius: 16px;
 }
 
-.acceso-dashboard-container .acceso-totales > h5 {
+.acceso-dashboard-container .acceso-totales>h5 {
   color: #180e2c;
   font-family: Poppins;
   font-size: 22px;
@@ -3531,7 +3554,7 @@ td {
   margin-bottom: 22px;
 }
 
-.acceso-dashboard-container .acceso-totales > p {
+.acceso-dashboard-container .acceso-totales>p {
   color: #222;
   font-family: Poppins;
   font-size: 16px;
@@ -3554,7 +3577,7 @@ td {
   margin-top: 41px;
 }
 
-.acceso-dashboard-container .acceso-card > h6 {
+.acceso-dashboard-container .acceso-card>h6 {
   color: #222;
   font-family: Poppins;
   font-size: 14px;
@@ -3578,7 +3601,7 @@ td {
   margin-top: 4px;
 }
 
-.acceso-dashboard-container .acceso-card:last-child > p {
+.acceso-dashboard-container .acceso-card:last-child>p {
   color: #777;
   font-family: Poppins;
   font-size: 14px;
@@ -3775,7 +3798,7 @@ td {
   margin-top: 30px;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 4px 6px 60px rgba(0, 0, 0, 0.07);
+  box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
 }
 
 .ventas-entrada-container h4 {
@@ -4002,7 +4025,7 @@ td {
   padding: 25px 20px;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 4px 6px 60px rgba(0, 0, 0, 0.07);
+  box-shadow: 4px 6px 60px 0px rgba(0, 0, 0, 0.07);
   margin-top: 30px;
 }
 
@@ -4133,6 +4156,7 @@ td {
 }
 
 @media (max-width: 575px) {
+
   .eventos-header p,
   .pagado-header p,
   .fiscal-header p,
@@ -4212,7 +4236,7 @@ td {
 }
 
 @media (max-width: 575px) {
-  .single-evento-card > img {
+  .single-evento-card>img {
     width: 150px;
   }
 
@@ -4297,7 +4321,7 @@ td {
 }
 
 @media (max-width: 1024px) {
-  .single-evento-card > img {
+  .single-evento-card>img {
     width: 180px;
   }
 
@@ -4371,6 +4395,7 @@ td {
   font-size: 14px;
   /* padding-bottom: 2.5px; */
 }
+
 .acceso-table.ventas-dashboard-table .progress {
   height: 29px;
 }
@@ -4456,6 +4481,7 @@ td {
   .accesos-card img {
     display: none;
   }
+
   .arrow-line,
   .arrow-line-2 {
     display: none;
@@ -4470,9 +4496,11 @@ td {
   .accesos-card-img2 {
     width: 20% !important;
   }
+
   .arrow-line {
     width: 30% !important;
   }
+
   .arrow-line:last-child {
     width: 25% !important;
   }
@@ -4506,6 +4534,7 @@ td {
   width: 50%;
   position: relative;
 }
+
 .arrow-line::after {
   content: "";
   position: absolute;
@@ -4524,6 +4553,7 @@ td {
   width: 30%;
   position: relative;
 }
+
 .arrow-line-2::after {
   content: "";
   position: absolute;
@@ -4535,51 +4565,60 @@ td {
   border-bottom: 5px solid transparent;
   border-left: 5px solid black;
 }
+
 @media (min-width: 575px) and (max-width: 620px) {
   .arrow-line-2 {
     width: 28% !important;
   }
 }
+
 @media (min-width: 621px) and (max-width: 767px) {
   .arrow-line-2 {
     width: 33% !important;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1310px) {
   .arrow-line-2 {
     width: 29% !important;
     margin: 0 12px 0 0;
   }
 }
+
 @media (min-width: 1311px) and (max-width: 1400px) {
   .arrow-line-2 {
     width: 30% !important;
     margin: 0 12px 0 0;
   }
 }
+
 @media (min-width: 1401px) and (max-width: 1500px) {
   .arrow-line-2 {
     width: 30% !important;
     margin: 0 20px 0 0;
   }
 }
+
 @media (min-width: 1501px) and (max-width: 1600px) {
   .arrow-line-2 {
     width: 30% !important;
     margin: 0 38px 0 0;
   }
 }
+
 @media (min-width: 1601px) {
   .arrow-line-2 {
     width: 30% !important;
     margin: 0 12px 0 0;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .arrow-line-2 {
     width: 37% !important;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1300px) {
   .arrow-line {
     width: 15% !important;

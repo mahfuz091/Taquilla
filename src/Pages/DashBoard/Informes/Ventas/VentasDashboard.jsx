@@ -109,7 +109,7 @@ const VentasDashboard = () => {
   }, []);
   const percentage = 40;
   return (
-    <div className='main-container detallesboleto'>
+    <div className='main-container detallesboleto ventas-dashboard'>
       <p>
         <img src={leftArrow} alt='' />
         Atrás
