@@ -1912,6 +1912,7 @@ td {
 
 .main-container.detallesboleto.ventas-dashboard .ventas-dashboard-container {
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .detallsboleto-container {
@@ -3520,7 +3521,7 @@ td {
 
 .acceso-dashboard-container .accesos-hora {
   background: #fff;
-  filter: drop-shadow(10px 12px 60px rgba(0, 0, 0, 0.08));
+  box-shadow: 10px 12px 60px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 25px 25px 28px 20px;
   margin-top: 30px;
